@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c6cc91b2;
+    margin: 0px auto;
+    height: 100%;
+    padding: 0px auto;
+}
+
+header {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: linear-gradient(to top, #063D1E , #2fab66);
+    color: white;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466);
+}
+
+header > nav {
+    background-color: #063d1e49;
+    text-align: left;
+    padding: 1px;
+    margin: 0px 0px 0px 0px;
+    text-shadow: none;
+}
+
+nav > ul {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 10px;
+}
+
+nav > ul li {
+    display: inline;
+    margin: 0px 10px 0px;
+}
+
+nav > ul li a {
+    color: rgba(130, 214, 130, 0.863);
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+nav > ul li a:hover {
+    color: white;
+    background-color: rgba(130, 214, 130, 0.863);
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+main {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px 0px 1px 0px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: none;
+    border-top-right-radius: none;
+    display: block;
+}
+
+main strong {
+    color: #0f5c30;
+    background-color: rgba(41, 216, 94, 0.582);
+    padding: 2px 5px;
+}
+
+main a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgba(7, 59, 23, 0.897);
+    padding: 2px 5px;
+}
+
+main a:hover {
+    color: #6eec8ac9;
+    background-color: rgba(7, 59, 23, 0.897);
+    text-decoration: underline;
+}
+
+
+h1#intro {
+    text-align: left;
+    color: #063d1e;
+    font-size: 2em;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+p#texto-intro {
+    text-align: justify;
+    margin: 20px;
+    line-height: 1.9;
+    text-indent: 50px;
+}
+
+.historia h2{
+    text-align: left;
+    background-image: linear-gradient(to right,#5bd391bd,  transparent);
+    padding: 2px 5px;
+    color: #063d1e;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.historia p {
+    text-align: justify;
+    margin: 20px;
+    line-height: 1.9;
+    text-indent: 50px;
+}
+
+.historia img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    width: 90%;
+    padding: 20px;
+}
+
+#bugdroid {
+    display: block;
+    margin: auto;
+    max-width: 350px;
+    height: 10%;
+    padding: 20px;
+}   
+
+article#conclusao {
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 1px;
+    background-color: #178b49;
+    color: white;
+    display: flex;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-indent: 20px;
+}
+
+section#outro-assunto {
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0.1px;
+    background-color: #178b49af;
+    color: rgb(0, 0, 0);
+    display: block;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+section#outro-assunto p {
+    text-align: justify;
+    margin: 20px;
+    line-height: 1.9;
+    text-indent: 50px;
+}
+
+
+aside ul {
+    list-style-type: none;
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\2714\00A0';
+}
+
+
+footer {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #063d1e;
+    padding: 10px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+#encerramento {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: #178b49af;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+section#video {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: #178b49af;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+section#video iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+}

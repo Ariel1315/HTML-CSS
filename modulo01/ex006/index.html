@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatações de Textos</title>
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito e Itálico</h2>
+    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag B</p> <!--Não é semântica!-->
+    <p>Nesta frase, tenho um <strong> termo em destaque</strong> usando a tag STRONG (semântica).</p>
+
+    <h2>Termos em Itálico / Ênfase:</h2>
+    <p>Já nesta frase, temos um <i>termo em Itálico</i> usando a tag I (não semântico).</p>
+    <p>Já nesta frase, temos um <em>termo em ênfase</em> usando a tag EM (semântico).</p>
+
+    <h2>Subscrito e Sobrescrito</h2>
+    <p>Na fórmula química da água, temos H<sub>2</sub>O.</p>
+    <p>Na fórmula química do gás carbônico, temos CO<sub>2</sub>.</p>
+    <p>Na fórmula química do ácido sulfúrico, temos H<sub>2</sub>SO<sub>4</sub>.</p>
+    <p>Testando manualmente, a fórmula química da água é H<sub>2</sub>O</p>
+    <hr>
+    <p>Agora, vamos para um exemplo <em><strong>Sobrescrito</strong></em></p>
+    <p>Exemplo de frase usando <sup>sobrescrito</sup></p>
+    <hr>
+    <h2>Texto Marcado</h2>
+    <p>Podemos usar <mark>um texto marcado</mark> usando a tag MARK.</p>
+    <p>Há um parâmetro em CSS que modifica o estilo das coisas. Podemos usá-los de formas pontuais em nosso código HTML.</p>
+    <p>Usando o <mark style="background-color: aqua;">marcador</mark> seguido do BACKGROUND-COLOR e a cor desejada!</p>
+    <h3>Agora, podemos modificar vários MARK's com uma TAG SYTLE acrescido de um seletor.</h3>
+    <style>
+        mark {
+            background-color: rgb(0, 255, 98);
+            color: black;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+    </style>
+    <p><mark>Neste exemplo, usei outros parâmetros (color, font-weight e font-size)!</mark></p>
+    <h2>Letras menores (texto pequeno)</h2>
+    <p><small>Leia as letras miúdas do nosso contrato!</small></p>
+    <h2>Texto Deletado</h2>
+    <p><del>Não precisa pagar a entrada.</del></p>
+    <h2>Texto inserido</h2>
+    <p>Existe o <u>sublinhado</u> com a tag U (não semântico).</p>
+    <p>E existe, <ins>sublinhado</ins> com a tag INS (semântico).</p>
+
+</body>
+</html>
