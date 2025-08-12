@@ -51,8 +51,25 @@ p {
 
 .imagem p {
     background-color: rgba(0, 0, 0, 0.253);
-    width: 200px;
+    width: 50%;
+    max-width: 350px;
     padding: 5px;
+}
+
+@media (max-width: 600px) {
+    section {
+         padding-left: 15px;
+        padding-right: 15px;
+    }
+
+     header h1 {
+        font-size: 1.5em;
+    }
+
+    .imagem p {
+        width: 90%;
+        font-size: 0.9em;
+    }
 }
 
 a {
