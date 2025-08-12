@@ -62,9 +62,8 @@ img#corpo {
 main {
     background-color: white;
     padding: 10px;
-    margin: 10px auto;
+    margin: 10px;
     border-radius: 10px;
-    display: inline-block;
 }
 
 div {
