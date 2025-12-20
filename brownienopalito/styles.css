@@ -225,6 +225,10 @@ main {
         text-align: justify;
     }
 
+    .nossos_produtos img {
+        max-width: 95%;       
+    }
+
 }
 
 aside {
