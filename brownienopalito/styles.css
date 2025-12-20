@@ -1,0 +1,284 @@
+@charset "UTF-8";
+
+body {
+    margin: 0px auto;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fffaef;
+}
+
+header {
+    margin:  0px 0px 0px 0px;
+    text-align: center;
+    background-color: #fffaef;
+    color: #55230d;
+    padding: 10px 0px 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-weight: 600;
+}
+
+.cabeca img{
+    width: 170px;
+    height: auto;
+}
+
+nav {
+    text-align: left;
+    font-weight: bold;
+    text-shadow: none;
+}
+
+nav ul {
+    text-decoration: none;
+    background-color: #55230d;
+    list-style-type: none;
+    padding: 12px;
+    border-bottom-left-radius:0px;
+    margin-top: 4px;
+    margin-bottom: 0px;
+    box-shadow:  6px 6px 13px rgba(0, 0, 0, 0.466);
+}
+
+nav > ul li {
+    display: inline;
+    margin: 0px 10px 0px ;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fffaef;
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(245, 245, 240, 0.315);
+    border-radius: 5px;
+    transition: 0.3s;
+    padding: 10px;
+}
+
+main {
+    max-width: 100%;
+    background-color: #fffaef;
+}
+
+#sobre {
+    margin-top: 100px;
+    padding: 0px;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: #fffaef;
+}
+
+.texto {
+    color: #55230d;
+    flex-direction: column;
+    flex: 1;
+}
+
+.texto h2 {
+    line-height: 2em;
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+
+.texto p {
+    text-align: justify;
+    line-height: 2em;
+    font-size: larger;
+    text-indent: 40px;
+    margin-left: 40px;
+}
+
+
+.nos img {
+    height: auto;
+    max-width: 320px;
+    margin-right: 40px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container p {
+        margin: 0;
+        text-align: justify;
+    }
+
+    .nos {
+        max-width: 95%;       
+    }
+}
+
+.ovo {
+    display: block;
+    width: 100%;
+    height: 600px;
+    margin-top: 0px;
+
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.336);
+    background-image: url(imagens/Brownietone_horizont.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+@media (max-width: 768px) {
+    .ovo {
+        background-image: url(imagens/Brownietone.jpeg);
+    }
+}
+
+#product {
+    margin-top: 100px;
+    padding: 30px 0px 30px 0px;
+}
+
+.nossos_produtos {
+    gap: 50px;
+    padding: 10px;
+    background-color:#55230d;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.textos {
+    display: flex;
+    color: #fffaef;
+    flex-direction: column;
+    flex: 2;
+    text-align: right;
+    order: 2;
+}
+
+.textos p a {
+    text-decoration: none;
+    color: #fffaef;
+    font-weight: bold;
+    background-color: rgba(245, 245, 240, 0.315);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.textos p a:hover {
+    background-color: rgba(245, 245, 240, 0.315);
+    border-radius: 5px;
+    transition: 0.3s;
+    padding: 10px;}
+
+.textos h2 {
+    line-height: 2em;
+    text-align: left;
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+.textos p {
+    text-align: justify;
+    line-height: 2em;
+    font-size: larger;
+    text-indent: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.nossos_produtos img {
+    height: 400px;
+    max-width: 400px;
+    margin: 20px;
+    margin-top: 0px;
+    border-radius: 10px;
+    order: 1;
+}
+
+
+@media (max-width: 768px) {
+    .nossos_produtos {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nossos_produtos p {
+        margin: 0;
+        text-align: justify;
+    }
+
+}
+
+aside {
+    margin-top: 100px;
+    margin-bottom: 0px;
+    padding: 10px;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.336);
+}
+
+#saiba {
+    background-color: #55230d;
+    padding: 10px;
+}
+
+#saiba h2 {
+    color: #fffaef;
+    line-height: 2em;
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+
+
+#saiba p {
+    color: #fffaef;
+    text-align: justify;
+    line-height: 2em;
+    font-size: larger;
+    text-indent: 40px;
+    margin-left: 40px;
+}
+
+#saiba p a {
+    text-decoration: none;
+    color: #fffaef;
+    text-align: justify;
+    line-height: 2em;
+    font-size: larger;
+    font-weight: bold;
+    background-color:  rgba(245, 245, 240, 0.315);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#saiba p a:hover {
+    background-color: rgba(245, 245, 240, 0.315);
+    border-radius: 5px;
+    transition: 0.3s;
+    padding: 10px;
+}
+
+footer {
+    background-color:#55230d;
+    color: #fffaef;
+    padding: 15px;
+    text-align: center;    
+}
