@@ -71,10 +71,10 @@ main {
 
 .container {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
-    gap: 50px;
-    flex-wrap: wrap;
+    gap: 20px;
+    flex-flow: row nowrap;
     padding: 10px;
     background-color: #fffaef;
 }
@@ -108,7 +108,7 @@ main {
     border-radius: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .container {
         flex-direction: column;
         align-items: center;
@@ -126,23 +126,19 @@ main {
 }
 
 .ovo {
-    display: block;
-    width: 100%;
-    height: 600px;
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 100%;
+    height: auto;
     margin-top: 0px;
-
     box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.336);
-    background-image: url(imagens/Brownietone_horizont.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
 
 }
 
-@media (max-width: 768px) {
-    .ovo {
-        background-image: url(imagens/Brownietone.jpeg);
+@media (max-width: 900px) {
+    .ovo img {
+        max-width: 100%;
+        height: 400px;
     }
 }
 
@@ -152,14 +148,15 @@ main {
 }
 
 .nossos_produtos {
-    gap: 50px;
+    gap: 20px;
     padding: 10px;
     background-color:#55230d;
+
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
-    gap: 50px;
-    flex-wrap: wrap;
+    gap: 20px;
+    flex-flow: row nowrap;
     padding: 20px;
 }
 
@@ -177,7 +174,7 @@ main {
     color: #fffaef;
     font-weight: bold;
     background-color: rgba(245, 245, 240, 0.315);
-    padding: 5px;
+    padding: 3px;
     border-radius: 5px;
 }
 
@@ -185,7 +182,7 @@ main {
     background-color: rgba(245, 245, 240, 0.315);
     border-radius: 5px;
     transition: 0.3s;
-    padding: 10px;}
+    padding: 5px;}
 
 .textos h2 {
     line-height: 2em;
@@ -204,7 +201,7 @@ main {
 }
 
 .nossos_produtos img {
-    height: 400px;
+    height: auto;
     max-width: 400px;
     margin: 20px;
     margin-top: 0px;
@@ -213,7 +210,7 @@ main {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .nossos_produtos {
         flex-direction: column;
         align-items: center;
@@ -226,24 +223,26 @@ main {
     }
 
     .nossos_produtos img {
-        max-width: 80%;
-        height: auto;
-        display: block;   
-        margin: 0 auto;    
+        max-width: 95%;
+        height: 100%;
+        order: 0;
     }
 
 }
 
 aside {
     margin-top: 100px;
-    margin-bottom: 0px;
+    margin-bottom: 30px;
     padding: 10px;
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.336);
+    border-radius: 10px;
+
+    height: 200px;
 }
 
 #saiba {
     background-color: #55230d;
     padding: 10px;
+    border-radius: 10px;
 }
 
 #saiba h2 {
@@ -273,14 +272,14 @@ aside {
     font-weight: bold;
     background-color:  rgba(245, 245, 240, 0.315);
     border-radius: 5px;
-    padding: 5px;
+    padding: 3px;
 }
 
 #saiba p a:hover {
     background-color: rgba(245, 245, 240, 0.315);
     border-radius: 5px;
     transition: 0.3s;
-    padding: 10px;
+    padding: 5px;
 }
 
 footer {
