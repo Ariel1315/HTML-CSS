@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: #db7272;  
+            height: 500px;          
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div.item {
+            padding: 10px;
+            text-align: center;
+            background-color: aqua;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Exemplo de Item 1</div>
+        <div class="item">Exemplo de Item 2</div>
+        <div class="item">Exemplo de Item 3</div>
+        <div class="item">Exemplo de Item 4</div>
+        <div class="item">Exemplo de Item 5</div>
+    </div>
+    -- flex-direction (row; row-reverse; column; column-reverse) --
+    -- eixo (main axis (main-start; main-end); cross axis) --
+    -- flax-wrap (nowrap; wrap; wrap-reverse) --
+    -- flex-flow (flex-direction + flex-wrap) --
+    -- flex-flow (row wrap; row nowrap; ) --
+</body>
+</html>

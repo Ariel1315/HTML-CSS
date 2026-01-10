@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mexendo nos itens</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0px;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            margin-top: 50px;
+            margin-bottom: 40px;
+            margin-left: 3vw;
+            height: 50vh;
+            width: 90vw;
+            gap: 0px;
+        }
+
+        #first {
+            display: flex;
+            flex-flow: row wrap;
+            width: 90vw;
+            border: 2px solid beige;
+            padding: 10px;
+            background-color: beige;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        #second {
+            display: flex;
+            flex-flow: column wrap;
+            width: 90vw;
+            border: 2px solid rgba(99, 23, 10, 0.904);
+            padding: 10px;
+            background-color: rgba(99, 23, 10, 0.904);
+            justify-content: center;
+        }
+
+        .item-1{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 50vw;
+            height: 10vh;
+            margin-left: 5px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .item-1 h3{
+            margin-left: 10px;
+        }
+
+        .item-2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 350px;
+            margin: 5px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <main>
+        <section id="first">
+            <div class="item-1"><h3>Nossos Produtos</h3></div>
+            <div class="item-2"><picture><img src="" alt="imagem"></picture></div>
+        </section>
+
+        <section id="second">
+            <div class="item-A">1</div>
+            <div class="item-B">2</div>
+        </section>
+    </main>
+    
+</body>
+</html>
