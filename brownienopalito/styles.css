@@ -230,9 +230,75 @@ main {
 
 }
 
+#mvv {
+    margin-top: 100px;
+    padding: 0px;
+    background-color: #fffaef;
+
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin: 50px;
+}
+
+.card_mvv {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-flow: column nowrap;
+    padding: 50px;
+    background-color: #fffaef;
+
+    box-shadow: 6px 6px 13px rgba(0, 0, 0, 0.336);
+}
+
+.card_mvv h3 {
+    color: #55230d;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card_mvv p {
+    color: #55230d;
+    text-align: center;
+    line-height: 1.2em;
+    font-size:  medium;
+}
+
+#mvv:hover {
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.466);
+    transition: 0.3s;
+}
+
+.card_mvv:hover {
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.466);
+    transition: 0.3s;
+    background-color: #55230d;
+}
+
+.card_mvv:hover h3 {
+    color: #fffaef;
+}
+
+.card_mvv:hover p {
+    color: #fffaef;
+}
+
+@media (max-width: 900px) {
+    #mvv {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
 aside {
     margin-top: 100px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     padding: 10px;
     border-radius: 10px;
 
