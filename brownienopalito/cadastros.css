@@ -201,22 +201,16 @@ form {
 
     main {
         flex-direction: column;
-        max-width: 100%;
-        width: 90%;
-        height: auto;
-        padding: 0px;
+        width: 80%;
         align-items: center;
         justify-content: center;
         align-self: center;
     }
 
     #texto {
-        max-width: 100%;
-        width: 90%;
-        max-height: auto;
         padding: 20px;
         margin-bottom: 20px;
-        height: auto;
+        height: 100%;
     }
 
     .container picture img {
