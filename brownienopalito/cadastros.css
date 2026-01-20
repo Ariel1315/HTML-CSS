@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 body {
     margin: 0px auto;
     padding: 0px;
@@ -196,7 +203,6 @@ form {
 
     body {
         background-image: url(imagens/pizza_brownie_far.jpg);
-        opacity: 0.9;
     }
 
     main {
@@ -206,17 +212,27 @@ form {
         justify-content: center;
         align-self: center;
         height: 900px;
+        opacity: 0.9;
+        padding: 12px;
+        max-width: 100%;
+        margin: 10px auto;
     }
 
     #texto {
-        padding: 20px;
-        margin-bottom: 20px;
-        height: 100vh
+        padding: 16px;
+        width: 100%;
+    }
+
+    .container {
+        max-width: 100%;
+        margin: 0px auto;
     }
 
     .container picture img {
-    width: 250px;
+    width: 80%;
+    max-width: 220px;
     height: auto;
+
     display: flex;
     margin: 0px auto;
     align-items: center;
