@@ -3,85 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brownie no Palito</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Cadastro na BP</title>
+    <link rel="stylesheet" href="cadastros.css">
 </head>
 <body>
+
     <header>
         <picture class="cabeca"><img src="imagens/logo_menor.png" alt=""></picture>
         <h3>Com açucar e afeto, fiz seu doce predileto!</h3>
         <nav>
             <ul>
-                    <li><a href="index.html" target="_blank">Home</a></li>
-                    <li><a href="produtos.html" target="_blank">Produtos</a></li>
-                    <li><a href="">Cadastro</a></li>
-                    <li><a href="sobre.html" target="_blank">Sobre Nós</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+
             </ul>
         </nav>
     </header>
-    
+
     <main>
-        <picture class="ovo"><img src="imagens/Brownietone_horizont_feio.png" alt="Brownietone"></picture>
-        <section id="sobre">
-                <div class="container">
-                <div class="texto">
-                <h2>Sobre Nós</h2>
-                    <p> Somos a Brownie no Palito, uma empresa que nasceu
-                     da vontade de oferecer produtos de qualidade à região do bairro Benfica.
-                    Nosso carro-chefe é o brownie — a tradicional delícia norte-americana — que adaptamos com um toque especial e muito cuidado em cada detalhe.
-                    Um dos nossos principais compromissos vai além do sabor e da apresentação: valorizamos a qualidade desde a escolha dos ingredientes até o produto final.
-                    Acreditamos que cada etapa do processo faz diferença e isso se reflete em cada mordida.</p>
-                </div>
-                    <picture class="nos">
-                        <source media="(max-width: 768px)" srcset="imagens/image.png" type="image/png">
-                        <img src="imagens/image.png" alt="logomarca">
-                    </picture>
-                </div>
+        <section class="container">
+            <div id="texto">
+                <h2>Cadastre-se</h2>
+                <form action="#" method="post">
+
+                    <div class="input-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="confirmar_senha">Confirmar Senha:</label>
+                        <input type="password" id="confirmar_senha" name="confirmar_senha" required>
+                    </div>
+
+                    <input type="submit" value="Cadastrar" class="btn-cadastrar"> 
+                </form>
+            </div> 
+            <picture>
+                <source media="(max-width: 768px)" srcset="imagens/logo_menor.png" type="image/png">
+                <img src="imagens/logo_menor.png" alt="Logo Brownie no Palito">
+            </picture>
         </section>
 
-        <section id="product">
-                <div class="nossos_produtos">
-                <div class="textos">
-                <h2>Nossos Produtos</h2>
-                    <p>São produtos que levam ingredientes de qualidade, pois pensamos em levar o que há de melhor para os nossos clientes.
-                    Trabalhamos com brownies em diversos sabores, como o tradicional chocolate, ninho, ninho com Nutella, entre outros.
-                    Além disso, oferecemos opções de ovos de Páscoa recheados com nossos deliciosos brownies, proporcionando uma experiência única e saborosa para essa época especial do ano.
-                    Venha conhecer <a href="produtos.html" target="_blank">nossos produtos</a> e se deliciar com o sabor irresistível dos nossos brownies e ovos de Páscoa!</p>
-                    </p>
-                </div>
-                    <picture class="grid">
-                        <img src="imagens/ovo_rocher.png" alt="ovo com ferrero rocher">
-                    </picture> 
-                </div>
-        </section>
-
-        <section id="mvv">
-                <div class="card_mvv">
-                    <h3>Missão</h3>
-                    <p>Levar produtos de qualidade, com experiência agradável de sabor ao paladar dos amantes de doces. Priorizar a gestão de qualidade desde a compra dos insumos, até chegar no consumidor final.</p>
-                </div>
-                <div class="card_mvv">
-                    <h3>Visão</h3>
-                    <p>Tornarmos referência na venda de sobremesas, em especial o brownie, na região em que nós atuamos. Espera-se conquistar o gosto popular dos consumidores do bairro Benfica, bem como realizar parcerias com outras empresas (manter a melhor relação B2B).</p>
-                </div>
-                <div class="card_mvv">
-                    <h3>Valores</h3>
-                    <p>Qualidade, Sabor, Inovação, Atendimento ao Cliente, Sustentabilidade e Paixão pelo que fazemos.</p>
-                </div>
-        </section>
-
-        <aside>
-            <div id="saiba">
-            <h2>Saiba mais</h2>
-            <p>Conheça mais sobre os nossas ofertas promocionais e cadastre-se. <a href="cadastro.html">Clique aqui!</a></p>
-            </div>
-        </aside>
+    </main>
 
         <footer>
-            &copy; Brownie no Palito - 2026<br>
-            CNPJ - 59.145.434/0001-22 <br>
-            Contato: +55 85 98606 - 4603
+            <p>
+                &copy; Brownie no Palito - 2026<br>
+                CNPJ - 59.145.434/0001-22 <br>
+                Contato: +55 85 98606 - 4603
+            </p>
         </footer>
-    </main>
+    
 </body>
 </html>
