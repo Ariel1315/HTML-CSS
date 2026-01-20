@@ -201,6 +201,7 @@ form {
 
     body {
         background-image: url(imagens/pizza_brownie_far.jpg);
+        background-attachment: scroll;
     }
 
     main {
