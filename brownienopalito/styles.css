@@ -303,6 +303,10 @@ main {
         align-items: center;
         text-align: center;
     }
+
+    aside {
+        height: auto;
+    };
 }
 
 aside {
@@ -311,7 +315,7 @@ aside {
     padding: 10px;
     border-radius: 10px;
 
-    height: 200px;
+    height: 500px;
 }
 
 #saiba {

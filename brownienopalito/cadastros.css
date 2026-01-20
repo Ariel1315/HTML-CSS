@@ -206,6 +206,7 @@ form {
         max-height: auto;
         padding: 20px;
         margin-bottom: 20px;
+        height: auto;
     }
 
     .container picture img {
@@ -219,6 +220,7 @@ form {
 }
 
 footer {
+    margin-top: 100px;
     background-color:#55230d;
     color: #fffaef;
     padding: 15px;
