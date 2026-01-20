@@ -67,8 +67,8 @@ nav ul li a:hover {
 main {
     display: flex;
     justify-content: center;
-    max-width: 700px;
-    width: 100%;
+    max-width: 100%;
+    width: 50%;
     max-height: 100%;
     height: auto;
     margin: 20px auto;
@@ -113,7 +113,7 @@ form {
     display: flex;
     flex-flow: column nowrap;
 
-    max-width: 600px;
+    max-width: 100%;
     width: 100%;
     min-height: auto;
     height: auto;
@@ -201,7 +201,8 @@ form {
 
     main {
         flex-direction: column;
-        max-width: 90vw;
+        max-width: 100%;
+        width: 90%;
         height: auto;
         padding: 0px;
         align-items: center;
@@ -211,7 +212,7 @@ form {
 
     #texto {
         max-width: 100%;
-        width: 100%;
+        width: 90%;
         max-height: auto;
         padding: 20px;
         margin-bottom: 20px;
