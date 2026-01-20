@@ -310,13 +310,13 @@ main {
 }
 
 aside {
-    margin-top: 80px;
-    margin-bottom: 0px;
-    padding: 10px;
+    margin: 10px;
+    padding: 0px;
     border-radius: 10px;
-
-    height: 200px;
+    height: 100%;
+    width: auto;
 }
+
 
 #saiba {
     background-color: #55230d;
@@ -368,3 +368,5 @@ footer {
     padding: 15px;
     text-align: center;    
 }
+
+

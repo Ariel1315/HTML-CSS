@@ -90,6 +90,7 @@ form {
     align-self: center;
     align-items: center;
     width: 100%;
+    height: auto;
 }
 
 .container {
@@ -115,6 +116,7 @@ form {
     max-width: 600px;
     width: 100%;
     min-height: auto;
+    height: auto;
 
     background-color: rgba(255, 250, 239, 0.9);
     padding: 20px;
@@ -200,7 +202,7 @@ form {
     main {
         flex-direction: column;
         max-width: 90vw;
-        max-height: 100%;
+        height: auto;
         padding: 0px;
         align-items: center;
         justify-content: center;
@@ -218,7 +220,7 @@ form {
 
     .container picture img {
     width: 250px;
-    height: 250px;
+    height: auto;
     display: flex;
     margin: 0px auto;
     align-items: center;
