@@ -210,7 +210,7 @@ form {
     #texto {
         padding: 20px;
         margin-bottom: 20px;
-        height: 100%;
+        height: 100vh
     }
 
     .container picture img {
