@@ -47,7 +47,48 @@
                         <input type="password" id="confirmar_senha" name="confirmar_senha" required>
                     </div>
 
-                    <input type="submit" value="Cadastrar" class="btn-cadastrar"> 
+                    <input type="submit" value="Cadastrar" class="btn-cadastrar">
+                    
+                    <div class="divisor">
+                        <span>ou</span>
+                    </div>
+
+                    <div id="g_id_onload"
+                         data-client_id="SEU_CLIENT_ID_AQUI"
+                         data-callback="handleGoogleLogin">
+                    </div>
+
+                    <div class="g_id_signin"
+                         data-type="standard"
+                         data-size="large"
+                         data-theme="outline"
+                         data-text="signup_with"
+                         data-shape="pill">
+                    </div>
+
+                    <script>
+                        function handleGoogleLogin(response) {
+                            fetch("login_google.php", {
+                                method: "POST",
+                                headers: {
+                                    "Content-Type": "application/json"
+                                },
+                                body: JSON.stringify({
+                                    credential: response.credential
+                                })
+                            })
+                            .then(res => res.json())
+                            .then(data => {
+                                if (data.success) {
+                                    window.location.href = "dashboard.php";
+                                } else {
+                                    alert("Erro ao autenticar com Google");
+                                }
+                            });
+                        }
+                    </script>
+
+
                 </form>
             </div> 
             <picture>
@@ -65,6 +106,9 @@
                 Contato: +55 85 98606 - 4603
             </p>
         </footer>
+
+        <script src="https://accounts.google.com/gsi/client" async defer></script>
+
     
 </body>
 </html>
