@@ -142,6 +142,11 @@ main {
     object-position: 35% 65%;
 }
 
+@media (max-width: 900px) {
+    .ovo {
+        width: 100%;
+    }
+}
 
 #product {
     margin-top: 100px;
