@@ -212,13 +212,12 @@ form {
         align-self: center;
         height: 900px;
         opacity: 0.9;
-        padding: 18px;
+
         max-width: 100%;
         margin: 10px auto;
     }
 
     #texto {
-        padding: 12px;
         width: 100%;
     }
 
