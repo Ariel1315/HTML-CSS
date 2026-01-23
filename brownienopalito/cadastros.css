@@ -106,7 +106,7 @@ form {
     justify-content: space-between;
     gap: 15px;
     align-self: center;
-    max-height: 90vh;
+    max-height: 92vh;
     max-width: 90vw;
     margin-bottom: 20px;
     margin-right: 20px;
@@ -212,13 +212,13 @@ form {
         align-self: center;
         height: 900px;
         opacity: 0.9;
-        padding: 12px;
+        padding: 15px;
         max-width: 100%;
         margin: 10px auto;
     }
 
     #texto {
-        padding: 16px;
+        padding: 10px;
         width: 100%;
     }
 
