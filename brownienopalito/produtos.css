@@ -82,6 +82,7 @@ section {
   gap: 0px;
   padding: 20px;
   box-shadow: 6px 6px 20px rgba(0,0,0,0.336);
+  border-radius: 20px;
 }
 
 .text {
@@ -98,10 +99,27 @@ section {
     border-radius: 5px;
 }
 
-#preco {
+#descricao {
+    margin-bottom: 40px;
+}
+
+.comprar {
     font-size: x-large;
     font-weight: bold;
-    margin-top: 20px;
+    text-decoration: none;
+    color: #55230d;
+    padding: 10px;
+    display: flex;
+
+    border-radius: 5px;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.comprar:hover {
+    background-color: #55230d;
+    color: #e2af40;
+    transition: 0.3s;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
 }
 
 .media img {
@@ -111,7 +129,7 @@ section {
     border-radius: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 929px) {
     .card {
         flex-direction: column;
         text-align: center;
@@ -121,6 +139,12 @@ section {
         max-width: 100%;
         height: 400px;
         margin: 0px;
+    }
+
+    .comprar {
+        display: flex;
+        justify-content: center;
+        text-indent: 0px;
     }
 }
 
