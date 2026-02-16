@@ -21,8 +21,14 @@ body {
     background-color: #fffaef;
 }
 
-.logo img {
+
+#logo_brown {
     width: 70px;
+    height: auto;
+}
+
+#logo_sem {
+    width: 200px;
     height: auto;
 }
 
@@ -86,10 +92,12 @@ nav ul li a:hover {
         display: block;
     }
 
-    .logo {
-        flex-flow: column nowrap;
-        align-items: center;
-        display: flex;
+    #logo_sem {
+        width: 150px;
+    }
+
+    #logo_brown {
+        width: 50px;
     }
 
 }
