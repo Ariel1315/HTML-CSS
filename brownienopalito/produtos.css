@@ -206,6 +206,11 @@ section {
         justify-content: center;
         text-indent: 0px;
     }
+
+    .text {
+        text-align: justify;
+        text-indent: 0px;
+    }
 }
 
 aside {
