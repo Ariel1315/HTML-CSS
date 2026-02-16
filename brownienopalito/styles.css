@@ -85,6 +85,13 @@ nav ul li a:hover {
     nav.active {
         display: block;
     }
+
+    .logo {
+        flex-flow: column nowrap;
+        align-items: center;
+        display: flex;
+    }
+
 }
 
 main {
