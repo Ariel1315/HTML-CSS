@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brownie no Palito</title>
+    <link rel="stylesheet" href="parcerias.css">
+</head>
+<body>
+
+    <header class="header-moderno">
+        <a href="index.html">
+        <div class="logo">
+            <img src="imagens/logo_so_brownie.png" alt="logo da empresa somente brownie">
+            <img style="width: 200px; height: auto;" src="imagens/logo_sem_brownie.png" alt="logo da empresa somente texto">
+        </div>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle">
+            ☰
+        </button>
+
+        <nav>
+            <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="parcerias.html">Parcerias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const menu = document.querySelector('nav');
+
+        toggle.addEventListener('click', () => {
+        menu.classList.toggle('active');});
+    </script>
+    
+    <main>
+
+        
+
+    </main>
+
+        <footer>
+            <p>
+                &copy; Brownie no Palito - 2026<br>
+                CNPJ - 59.145.434/0001-22 <br>
+                Contato: +55 85 98606 - 4603
+            </p>
+        </footer>
+
+</body>
+</html>

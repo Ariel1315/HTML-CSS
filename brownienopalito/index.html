@@ -7,18 +7,33 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <picture class="cabeca"><img src="imagens/logo_menor.png" alt="Logo"></picture>
-        <h3>Com açucar e afeto, fiz seu doce predileto!</h3>
+    <header class="header-moderno">
+        <a href="index.html">
+        <div class="logo">
+            <img src="imagens/logo_so_brownie.png" alt="logo da empresa somente brownie">
+            <img style="width: 200px; height: auto;" src="imagens/logo_sem_brownie.png" alt="logo da empresa somente texto">
+        </div>
+        </a>
+        <button class="menu-toggle" id="menu-toggle">
+            ☰
+        </button>
+
         <nav>
             <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="cadastro.html">Cadastro</a></li>
-
+                    <li><a href="parcerias.html">Parcerias</a></li>
             </ul>
         </nav>
     </header>
+
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const menu = document.querySelector('nav');
+
+        toggle.addEventListener('click', () => {
+        menu.classList.toggle('active');});
+    </script>
     
     <main>
         <picture class="ovo">
@@ -74,9 +89,12 @@
 
         <aside>
             <div id="saiba">
-            <h2>Saiba mais</h2>
-            <p>Clientes cadastrados têm vantagens exclusivas, como brindes, descontos nos produtos mais comprados, acesso antecipado às novidades do lançamento do cardápio e participação em votações para a escolha de novos produtos (aqui, a sua ideia tem valor).
-Conheça mais sobre nossas ofertas promocionais e cadastre-se. <a href="cadastro.html" target="_blank">Clique aqui!</a></p>
+                <h2>Saiba mais</h2>
+
+                <p>
+                Acesse nossas redes sociais para ter mais informações sobre nossos produtos, novidades e promoções.
+                Aproveite as promoções da Brownie no Palito! <a href="https://www.instagram.com/brownienopalito/" target="_blank">Clique aqui</a>
+                </p>
             </div>
         </aside>
 

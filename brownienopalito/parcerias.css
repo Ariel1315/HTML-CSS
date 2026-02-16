@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+body {
+    margin: 0px auto;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fffaef;
+}
+
+.header-moderno {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #fffaef;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fffaef;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+}
+
+/* MENU NORMAL (DESKTOP) */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #55230d;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #55230d;
+    color: #fffaef;
+}
+
+
+/* BOTÃO HAMBÚRGUER */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: #55230d;
+    cursor: pointer;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 100%;
+        background-color: #fffaef;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        gap: 15px;
+    }
+
+    nav.active {
+        display: block;
+    }
+}
+
+
+footer {
+    margin-top: 100px;
+    background-color:#55230d;
+    color: #fffaef;
+    padding: 15px;
+    text-align: center;    
+}

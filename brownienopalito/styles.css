@@ -7,56 +7,84 @@ body {
     background-color: #fffaef;
 }
 
-header {
-    margin:  0px 0px 0px 0px;
-    text-align: center;
+.header-moderno {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
     background-color: #fffaef;
-    color: #55230d;
-    padding: 10px 0px 0px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fffaef;
 }
 
-.cabeca img{
-    width: 170px;
+.logo img {
+    width: 70px;
     height: auto;
 }
 
-nav {
-    text-align: left;
-    font-weight: bold;
-    text-shadow: none;
-}
-
+/* MENU NORMAL (DESKTOP) */
 nav ul {
-    text-decoration: none;
-    background-color: #55230d;
-    list-style-type: none;
-    padding: 12px;
-    border-bottom-left-radius:0px;
-    margin-top: 4px;
-    margin-bottom: 0px;
-    box-shadow:  6px 6px 13px rgba(0, 0, 0, 0.466);
-}
-
-nav > ul li {
-    display: inline;
-    margin: 0px 10px 0px ;
+    list-style: none;
+    display: flex;
+    gap: 25px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #fffaef;
-    display: inline-block;
-    padding: 0px 10px;
+    color: #55230d;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: rgba(245, 245, 240, 0.315);
-    border-radius: 5px;
-    transition: 0.3s;
-    padding: 10px;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #55230d;
+    color: #fffaef;
+}
+
+
+/* BOTÃO HAMBÚRGUER */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: #55230d;
+    cursor: pointer;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 100%;
+        background-color: #fffaef;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        gap: 15px;
+    }
+
+    nav.active {
+        display: block;
+    }
 }
 
 main {
@@ -75,7 +103,7 @@ main {
     justify-content: space-between;
     gap: 20px;
     flex-flow: row nowrap;
-    padding: 10px;
+    padding: 15px;
     background-color: #fffaef;
 }
 
@@ -154,7 +182,6 @@ main {
 }
 
 .nossos_produtos {
-    gap: 20px;
     padding: 10px;
     background-color:#55230d;
 
@@ -246,7 +273,7 @@ main {
 
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 10px;
     margin: 50px;
 }
@@ -254,7 +281,7 @@ main {
 .card_mvv {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 10px;
     flex-flow: column nowrap;
     padding: 50px;
@@ -309,7 +336,7 @@ main {
 }
 
 aside {
-    margin: 10px;
+    margin: 100px 0px 20px 0px;
     padding: 0px;
     border-radius: 10px;
     height: 100%;
@@ -320,7 +347,11 @@ aside {
 #saiba {
     background-color: #55230d;
     padding: 10px;
-    border-radius: 10px;
+    margin: 150px 0px 0px 0px;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
 }
 
 #saiba h2 {
@@ -328,7 +359,6 @@ aside {
     line-height: 2em;
     text-align: left;
     margin-left: 50px;
-    margin-bottom: 40px;
 }
 
 
@@ -337,23 +367,21 @@ aside {
     text-align: justify;
     line-height: 2em;
     font-size: larger;
-    text-indent: 40px;
     margin-left: 40px;
+    margin-bottom: 40px;
+    text-indent: 20px;
 }
 
-#saiba p a {
+#saiba a {
     text-decoration: none;
     color: #fffaef;
-    text-align: justify;
-    line-height: 2em;
-    font-size: larger;
     font-weight: bold;
-    background-color:  rgba(245, 245, 240, 0.315);
+    background-color: rgba(245, 245, 240, 0.315);
     border-radius: 5px;
-    padding: 3px;
+    padding: 4px;
 }
 
-#saiba p a:hover {
+#saiba a:hover {
     background-color: rgba(245, 245, 240, 0.315);
     border-radius: 5px;
     transition: 0.3s;
@@ -361,7 +389,7 @@ aside {
 }
 
 footer {
-    margin-top: 100px;
+    margin: 0 auto;
     background-color:#55230d;
     color: #fffaef;
     padding: 15px;

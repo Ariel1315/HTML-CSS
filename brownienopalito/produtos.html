@@ -7,21 +7,50 @@
     <link rel="stylesheet" href="produtos.css">
 </head>
 <body>
-    <header>
-        <picture class="cabeca"><img src="imagens/logo_menor.png" alt=""></picture>
-        <h3>Com açucar e afeto, fiz seu doce predileto!</h3>
+    <header class="header-moderno">
+        <a href="index.html">
+        <div class="logo">
+            <img src="imagens/logo_so_brownie.png" alt="logo da empresa somente brownie">
+            <img style="width: 200px; height: auto;" src="imagens/logo_sem_brownie.png" alt="logo da empresa somente texto">
+        </div>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle">
+            ☰
+        </button>
+
         <nav>
             <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="cadastro.html">Cadastro</a></li>
-
+                    <li><a href="parcerias.html">Parcerias</a></li>
             </ul>
         </nav>
     </header>
+
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const menu = document.querySelector('nav');
+
+        toggle.addEventListener('click', () => {
+        menu.classList.toggle('active');});
+    </script>
     
     <main>
+        
         <h2>Nossos Produtos</h2>
+
+        <section class="produtos">
+            <article class="card">
+                <div class="text">
+                    <h3>Casquinha de Brownie</h3>
+                    <p id="descricao">Uma fina e crocante casquinha elaborada a partir dos nossos brownies artesanais, perfeita para finalizar sua refeição com um toque doce e cheio de personalidade. Textura delicada, sabor intenso e aquele gostinho que convida a repetir. <strong style="font-weight: bold;">Alérgicos contém derivados lácteos.</strong></p>
+                    <a class="comprar" href="https://wa.me/5585986064603" target="_blank">Comprar: R$ 5,00</a>
+                </div>
+                <picture class="media"><img src="imagens/Casquinhas_320px.png" alt="Casquinha de Brownie"></picture>
+            </article>
+        </section>
+
         <section class="produtos">
             <article class="card">
                 <div class="text">
