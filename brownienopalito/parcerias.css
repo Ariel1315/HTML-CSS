@@ -21,8 +21,19 @@ body {
     background-color: #fffaef;
 }
 
-.logo img {
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#logo_brown {
     width: 70px;
+    height: auto;
+}
+
+#logo_sem {
+    width: 200px;
     height: auto;
 }
 
@@ -68,7 +79,7 @@ nav ul li a:hover {
     nav {
         display: none;
         position: absolute;
-        top: 100px;
+        top: 75px;
         right: 0;
         width: 100%;
         background-color: #fffaef;
@@ -85,8 +96,23 @@ nav ul li a:hover {
     nav.active {
         display: block;
     }
+
+    
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
+    #logo_sem {
+        width: 150px;
+    }
+
+    #logo_brown {
+        width: 50px;
+    }
+
+}
 
 footer {
     margin-top: 100px;
