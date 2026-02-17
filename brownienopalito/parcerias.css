@@ -167,7 +167,8 @@ main {
 }
 
 .card1 p {
-    max-width: 90%;
+    max-width: 95%;
+    hyphens: auto;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -197,8 +198,8 @@ main {
 
 
 .card2 p {
-    max-width: 90%;    
-    
+    max-width: 95%;    
+    hyphens: auto;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -227,8 +228,9 @@ main {
 
 
 .card3 p {
-    max-width: 90%;    
+    max-width: 95%;    
     
+    hyphens: auto;
     text-align: justify;
     text-justify: inter-word;
 }

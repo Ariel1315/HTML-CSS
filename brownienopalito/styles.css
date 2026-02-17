@@ -254,6 +254,7 @@ main {
 
 .textos p {
     text-align: justify;
+    hyphens: auto;
     line-height: 2em;
     font-size: larger;
     text-indent: 40px;
@@ -326,7 +327,9 @@ main {
 
 .card_mvv p {
     color: #55230d;
-    text-align: center;
+    text-align: justify;
+    hyphens: auto;
+    text-justify: inter-word;
     line-height: 1.2em;
     font-size:  medium;
 }

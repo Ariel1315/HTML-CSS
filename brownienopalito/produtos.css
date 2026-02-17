@@ -230,6 +230,7 @@ aside h3 {
 aside p{
     color: #55230d;
     text-align: justify;
+    hyphens: auto;
     line-height: 2em;
     font-size: larger;
     text-indent: 40px;
