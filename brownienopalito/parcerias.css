@@ -5,8 +5,6 @@ body {
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #fffaef;
-    text-align: justify;
-    text-justify: inter-word;
 }
 
 .header-moderno {
@@ -164,12 +162,14 @@ main {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.137);
     font-weight: bolder;
     text-align: justify;
+    text-justify: inter-word;
     line-height: 2em;
 }
 
 .card1 p {
-    max-width: 80%;    
+    max-width: 90%;
     text-align: justify;
+    text-justify: inter-word;
 }
 
 
@@ -189,14 +189,18 @@ main {
     padding: 20px;  
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     font-weight: bolder;
+    
     text-align: justify;
+    text-justify: inter-word;
     line-height: 2em;  
 }
 
 
 .card2 p {
-    max-width: 80%;    
+    max-width: 90%;    
+    
     text-align: justify;
+    text-justify: inter-word;
 }
 
 .card2 img {
@@ -217,14 +221,16 @@ main {
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);    
     font-weight: bolder;
-    text-align: justify;
+    
     line-height: 2em;
 }
 
 
 .card3 p {
-    max-width: 80%;    
+    max-width: 90%;    
+    
     text-align: justify;
+    text-justify: inter-word;
 }
 
 .card3 img {
