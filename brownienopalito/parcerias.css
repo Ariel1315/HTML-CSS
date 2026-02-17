@@ -114,10 +114,246 @@ nav ul li a:hover {
 
 }
 
+main {
+    background-color: #fffaef;
+    max-width: 100%;
+}
+
+.inicio {
+    margin-top: 150px;
+    max-width: 100%;
+    background-color: #fffaef;
+    padding: 30px;
+    color: #55230d;
+}
+
+.inicio h2 {
+    text-align: justify;
+    line-height: 2em;
+}
+
+.inicio p {
+    text-indent: 20px;
+    text-align: justify;
+    line-height: 2em;
+    font-size: larger;
+}
+
+.produtos {
+    padding: 50px;
+    max-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    color: #55230d;
+    background-color: #55230d;
+}
+
+
+.card1 {
+    display: flex;
+    background-color: #fffaef;
+    border-radius: 5px;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.137);
+    font-weight: bolder;
+    text-align: justify;
+    line-height: 2em;
+}
+
+.card1 p {
+    max-width: 80%;    
+    text-align: justify;
+}
+
+
+.card1 img {
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.card2 {
+    display: flex;
+    background-color: #fffaef;
+    border-radius: 5px;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    max-width: 400px;
+    padding: 20px;  
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    font-weight: bolder;
+    text-align: justify;
+    line-height: 2em;  
+}
+
+
+.card2 p {
+    max-width: 80%;    
+    text-align: justify;
+}
+
+.card2 img {
+    padding: 20px;
+    width: 320px;
+    height: 320px;
+    border-radius: 25px;
+}
+
+.card3 {
+    display: flex;
+    background-color: #fffaef;
+    border-radius: 5px;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);    
+    font-weight: bolder;
+    text-align: justify;
+    line-height: 2em;
+}
+
+
+.card3 p {
+    max-width: 80%;    
+    text-align: justify;
+}
+
+.card3 img {
+    border-radius: 25px;
+    padding: 20px;
+    width: 320px;
+    height: 320px;    
+}
+
+
+.who {
+    max-width: 100%;
+    background-color: #fffaef;
+    padding: 50px;
+    color: #55230d;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+
+    text-align: justify;
+    line-height: 3em;
+    font-size: larger;
+}
+
+.who_config {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 100px;
+}
+
+
+.who h2 {
+    text-align: center;
+}
+
+.lista-who {
+    background-color: #D2C3A0;
+    padding: 30px;
+    max-width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.lista-who ul {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.who h3 {
+    text-align: center;
+    max-width: 100%;
+}
+
+aside {
+    margin-top: 0px;
+    padding: 10px;
+    background-color: #55230d;
+    text-align: justify;
+    line-height: 2em;
+    font-size: larger;
+    color: #fffaef;
+    text-indent: 30px;
+}
+
+aside h3 {
+    margin-left: 50px;
+}
+
+aside p {
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
 footer {
-    margin-top: 100px;
+    margin-top: 0px;
     background-color:#55230d;
     color: #fffaef;
     padding: 15px;
-    text-align: center;    
+    text-align: center; 
+}
+
+footer p {
+    text-decoration: none;
+}
+
+
+@media (max-width: 1445px) {
+    .produtos {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 20px;
+    }
+    
+    .who_config {
+        gap: 10px;
+    }
+
+    .lateral img {
+        height: 800px;
+    }
+}
+
+@media (max-width: 768px) {
+    .who_config {
+        display: flex;
+        flex-flow: column wrap;
+        line-height: normal;
+        font-size: small;
+        text-align: start;
+    }
+
+    aside {
+        max-width: 100%;
+        padding-top: 50px;
+    }
+
+    aside p {
+        max-width: 80%;
+        font-size: normal;
+        margin: 0 auto;
+        line-height: 2em;
+    }
+
+    aside h3 {
+        text-align: center;
+        line-height: 2em;
+        margin: 0 auto;
+        text-indent: 2px;
+    }
 }
