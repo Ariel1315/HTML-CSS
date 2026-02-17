@@ -338,9 +338,31 @@ footer p {
         text-align: start;
     }
 
+    .produtos {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .card1 img {
+        max-width: 250px;
+        height: 250px;
+    }
+
+    .card2 img {
+        max-width: 250px;
+        height: 250px;
+    }
+
+    .card3 img {
+        max-width: 250px;
+        height: 250px;
+    }
+
     aside {
         max-width: 100%;
         padding-top: 50px;
+        margin-bottom: 20px;
     }
 
     aside p {
