@@ -5,6 +5,8 @@ body {
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #fffaef;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .header-moderno {
@@ -330,12 +332,12 @@ footer p {
 }
 
 @media (max-width: 768px) {
-    .who_config {
-        display: flex;
-        flex-flow: column wrap;
-        line-height: normal;
-        font-size: small;
-        text-align: start;
+
+    .lista-who {
+        line-height: 1.7em;
+        font-size: medium;
+        max-width: 100%;
+
     }
 
     .produtos {
