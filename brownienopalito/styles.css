@@ -158,7 +158,7 @@ main {
 
 .nos img {
     height: auto;
-    max-width: 320px;
+    display: flex;
     margin-right: 40px;
     border-radius: 10px;
 }
@@ -176,7 +176,8 @@ main {
     }
 
     .nos {
-        max-width: 95%;       
+        max-width: 100%;
+        margin-left: 40px;       
     }
 }
 
@@ -194,14 +195,22 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 35% 65%;
+    object-position: 60% 65%;
 }
 
 @media (max-width: 900px) {
     .ovo {
         width: 100%;
+        height: 500px;
     }
+
+    .ovo img {
+        width: 100%;
+        height: 500px;
+    }
+
 }
+
 
 #product {
     margin-top: 100px;
@@ -272,7 +281,7 @@ main {
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
     .nossos_produtos {
         flex-direction: column;
         align-items: center;
@@ -285,7 +294,7 @@ main {
     }
 
     .nossos_produtos img {
-        max-width: 95%;
+        max-width: 100%;
         height: 100%;
         order: 0;
         margin: 0px;
