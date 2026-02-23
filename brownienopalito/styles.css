@@ -431,6 +431,10 @@ main {
         margin: 0 auto;
     }
 
+    .videos {
+        max-width: 100%;
+    }
+
     .footer {
         margin-top: 20px;
     }
