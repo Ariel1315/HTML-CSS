@@ -187,7 +187,18 @@ main {
 
     .nos img {
         max-width: 100%;
+        height: 300px;
         margin-right: 0px;
+    }
+
+    .texto h2 {
+        line-height: 1.7em;
+    }
+
+    .texto p {
+        line-height: 1.7em;
+        font-size: 1rem;
+        margin: 0px 40px 0px 40px;
     }
 }
 
@@ -265,7 +276,7 @@ main {
 }
 
 .textos h2 {
-    line-height: 2em;
+    line-height: 1.6em;
     text-align: left;
     margin-right: 50px;
     margin-bottom: 10px;
@@ -274,7 +285,7 @@ main {
 .textos p {
     text-align: justify;
     hyphens: auto;
-    line-height: 2em;
+    line-height: 1.6em;
     font-size: larger;
     text-indent: 40px;
     margin-left: 40px;
@@ -305,10 +316,17 @@ main {
 
     .nossos_produtos img {
         max-width: 100%;
-        height: 100%;
+        height: 400px;
         order: 0;
         margin: 0px;
     }
+
+    .textos p {
+        line-height: 1.7;
+        font-size: 1rem;
+        margin: 20px 40px 0px 40px;
+    }
+
 
 }
 
@@ -433,12 +451,14 @@ main {
     }
 
     .text_onde {
-        text-align: center;
-        padding: 10px;
-        max-width: 750px;
-        margin: 40px auto;
-        padding: 0 24px;
+        text-align: left;
         font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .text_onde p {
+        font-size: 1rem;
+        margin-right: 40px;
         line-height: 1.6;
     }
 
