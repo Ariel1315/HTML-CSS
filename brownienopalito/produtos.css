@@ -143,6 +143,11 @@ section {
   padding: 20px;
   box-shadow: 6px 6px 20px rgba(0,0,0,0.336);
   border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 .text {
@@ -159,7 +164,7 @@ section {
     border-radius: 5px;
 }
 
-#descricao {
+.descricao {
     margin-bottom: 40px;
 }
 

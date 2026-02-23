@@ -250,7 +250,7 @@ main {
 .textos p a:hover {
     background-color: rgba(245, 245, 240, 0.315);
     border-radius: 5px;
-    transition: 0.3s;
+    transition: all 0.3s ease;
     padding: 4.3px;
 }
 
@@ -345,12 +345,12 @@ main {
 
 #mvv:hover {
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.466);
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
 .card_mvv:hover {
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.466);
-    transition: 0.3s;
+    transition: all 0.3s ease;
     background-color: #55230d;
 }
 
@@ -491,7 +491,7 @@ aside {
 #saiba a:hover {
     background-color: rgba(245, 245, 240, 0.315);
     border-radius: 5px;
-    transition: 0.3s;
+    transition: all 0.3s ease;
     padding: 5px;
 }
 
