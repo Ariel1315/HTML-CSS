@@ -362,7 +362,52 @@ main {
     color: #fffaef;
 }
 
-@media (max-width: 900px) {
+.onde {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    flex-flow: row nowrap;
+    padding: 15px;
+    background-color: #fffaef;
+}
+
+#text_onde {
+    color: #55230d;
+    flex-direction: column;
+    flex: 1;
+}
+
+#text_onde h2 {
+    line-height: 2em;
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+
+#text_onde p {
+    text-align: justify;
+    line-height: 2em;
+    font-size: larger;
+    text-indent: 40px;
+    margin-left: 40px;
+}
+
+#video {
+    height: auto;
+    display: flex;
+    margin-right: 40px;
+    border-radius: 30px;
+}
+
+.videos {
+  width: 400px;              /* Ajuste como quiser */
+  border-radius: 15px;       /* Cantos arredondados */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3); /* Sombra elegante */
+  object-fit: cover;         /* Ajusta o enquadramento */
+}
+
+@media (max-width: 1000px) {
     #mvv {
         flex-direction: column;
         align-items: center;
@@ -372,10 +417,29 @@ main {
     aside {
         height: auto;
     }
+
+    .onde {
+        flex-flow: column nowrap;
+    }
+
+    .text_onde {
+        text-align: center;
+        padding: 10px;
+    }
+
+    #video {
+        margin: 0 auto;
+    }
+
+    .footer {
+        margin-top: 20px;
+    }
 }
 
+
+
 aside {
-    margin: 100px 0px 20px 0px;
+    margin: 100px 0px 0px 0px;
     padding: 0px;
     border-radius: 10px;
     height: 100%;
@@ -427,12 +491,37 @@ aside {
     padding: 5px;
 }
 
-footer {
-    margin: 0 auto;
-    background-color:#55230d;
-    color: #fffaef;
-    padding: 15px;
-    text-align: center;    
+.footer {
+  background-color: #55230d;
+  padding: 30px 0;
+  text-align: center;
 }
 
+.footer-content {
+  color: #fffaef;
+  font-size: 14px;
+}
+
+.footer-icons {
+  margin-bottom: 12px;
+}
+
+.icon {
+  margin: 0 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.endereco {
+  color: #fffaef;
+  text-decoration: none;
+}
+
+.endereco:hover {
+  text-decoration: underline;
+}
 
