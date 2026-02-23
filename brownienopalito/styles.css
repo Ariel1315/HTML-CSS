@@ -112,6 +112,16 @@ nav ul li a:hover {
         width: 50px;
     }
 
+    .texto {
+    text-indent: 0;
+    line-height: 1.6;
+    }
+
+    .text_onde {
+    text-indent: 0;
+    line-height: 1.6;
+    }
+
 }
 
 main {
@@ -372,20 +382,20 @@ main {
     background-color: #fffaef;
 }
 
-#text_onde {
+.text_onde {
     color: #55230d;
     flex-direction: column;
     flex: 1;
 }
 
-#text_onde h2 {
+.text_onde h2 {
     line-height: 2em;
     text-align: left;
     margin-left: 50px;
     margin-bottom: 40px;
 }
 
-#text_onde p {
+.text_onde p {
     text-align: justify;
     line-height: 2em;
     font-size: larger;
@@ -425,6 +435,11 @@ main {
     .text_onde {
         text-align: center;
         padding: 10px;
+        max-width: 750px;
+        margin: 40px auto;
+        padding: 0 24px;
+        font-size: 1rem;
+        line-height: 1.6;
     }
 
     #video {
