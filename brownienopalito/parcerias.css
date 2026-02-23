@@ -1,11 +1,12 @@
 @charset "UTF-8";
 
 body {
-    margin: 0px auto;
-    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #fffaef;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--cor-fundo);
+    color: var(--cor-principal);
 }
+
 
 .header-moderno {
     display: flex;
@@ -121,12 +122,7 @@ nav ul li a:hover {
     --cor-texto-claro: #ffffff;
 }
 
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: var(--cor-fundo);
-    color: var(--cor-principal);
-}
+
 
 /* Container padrão */
 .container {
