@@ -332,9 +332,9 @@ main {
 }
 
 #mvv {
-    margin-top: 100px;
     padding: 0px;
     background-color: #fffaef;
+    max-width: 100%;
 
 
     display: flex;
@@ -349,10 +349,11 @@ main {
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
+
     padding: 50px;
     background-color: #fffaef;
-
+    max-width: 100%;
     box-shadow: 6px 6px 13px rgba(0, 0, 0, 0.336);
 }
 
@@ -368,12 +369,7 @@ main {
     text-align: justify;
     text-justify: inter-word;
     line-height: 1.2em;
-    font-size:  medium;
-}
-
-#mvv:hover {
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.466);
-    transition: all 0.3s ease;
+    font-size:  1.2rem;
 }
 
 .card_mvv:hover {
@@ -439,6 +435,12 @@ main {
     #mvv {
         flex-direction: column;
         align-items: center;
+        text-align: center;
+    }
+
+    .card_mvv p {
+        line-height: 1.7em;
+        font-size: 1rem;
         text-align: center;
     }
 
