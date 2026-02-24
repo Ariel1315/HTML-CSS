@@ -245,14 +245,14 @@ section {
 
     #pedido p {
         line-height: 1.7em;
-        font-size: 1.2rem;
-        margin-bottom: 15px;
+        font-size: 1rem;
+        padding: 0px;
+        margin: 0px auto;
     }
 
     #pedido a {
         max-width: 100%;
         padding: 20px;
-        
     }
 
 }
