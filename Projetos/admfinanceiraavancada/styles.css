@@ -235,9 +235,23 @@ footer {
         display: flex;
     }
 
-    .intro, .objectives, .navigation {
+    .intro p {
         text-indent: 0px;
         line-height: 1.7em;
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .card  p {
+        line-height: 1.7em;
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .navigation p {
+        text-indent: 0px;
+        line-height: 1.7em;
+        text-align: justify;
         font-size: 1rem;
     }
 }
