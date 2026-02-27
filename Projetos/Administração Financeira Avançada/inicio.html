@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Administração Financeira Avançada</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+    <div class="logo">
+        <h1>Administração Financeira Avançada</h1>
+        <span class="subtitulo">Monitoria Acadêmica</span>
+    </div>
+
+    <nav class="nav" id="nav">
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#unidades">Unidades</a></li>
+            <li><a href="conteudos.html">Conteúdos</a></li>
+        </ul>
+    </nav>
+
+    <div class="header-actions">
+        <button id="theme-toggle" class="theme-btn">🌙</button>
+
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<script>
+const hamburger = document.getElementById("hamburger");
+const nav = document.getElementById("nav");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    nav.classList.toggle("active");
+});
+</script>
+
+<script>
+const toggleBtn = document.getElementById("theme-toggle");
+
+if(localStorage.getItem("theme") === "dark"){
+    document.body.classList.add("dark-mode");
+    toggleBtn.textContent = "☀️";
+}
+
+toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+        localStorage.setItem("theme", "dark");
+        toggleBtn.textContent = "☀️";
+    } else {
+        localStorage.setItem("theme", "light");
+        toggleBtn.textContent = "🌙";
+    }
+});
+</script>
+
+    <main>
+        <section id="inicio" class="intro">
+            <h2>Bem-vindo ao Curso de Administração Financeira Avançada</h2>
+            <p style="text-indent: 20px;">Este curso foi idealizado para fornecer conhecimentos aprofundados sobre administração financeira, incluindo tópicos como introdução ao mercado financeiro, análise de investimentos, estruturas de capital e tomada de decisão. Pensado para os alunos da disciplina do curso Administração de Empresas da Universidade Estadual do Ceará.</p>
+        </section>
+
+        <section class="objectives">
+            <h2>Objetivos do Curso</h2>
+            <ul>
+                <li>Compreender os princípios avançados de administração financeira.</li>
+                <li>Desenvolver habilidades para análise financeira detalhada.</li>
+                <li>Aprender e reconhecer cenários de acordo com análises realizadas.</li>
+                <li>Aplicar conceitos de planejamento financeiro em situações reais.</li>
+            </ul>
+        </section>
+
+        <section class="navigation">
+            <h2>Como Navegar pelo Curso</h2>
+            <p style="text-indent: 20px;">Use o menu de navegação abaixo para acessar as diferentes unidades e conteúdos do curso. Cada unidade contém materiais de leitura, vídeos e exercícios práticos para ajudar no seu aprendizado.</p>
+        </section>
+
+        <a id="none" href="unidadeI.html">
+            <section id="unidades" class="card">
+                <h3>Unidade I</h3>
+                <p>Introdução ao Mercado Financeiro</p>
+                <ul>
+                    <li>Conceitos introdutórios sobre Produtos Financeiros</li>
+                    <li>Aspectos Centrais associados às Ações</li>
+                    <li>Critérios de Análise para Investimentos em Ações</li>
+                    <li>Avaliação do Valor das Ações</li>
+                    <li>Conceitos e os Produtos de Renda Fixa</li>
+                    <li>Avaliação dos Produtos de Renda Fixa</li>
+                </ul>
+            </section>
+        </a>
+
+        <a id="none" href="unidadeII.html">
+            <section class="card">
+                <h3>Unidade II</h3>
+                <p>Fundamentos da Administração dos Ativos Permanentes</p>
+                <ul>
+                    <li>Fundamentos de Investimento de Capital</li>
+                    <li>Fluxos de Caixa e Decisões de Investimento</li>
+                    <li>Mensuração dos Fluxos de Caixa Operacionais</li>
+                    <li>Técnicas de Análise de Investimentos</li>
+                    <li>Payback Efetivo e Payback Descontado</li>
+                    <li>Valor Presente Líquido (VPL)</li>
+                    <li>Taxa Interna de Retorno (TIR)</li>
+                </ul>
+            </section>
+        </a>
+
+        <a id="none" href="unidadeIII.html">
+            <section class="card">
+                <h3>Unidade III</h3>
+                <p>Custo de Capital</p>
+                <ul>
+                    <li>Custo de Capital</li>
+                    <li>Custo de Capital de Terceiros</li>
+                    <li>Custo de Capital Próprio</li>
+                    <li>Custo Médio Ponderado de Capital (WAAC)</li>
+                </ul>
+            </section>
+        </a>
+
+        <a id="none" href="unidadeIV.html">
+            <section class="card">
+                <h3>Unidade IV</h3>
+                <p>Alavancagem e Criação de Valor</p>
+                <ul>
+                    <li>Análise Custo - Volume - Lucro</li>
+                    <li>Alavancagem Operacional</li>
+                    <li>Alavancagem Financeira</li>
+                    <li>Medidas de Criação de Valor</li>
+                </ul>
+            </section>
+        </a>
+
+        <a id="none" href="unidadeV.html">
+            <section class="card">
+                <h3>Unidade V</h3>
+                <p>Estrutura de Capital</p>
+                <ul>
+                    <li>Reflexões sobre a Estrutura Ótima de Capital</li>
+                    <li>Teoria Convencional</li>
+                    <li>Teoria de Modigliani e Miller</li>
+                    <li>Proposições em um Mundo com Impostos</li>
+                </ul>
+            </section>
+        </a>
+
+        <footer>
+            <p style="text-align: center;">&copy; 2026 Aprendendo Administração Financeira Avançada. Todos os direitos reservados.</p>
+            <p style="text-align: center;">Site criado por: Ariel de Oliveira</p>
+        </footer>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidade I</title>
+    <link rel="stylesheet" href="unidadeI.css">
+</head>
+<body>
+<header class="header">
+    <div class="logo">
+        <h1>Administração Financeira Avançada</h1>
+        <span class="subtitulo">Unidade I • Introdução ao Mercado Financeiro</span>
+    </div>
+
+    <nav class="nav" id="nav">
+        <ul>
+            <li><a href="inicio.html">Início</a></li>
+            <li><a href="unidadeI.html">Unidades</a></li>
+            <li><a href="conteudos.html">Conteúdos</a></li>
+        </ul>
+    </nav>
+
+    <div class="header-actions">
+        <button id="theme-toggle" class="theme-btn">🌙</button>
+
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<script>
+const toggleBtn = document.getElementById("theme-toggle");
+const hamburger = document.getElementById("hamburger");
+const nav = document.getElementById("nav");
+
+if(localStorage.getItem("theme") === "dark"){
+    document.body.classList.add("dark-mode");
+    toggleBtn.textContent = "☀️";
+}
+
+toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+        localStorage.setItem("theme", "dark");
+        toggleBtn.textContent = "☀️";
+    } else {
+        localStorage.setItem("theme", "light");
+        toggleBtn.textContent = "🌙";
+    }
+});
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    nav.classList.toggle("active");
+});
+</script>
+
+    <main>
+         <section id="inicio" class="intro">
+            <h2>Introdução ao Mercado Financeiro</h2>
+            <p style="text-indent: 20px;">O mercado financeiro é um sistema complexo composto por instituições, ativos e participantes que interagem para facilitar a alocação de recursos financeiros. Ele desempenha um papel fundamental na economia, permitindo que empresas e indivíduos obtenham capital para investimentos e crescimento. Este curso explora os principais componentes do mercado financeiro, incluindo os diferentes tipos de ativos, instituições financeiras e mecanismos de negociação.</p>
+        </section>
+
+        <section class="conteudos">
+            <h2>Conceitos Introdutórios Sobre Produtos Financeiros</h2>
+            <p style="text-indent: 20px;">Segundo as leis <strong>nº6.385/76 e nº10.303/01</strong>, <strong style="background-color: #1e3b8ae5; color: white; padding: 3px; border-radius: 5px;">valores mobiliários</strong> são quaisquer títulos ou contratos de investimento coletivo ofertados publicamente que gerem direito de participação, de parceria ou remuneração, inclusive resultante da prestação de serviços, cujos rendimentos advém do esforço do empreendedor ou de terceiros. Em outras palavras, são <strong>títulos ou contratos</strong> que representam investimentos financeiros, usados para <strong>captar recursos</strong> no mercado de capitais. Quem compra vira investidor e pode ter direito a <strong>rendimento, participação nos lucros ou valorização do título.</strong></p>
+         
+            <div class="card">
+                <h3>Ações</h3>
+                <p>São valores mobiliários representativos do capital social de uma companhia, ou ainda, as menores unidades de capital de uma empresa. O nome vem da ideia de “fração” do capital: cada ação representa uma parte (quota) da empresa.</p>
+                <p><strong>Obrigações do acionista:</strong> Desde que tenha subscrito ações de um aumento de capital, é obrigado a integralizar sua parte do capital (isto é, pagar o valor das ações que subscreveu).</p>
+                <p><strong>Direitos do acionista:</strong> Direito de voto nas assembleias, direito a <strong style="background-color: #1e3b8ae5; color: white; padding: 3px; border-radius: 5px;">dividendos</strong > ou em forma de <strong style="background-color: #1e3b8ae5; color: white; padding: 3px; border-radius: 5px;">juros sobre o capital próprio</strong>, direito a informações sobre a empresa e de subscrição de novas ações.</p>
+                <p><strong style="background-color: #1e3b8ae5; color: white; padding: 3px; border-radius: 5px;">Dividendos:</strong> A parcela do lucro líquido da companhia, apurado ao final do exercício social, que é distribuída aos acionistas, na proporção de suas ações.</p>
+                <p><strong style="background-color: #1e3b8ae5; color: white; padding: 3px; border-radius: 5px;">Juros sobre Capital Próprio (JCP):</strong> consistem em forma de remuneração aos acionistas, calculada sobre o capital próprio da companhia, com tratamento fiscal específico, distinta da distribuição de lucros.</p>
+                <p><strong style="background-color: #1e3b8ae5; color: white; padding: 3px; border-radius: 5px;">Subscrição de novas ações:</strong> Preferência de compra de novas ações emitidas pela empresa.</p>
+                
+                
+                    <h4>Espécies</h4>
+                <section class="especies">    
+                    <div class="especies-cards">
+                        <p><strong>Ordinárias</strong></p>
+                        <ul>
+                            <li>Exerce o direito de voto nas assembleias gerais;</li>
+                            <li>Tem voto proporcional à quantidade de ações detidas;</li>
+                            <li>Não possui preferência no recebimento de dividendos;</li>
+                            <li>Não possui preferência no reembolso do capital em caso de liquidação.</li>
+                        </ul>
+                        <p><strong>Obs.: Em muitas empresas os principais acionistas constituem toda ou a maioria da junta de diretores, controlando efetivamente o negócio.</strong></p>
+                    </div>
+                
+                    <div class="especies-cards">
+                        <p><strong>Preferênciais</strong></p>
+                        <ul>
+                            <li>Tem preferência no recebimento dos dividendos;</li>
+                            <li>Vantagem no recebimento dos dividendos, com fixação de um dividendo mínimo obrigatório;</li>
+                            <li>Preferência no reembolso do capital em caso de liquidação da sociedade.</li>
+                        </ul>
+                    </div>
+
+                    <div class="especies-cards">
+                        <p><strong>De Fruição</strong></p>
+                        <p>O acionista de fruição (ou de gozo) detém ações que conferem direito à participação nos lucros da companhia, mas sem direito a voto ou participação no capital social. Essas ações podem ser negociadas na bolsa, e não se restringem apenas aos fundadores da empresa.</p>
+                    </div>
+                </section>
+            <h3></h3>
+            </div>
+                
+                    
+
+        </section>
+    </main>
+    
+</body>
+</html>

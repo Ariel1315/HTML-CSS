@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+/* ===== VARIÁVEIS ===== */
+
+:root {
+    --bg: #f1f5f9;
+    --bg-main: #ffffff;
+    --bg-card: #f8f9fa;
+    --text: #1f2933;
+    --primary: #1e3a8a;
+    --highlight: #1e3b8ae5;
+    --shadow: rgba(0,0,0,0.08);
+}
+
+.dark-mode {
+    --bg: #0f172a;
+    --bg-main: #1e293b;
+    --bg-card: #273549;
+    --text: #e2e8f0;
+    --primary: #3b82f6;
+    --highlight: #3b82f6;
+    --shadow: rgba(0,0,0,0.4);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.8em;
+    transition: 0.3s;
+}
+
+/* ===== HEADER MODERNO ===== */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--primary);
+    color: white;
+    box-shadow: 0 4px 12px var(--shadow);
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.subtitulo {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    opacity: 0.7;
+}
+
+/* ===== BOTÃO TEMA ===== */
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.theme-btn {
+    background: white;
+    color: var(--primary);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.theme-btn:hover {
+    transform: scale(1.1);
+}
+
+/* ===== HAMBURGUER ===== */
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22px;
+    height: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(7px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-7px);
+}
+
+/* ===== CONTEÚDO ===== */
+
+main {
+    background-color: var(--bg-main);
+    margin: 24px auto;
+    padding: 32px;
+    border-radius: 12px;
+    max-width: 80%;
+    box-shadow: 0 6px 20px var(--shadow);
+    text-align: justify;
+}
+
+.intro {
+    background-color: var(--bg-main);
+    margin-bottom: 60px;
+    padding: 32px;
+    border-left: 6px solid var(--primary);
+    border-radius: 10px;
+}
+
+.card {
+    background-color: var(--bg-card);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    background-color: linear-gradient(to right, var(--primary), var(--highlight));
+    color: var(--text);
+    padding: 3px;
+    border-radius: 5px;
+}
+
+/* ===== ESPÉCIES ===== */
+
+.especies {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.especies-cards {
+    background-color: var(--bg-main);
+    padding: 20px;
+    max-width: 380px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px var(--shadow);
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 900px) {
+
+    .nav {
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: var(--bg-main);
+        width: 220px;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px var(--shadow);
+        transform: translateY(-20px);
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.3s;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav.active {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .nav a {
+        color: var(--text);
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
