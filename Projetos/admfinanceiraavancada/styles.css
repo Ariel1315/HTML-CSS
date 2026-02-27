@@ -234,4 +234,10 @@ footer {
     .hamburger {
         display: flex;
     }
+
+    .intro, .objectives, .navigation {
+        text-indent: 0px;
+        line-height: 1.7em;
+        font-size: 1rem;
+    }
 }

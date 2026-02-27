@@ -219,4 +219,21 @@ main {
     .hamburger {
         display: flex;
     }
+
+    .intro {
+        text-indent: 0px;
+        line-height: 1.7em;
+        font-size: 1rem;
+    }
+
+    .card {
+        line-height: 1.7em;
+        font-size: 1rem;
+    }
+
+    .especies-cards {
+        max-width: 100%;
+        line-height: 1.7em;
+        font-size: 1rem;
+    }
 }
