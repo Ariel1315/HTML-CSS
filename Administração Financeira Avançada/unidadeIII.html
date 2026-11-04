@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidade III – Avaliação Econômica de Investimentos</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Analytics (GA4): troque G-XXXXXXXXXX pelo seu ID de métrica -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('consent', 'default', { analytics_storage: 'denied' });
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body data-unidade="III">
+<header class="header">
+    <div class="logo">
+        <h1>Administração Financeira Avançada</h1>
+        <span class="subtitulo">Monitoria Acadêmica</span>
+    </div>
+    <nav class="nav" id="nav">
+        <ul>
+            <li><a href="inicio.html">Início</a></li>
+            <li><a href="inicio.html#unidades">Unidades</a></li>
+            <li><a href="conteudos.html">Conteúdos</a></li>
+        </ul>
+    </nav>
+    <div class="header-actions">
+        <button id="theme-toggle" class="theme-btn">🌙</button>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+</header>
+<main>
+<section class="topico">
+    <h2>Unidade III – Avaliação Econômica de Investimentos</h2>
+    <p>Depois de dimensionar os fluxos de caixa (Unidade II), é preciso avaliar se o projeto vale a pena. Esta unidade apresenta os métodos de avaliação econômica usados no orçamento de capital (<em>capital budgeting</em>).</p>
+</section>
+
+<section class="topico">
+    <h2>1. Por que avaliar economicamente?</h2>
+    <p>Segundo Assaf Neto (2014), uma empresa pode ser vista como um conjunto de projetos de investimento em diferentes estágios de execução. Ao avaliar alternativas, o objetivo é <strong>maximizar a contribuição marginal do capital</strong>, aumentando a riqueza líquida da empresa. Os métodos de avaliação medem a dimensão e a viabilidade desses resultados, isto é, a capacidade de gerar riqueza.</p>
+    <p>Os métodos quantitativos dividem-se em dois grupos:</p>
+    <ul>
+        <li>os que <strong>não consideram</strong> o valor do dinheiro no tempo;</li>
+        <li>os que <strong>consideram</strong> esse valor, com base no fluxo de caixa descontado. Pelo maior rigor, recebem atenção preferencial.</li>
+    </ul>
+    <p>Um ativo é avaliado pelos benefícios de caixa futuros trazidos a valor presente, por uma taxa de desconto que reflete o risco da decisão. A exceção é o <em>payback</em>, mantido pelo seu forte conteúdo informacional.</p>
+    <div class="tabela-wrap"><table>
+        <tr><th>Método</th><th>Sigla em inglês</th><th>Considera o valor do dinheiro no tempo?</th></tr>
+        <tr><td>Período de Payback</td><td>Payback Period</td><td>Depende da modalidade (simples e médio: não; efetivo: sim)</td></tr>
+        <tr><td>Valor Presente Líquido (VPL)</td><td>NPV</td><td>Sim</td></tr>
+        <tr><td>Taxa Interna de Retorno (TIR)</td><td>IRR</td><td>Sim</td></tr>
+        <tr><td>Índice de Lucratividade (IL)</td><td>PVI</td><td>Sim</td></tr>
+    </table></div>
+</section>
+
+<section class="topico">
+    <h2>2. Exemplo usado na unidade</h2>
+    <p>Uma indústria de polpas de frutas investiu <strong>$ 200.000</strong> em uma nova máquina de embalar. Esse valor já inclui a instalação e o capital de giro adicional. Os benefícios líquidos de caixa previstos são <strong>$ 70.000, $ 120.000, $ 80.000 e $ 100.000</strong> nos anos 1 a 4 (vida útil de 4 anos). A taxa mínima de atratividade (TMA) é de <strong>10% a.a.</strong></p>
+    <div class="tabela-wrap"><table>
+        <tr><th>$ mil</th><th>Ano 0</th><th>Ano 1</th><th>Ano 2</th><th>Ano 3</th><th>Ano 4</th></tr>
+        <tr><td>Fluxo de caixa</td><td>(200)</td><td>70</td><td>120</td><td>80</td><td>100</td></tr>
+    </table></div>
+</section>
+
+<section class="topico">
+    <h2>3. Período de Payback</h2>
+    <p>É o tempo necessário para recuperar o investimento inicial com os benefícios líquidos de caixa do projeto. <strong>Quanto menor o payback, melhor</strong>, porque a empresa libera recursos mais cedo para outros projetos.</p>
+    <ul>
+        <li><strong>Payback simples:</strong> não atualiza o valor do dinheiro no tempo.</li>
+        <li><strong>Payback médio:</strong> também não atualiza o valor do dinheiro no tempo.</li>
+        <li><strong>Payback efetivo (descontado):</strong> corrige o valor do dinheiro no tempo. É o mais recomendado.</li>
+    </ul>
+    <h3>Cálculo no exemplo</h3>
+    <div class="tabela-wrap"><table>
+        <tr><th>Ano</th><th>Fluxo</th><th>Acumulado (simples)</th><th>Fluxo descontado a 10%</th><th>Acumulado (efetivo)</th></tr>
+        <tr><td>1</td><td>70</td><td>70</td><td>63,64</td><td>63,64</td></tr>
+        <tr><td>2</td><td>120</td><td>190</td><td>99,17</td><td>162,81</td></tr>
+        <tr><td>3</td><td>80</td><td>270</td><td>60,11</td><td>222,92</td></tr>
+        <tr><td>4</td><td>100</td><td>370</td><td>68,30</td><td>291,22</td></tr>
+    </table></div>
+    <ul>
+        <li><strong>Simples:</strong> após 2 anos faltam 10 (200 − 190). Dividindo pelo fluxo do ano 3: 10 ÷ 80 = 0,125. Payback ≈ <strong>2,125 anos</strong> (cerca de 2 anos e 1,5 mês).</li>
+        <li><strong>Médio:</strong> investimento ÷ fluxo médio anual = 200 ÷ 92,5 ≈ <strong>2,16 anos</strong>.</li>
+        <li><strong>Efetivo:</strong> após 2 anos faltam 37,19 (200 − 162,81). Dividindo pelo fluxo descontado do ano 3: 37,19 ÷ 60,11 ≈ 0,62. Payback ≈ <strong>2,62 anos</strong> (cerca de 2 anos e 7 meses).</li>
+    </ul>
+    <div class="destaque">O payback efetivo é maior que o simples porque os fluxos futuros valem menos em valores de hoje.</div>
+    <p><strong>Limitação:</strong> o payback não mostra quanto o projeto gera depois de recuperar o investimento. Por isso é usado junto com VPL e TIR.</p>
+</section>
+
+<section class="topico">
+    <h2>4. Valor Presente Líquido (VPL)</h2>
+    <p>É a diferença entre o valor presente dos benefícios de caixa e o valor presente dos desembolsos, incluindo o investimento inicial.</p>
+    <div class="formula">VPL = − I<sub>0</sub> + FC<sub>1</sub>/(1+i)¹ + FC<sub>2</sub>/(1+i)² + ... + FC<sub>n</sub>/(1+i)<sup>n</sup></div>
+    <div class="tabela-wrap"><table>
+        <tr><th>Resultado</th><th>Interpretação</th><th>Decisão</th></tr>
+        <tr><td>VPL &gt; 0</td><td>O projeto adiciona riqueza</td><td>Aceitar</td></tr>
+        <tr><td>VPL &lt; 0</td><td>O projeto destrói valor</td><td>Rejeitar</td></tr>
+        <tr><td>VPL = 0</td><td>Nem adiciona nem destrói valor</td><td>Avaliar outros critérios</td></tr>
+    </table></div>
+    <h3>Cálculo no exemplo (i = 10%)</h3>
+    <div class="formula">VPL = −200 + 70/1,1 + 120/1,1² + 80/1,1³ + 100/1,1⁴<br>VPL = −200 + 63,64 + 99,17 + 60,11 + 68,30 = <strong>$ 91,22 mil</strong></div>
+    <p>Como o VPL é positivo, o projeto <strong>deve ser aceito</strong>. Ele cria cerca de $ 91.216 de riqueza além do retorno mínimo exigido de 10%.</p>
+</section>
+
+<section class="topico">
+    <h2>5. Taxa Interna de Retorno (TIR)</h2>
+    <p>É a taxa de desconto que torna o VPL igual a zero, isto é, que iguala as entradas e as saídas de caixa (geralmente no momento zero).</p>
+    <div class="formula">0 = Σ FC<sub>t</sub> / (1 + TIR)<sup>t</sup> &nbsp;&nbsp;(t = 0 até n)</div>
+    <div class="tabela-wrap"><table>
+        <tr><th>Comparação</th><th>VPL</th><th>Decisão</th></tr>
+        <tr><td>TMA &lt; TIR</td><td>VPL &gt; 0</td><td>Aceitar</td></tr>
+        <tr><td>TMA &gt; TIR</td><td>VPL &lt; 0</td><td>Rejeitar</td></tr>
+        <tr><td>TMA = TIR</td><td>VPL = 0</td><td>Avaliar</td></tr>
+    </table></div>
+    <h3>Cálculo no exemplo</h3>
+    <p>Resolve-se: 200 = 70/(1+TIR) + 120/(1+TIR)² + 80/(1+TIR)³ + 100/(1+TIR)⁴. Não há solução algébrica simples; usa-se calculadora financeira, planilha (função <code>TIR</code>/<code>IRR</code>) ou tentativa e erro. Veja o VPL em algumas taxas:</p>
+    <div class="tabela-wrap"><table>
+        <tr><th>Taxa</th><th>10%</th><th>20%</th><th>30%</th><th>40%</th></tr>
+        <tr><td>VPL ($ mil)</td><td>91,22</td><td>≈ 36,2</td><td>≈ −3,7</td><td>≈ −33,6</td></tr>
+    </table></div>
+    <p>O VPL zera pouco abaixo de 30%: <strong>TIR ≈ 28,9% a.a.</strong> Como a TIR (28,9%) é maior que a TMA (10%), o projeto <strong>deve ser aceito</strong>, o que confirma o resultado do VPL.</p>
+    <p>No gráfico VPL × taxa, a curva cai à medida que a taxa sobe e cruza o eixo horizontal exatamente na TIR.</p>
+</section>
+
+<section class="topico">
+    <h2>6. Índice de Lucratividade (IL)</h2>
+    <p>Variante do VPL: divide o valor presente dos benefícios líquidos de caixa pelo valor presente dos desembolsos.</p>
+    <div class="formula">IL = VP dos benefícios líquidos de caixa ÷ VP dos desembolsos de caixa</div>
+    <div class="tabela-wrap"><table>
+        <tr><th>Resultado</th><th>Equivale a</th><th>Decisão</th></tr>
+        <tr><td>IL &gt; 1</td><td>VPL &gt; 0</td><td>Aceitar</td></tr>
+        <tr><td>IL &lt; 1</td><td>VPL &lt; 0</td><td>Rejeitar</td></tr>
+        <tr><td>IL = 1</td><td>VPL = 0</td><td>Avaliar</td></tr>
+    </table></div>
+    <h3>Cálculo no exemplo</h3>
+    <div class="formula">IL = 291,22 ÷ 200 ≈ <strong>1,46</strong></div>
+    <p>Cada $ 1 investido gera cerca de $ 1,46 em valor presente. Como IL &gt; 1, o projeto <strong>deve ser aceito</strong>.</p>
+</section>
+
+<section class="topico">
+    <h2>7. Resumo do exemplo</h2>
+    <div class="tabela-wrap"><table>
+        <tr><th>Método</th><th>Resultado</th><th>Conclusão</th></tr>
+        <tr><td>Payback simples</td><td>≈ 2,13 anos</td><td>Recupera em pouco mais de 2 anos</td></tr>
+        <tr><td>Payback médio</td><td>≈ 2,16 anos</td><td>Mesma ordem do simples</td></tr>
+        <tr><td>Payback efetivo (10%)</td><td>≈ 2,62 anos</td><td>Recuperação mais lenta ao descontar o tempo</td></tr>
+        <tr><td>VPL (10%)</td><td>$ 91.216</td><td>Aceitar (VPL &gt; 0)</td></tr>
+        <tr><td>TIR</td><td>≈ 28,9% a.a.</td><td>Aceitar (TIR &gt; TMA)</td></tr>
+        <tr><td>IL</td><td>≈ 1,46</td><td>Aceitar (IL &gt; 1)</td></tr>
+    </table></div>
+    <div class="destaque">VPL, TIR e IL levam à mesma decisão neste exemplo: aceitar o projeto.</div>
+</section>
+
+<div class="acoes">
+    <a class="btn" id="btn-avancar" href="unidadeIV.html">Avançar ➜</a>
+    <button class="btn" id="btn-questoes">Questões ✏️</button>
+</div>
+
+<section class="topico" id="questoes">
+    <h2>Questões – Unidade III</h2>
+    <div id="lista-questoes"></div>
+    <p class="placar" id="placar"></p>
+</section>
+
+<section class="topico" style="text-align:center;">
+    <h2>Sua opinião é importante</h2>
+    <p style="text-align:center;">Ajude a melhorar este material respondendo a um formulário rápido sobre esta unidade.</p>
+    <a class="btn" id="btn-formulario" href="https://forms.gle/SEU-FORMULARIO" target="_blank" rel="noopener">Responder formulário 📝</a>
+</section>
+<script>
+const QUESTOES = [
+ {enunciado:"Qual modalidade de payback corrige o valor do dinheiro no tempo?",
+  opcoes:["Simples","Médio","Efetivo (descontado)","Nenhuma"],correta:2,
+  explicacao:"O payback efetivo desconta os fluxos pela taxa de atratividade e é o mais recomendado."},
+ {enunciado:"Investimento de $ 200.000 com fluxos anuais de 70.000, 120.000, 80.000 e 100.000. Qual o payback simples?",
+  opcoes:["Cerca de 2,1 anos","Cerca de 1,5 ano","Cerca de 3,0 anos","Cerca de 4,0 anos"],correta:0,
+  explicacao:"Acumulado: 70 e 190 nos dois primeiros anos. Faltam 10, que dividido por 80 dá 0,125. Payback = 2,125 anos."},
+ {enunciado:"Um projeto tem VPL negativo. A decisão correta é:",
+  opcoes:["Aceitar, pois há retorno positivo","Rejeitar, pois destrói valor","Aceitar se o payback for curto","Sempre aceitar"],correta:1,
+  explicacao:"VPL < 0 indica que o retorno é menor que o custo do capital; o projeto destrói valor."},
+ {enunciado:"A TIR de um projeto é 9% a.a. e a TMA é 12% a.a. O que se conclui?",
+  opcoes:["Aceitar, pois TIR > 0","Rejeitar, pois TMA > TIR e VPL < 0","Aceitar, pois TMA > TIR","VPL é exatamente zero"],correta:1,
+  explicacao:"Se TMA > TIR, o VPL à TMA é negativo e a proposta deve ser rejeitada."},
+ {enunciado:"A TIR é definida como a taxa de desconto que:",
+  opcoes:["Torna o payback igual a zero","Torna o VPL igual a zero","Torna o IL igual a 2","É sempre igual à TMA"],correta:1,
+  explicacao:"A TIR iguala o valor presente das entradas ao das saídas, ou seja, VPL = 0."},
+ {enunciado:"No exemplo da indústria de polpas (TMA 10%), o valor presente dos benefícios é cerca de $ 291.216 e o investimento é $ 200.000. Qual o IL?",
+  opcoes:["0,69","1,00","1,46","2,91"],correta:2,
+  explicacao:"IL = 291.216 ÷ 200.000 ≈ 1,46. Como IL > 1, o VPL é positivo e o projeto é aceito."},
+ {enunciado:"Qual a relação entre IL e VPL?",
+  opcoes:["IL > 1 equivale a VPL > 0","IL > 1 equivale a VPL < 0","IL = 0 equivale a VPL = 0","Não há relação"],correta:0,
+  explicacao:"O IL é uma variante do VPL: IL > 1 significa que o VP dos benefícios supera o dos desembolsos, logo VPL > 0."}
+];
+</script>
+
+<footer>
+    <p style="text-align: center;">&copy; 2026 Aprendendo Administração Financeira Avançada. Todos os direitos reservados.</p>
+    <p style="text-align: center;">Site criado por: Ariel de Oliveira</p>
+</footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
