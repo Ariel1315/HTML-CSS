@@ -341,3 +341,51 @@ footer {
 }
 .cookie-banner p { margin: 0 0 12px; font-size: 0.9rem; }
 .cookie-banner .btn { padding: 8px 20px; font-size: 0.9rem; border: 2px solid var(--primary); }
+
+
+/* ===== IMAGENS RESPONSIVAS ===== */
+.figura { margin: 24px 0; text-align: center; }
+.figura img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    background: #fff;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px var(--shadow);
+    box-sizing: border-box;
+}
+.figura figcaption { margin-top: 8px; font-size: 0.85rem; opacity: 0.85; }
+.figuras-duplas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+    gap: 16px;
+    align-items: start;
+}
+.figuras-duplas .figura { margin: 8px 0; }
+
+/* ===== BLOCOS DE APOIO (UNIDADE III) ===== */
+.grid-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+    gap: 12px; margin: 16px 0;
+}
+.grid-info > div {
+    background: var(--nav-bg); border-radius: 10px; padding: 12px 14px;
+    border-top: 4px solid var(--primary); font-size: 0.95rem;
+}
+.grid-info h4 { margin: 0 0 6px; color: var(--primary); }
+.grid-info p, .grid-info ul { margin: 0; text-align: left; }
+.grid-info ul { padding-left: 18px; }
+.grafico { margin: 16px 0; }
+.grafico svg { width: 100%; height: auto; display: block; }
+.grafico text { fill: var(--text); font-family: Arial, Helvetica, sans-serif; }
+.grafico .eixo { stroke: var(--text); opacity: .5; }
+.grafico .grade { stroke: var(--text); opacity: .12; }
+.controles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 12px; margin: 12px 0; }
+.controles label { display: block; font-weight: bold; font-size: 0.95rem; }
+.controles input[type=range] { width: 100%; }
+.legenda { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 0.85rem; margin: 8px 0; }
+.legenda span::before { content: ""; display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; background: var(--c); }
+.alerta { background: #fef3c7; color: #78350f; padding: 8px 12px; border-radius: 8px; font-size: 0.9rem; display: none; }
