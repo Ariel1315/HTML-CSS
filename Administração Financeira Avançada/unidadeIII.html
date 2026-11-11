@@ -89,11 +89,21 @@
     </ul>
     <div class="destaque">O payback efetivo é maior que o simples porque os fluxos futuros valem menos em valores de hoje.</div>
     <p><strong>Limitação:</strong> o payback não mostra quanto o projeto gera depois de recuperar o investimento. Por isso é usado junto com VPL e TIR.</p>
+
+    <div class="grid-info">
+        <div><h4>O que mede?</h4><p>O <strong>tempo</strong> (em anos ou meses) para o caixa gerado pagar o investimento. É uma medida de <strong>liquidez e de risco</strong>: quanto mais cedo o dinheiro volta, menos tempo o capital fica exposto a imprevistos.</p></div>
+        <div><h4>Como decidir?</h4><p>Fica a critério da empresa a escolha de prazos que seriam aceitáveis; ex.: <strong>prazo-limite</strong> (por exemplo, 3 anos). Se o payback for menor ou igual ao limite, o projeto passa no teste. No exemplo, 2,13 anos (simples) e 2,62 anos (efetivo) ficam abaixo de 3 anos.</p></div>
+        <div><h4>Vantagens</h4><ul><li>Fácil de calcular e de explicar</li><li>Útil quando o caixa é escasso ou o futuro é muito incerto</li></ul></div>
+        <div><h4>Cuidados</h4><ul><li>Ignora o que acontece <strong>depois</strong> da recuperação</li><li>O simples e o médio ignoram o valor do dinheiro no tempo</li><li>Não mede riqueza criada: não deve ser o único critério</li></ul></div>
+    </div>
+    <p><strong>Passo a passo:</strong> (1) acumule os fluxos ano a ano; (2) ache o último ano em que o acumulado ainda é menor que o investimento; (3) divida o que falta pelo fluxo do ano seguinte e some à parte inteira.</p>
 </section>
 
 <section class="topico">
     <h2>4. Valor Presente Líquido (VPL)</h2>
     <p>É a diferença entre o valor presente dos benefícios de caixa e o valor presente dos desembolsos, incluindo o investimento inicial.</p>
+    <div class="formula">VPL = Σ [FC<sub>t</sub> / (1+i)<sup>t</sup>] - I<sub>0</sub></div>
+    <p><em>Que é o mesmo que...</em></p>
     <div class="formula">VPL = − I<sub>0</sub> + FC<sub>1</sub>/(1+i)¹ + FC<sub>2</sub>/(1+i)² + ... + FC<sub>n</sub>/(1+i)<sup>n</sup></div>
     <div class="tabela-wrap"><table>
         <tr><th>Resultado</th><th>Interpretação</th><th>Decisão</th></tr>
@@ -104,6 +114,16 @@
     <h3>Cálculo no exemplo (i = 10%)</h3>
     <div class="formula">VPL = −200 + 70/1,1 + 120/1,1² + 80/1,1³ + 100/1,1⁴<br>VPL = −200 + 63,64 + 99,17 + 60,11 + 68,30 = <strong>$ 91,22 mil</strong></div>
     <p>Como o VPL é positivo, o projeto <strong>deve ser aceito</strong>. Ele cria cerca de $ 91.216 de riqueza além do retorno mínimo exigido de 10%.</p>
+
+    <h3>Entendendo o que o VPL calcula</h3>
+    <p>O VPL responde: <em>"depois de pagar o investimento e remunerar o capital à taxa exigida, sobra quanto de riqueza, em dinheiro no tempo presente?"</em> Cada fluxo futuro é <strong>descontado</strong> (dividido por (1+i)ⁿ) porque $ 1 recebido daqui a 3 anos vale menos que $ 1 hoje. Depois, soma-se tudo e subtrai-se o investimento.</p>
+    <div class="grid-info">
+        <div><h4>O que o resultado significa?</h4><p>VPL de $ 91.216 não é "lucro contábil". É a riqueza <strong>adicional, em valores no tempo presente</strong>, além de render os 10% exigidos sobre o capital. Se o VPL fosse zero, o projeto apenas pagaria o custo do capital.</p></div>
+        <div><h4>Papel da taxa i</h4><p>A taxa de desconto é o <strong>retorno exigido</strong> (veja o tópico sobre TMA e WACC). Quanto maior a taxa, menor o VPL: a 10% o VPL é 91,22; a 30% já é negativo (≈ −3,7).</p></div>
+        <div><h4>Vantagens</h4><ul><li>Considera todos os fluxos e o valor do dinheiro no tempo</li><li>Mede a riqueza criada em $</li><li>É aditivo: o VPL de vários projetos pode ser somado</li></ul></div>
+        <div><h4>Cuidados</h4><ul><li>Depende da taxa escolhida</li><li>Resultado não avalia a questão temporal de retorno do investimento como o Payback</li></ul></div>
+    </div>
+    <p><strong>Passo a passo:</strong> (1) escolha a taxa i; (2) desconte cada fluxo para o ano 0; (3) some os valores presentes; (4) subtraia o investimento inicial.</p>
 </section>
 
 <section class="topico">
@@ -124,6 +144,15 @@
     </table></div>
     <p>O VPL zera pouco abaixo de 30%: <strong>TIR ≈ 28,9% a.a.</strong> Como a TIR (28,9%) é maior que a TMA (10%), o projeto <strong>deve ser aceito</strong>, o que confirma o resultado do VPL.</p>
     <p>No gráfico VPL × taxa, a curva cai à medida que a taxa sobe e cruza o eixo horizontal exatamente na TIR.</p>
+
+    <h3>Entendendo o que a TIR calcula</h3>
+    <p>A TIR é o <strong>retorno anual do próprio projeto</strong>, como se fosse a taxa de juros de uma aplicação. Ela responde: <em>"se esses fluxos fossem um investimento financeiro, quanto ele renderia por ano?"</em> No exemplo, aplicar $ 200.000 neste projeto equivale a uma aplicação que rende cerca de 28,9% a.a.</p>
+    <div class="grid-info">
+        <div><h4>Como decidir?</h4><p>Compare a TIR com a taxa exigida (TMA). Se TIR &gt; TMA, o projeto rende mais do que o mínimo aceitável. A <strong>folga</strong> (28,9% contra 10%) indica a margem de segurança: o retorno exigido poderia subir bastante antes de o VPL ficar negativo.</p></div>
+        <div><h4>Relação com o VPL</h4><p>A TIR é o ponto em que a curva do VPL cruza o zero. Por isso, para um projeto "convencional" (um desembolso inicial seguido só de entradas), TIR &gt; TMA e VPL &gt; 0 levam à mesma decisão.</p></div>
+        <div><h4>Vantagens</h4><ul><li>Resultado em %, fácil de comparar com juros, Selic e custo de capital</li><li>Não exige definir a taxa para ser calculada</li></ul></div>
+        <div><h4>Cuidados</h4><ul><li>Entre projetos excludentes, pode contradizer o VPL (escala e prazos diferentes). Nesse caso, prevalece o VPL</li></ul></div>
+    </div>
 </section>
 
 <section class="topico">
@@ -138,11 +167,100 @@
     </table></div>
     <h3>Cálculo no exemplo</h3>
     <div class="formula">IL = 291,22 ÷ 200 ≈ <strong>1,46</strong></div>
-    <p>Cada $ 1 investido gera cerca de $ 1,46 em valor presente. Como IL &gt; 1, o projeto <strong>deve ser aceito</strong>.</p>
+    <p>Analisando em unidade monetária, cada $ 1 investido gera cerca de $ 1,46 em valor presente. Como IL &gt; 1, o projeto <strong>deve ser aceito</strong>.</p>
+
+    <h3>Entendendo o que o IL calcula</h3>
+    <p>O IL mede a <strong>eficiência do capital</strong>: quanto de valor presente cada $ 1 investido gera. No exemplo, IL = 1,46 significa que cada $ 1 investido devolve $ 1,46 em valores de hoje, ou seja, $ 0,46 de riqueza a mais. Esse $ 0,46 é o <strong>VPL por real investido</strong> (91.216 ÷ 200.000).</p>
+    <div class="grid-info">
+        <div><h4>Quando é mais útil?</h4><p> Dois projetos com o mesmo VPL podem ter ILs bem diferentes se exigirem investimentos diferentes.</p></div>
+        <div><h4>Relação com o VPL</h4><p>IL = (VPL + investimento) ÷ investimento = 1 + VPL/I. Por isso IL &gt; 1 equivale a VPL &gt; 0. O IL muda a <em>unidade</em> (razão em vez de $), não a decisão de aceitar ou rejeitar.</p></div>
+        <div><h4>Cuidados</h4><ul><li>Não mostra o tamanho da riqueza criada (um IL alto pode vir de projeto pequeno)</li><li>Depende da mesma taxa de desconto do VPL</li></ul></div>
+    </div>
 </section>
 
 <section class="topico">
-    <h2>7. Resumo do exemplo</h2>
+    <h2>7. WACC e TMA: qual taxa usar para descontar?</h2>
+    <p>VPL e IL dependem de uma taxa de desconto, e a TIR precisa ser comparada com uma taxa de referência. Essa taxa é a <strong>TMA (Taxa Mínima de Atratividade)</strong>: o retorno mínimo que o projeto precisa oferecer para valer o investimento. Uma referência muito usada para defini-la é o <strong>WACC</strong>.</p>
+    <h3>O que é o WACC</h3>
+    <p>WACC (<em>Weighted Average Cost of Capital</em>, em português CMPC ou WAAC) é o <strong>custo médio ponderado do capital</strong> da empresa: quanto ela paga, em média, para financiar seus ativos com capital próprio e de terceiros.</p>
+    <div class="formula">WACC = (W<sub>e</sub> × K<sub>e</sub>) + (W<sub>i</sub> × K<sub>i</sub>) × (1 − IR)</div>
+    <p>We = participação do capital próprio; Wi = Participação da dívida (terceiros); K<sub>e</sub> = custo do capital próprio (retorno exigido pelos acionistas); K<sub>i</sub> = custo da dívida antes do imposto; IR = alíquota. A dívida entra <strong>após o imposto</strong> por causa do benefício fiscal dos juros (Unidade II e Unidade IV).</p>
+    <div class="destaque">Exemplo ilustrativo: 60% capital próprio com K<sub>e</sub> = 12%; 40% dívida com K<sub>d</sub> = 8%; IR = 34%. WACC = 0,6 × 12% + 0,4 × 8% × 0,66 = 7,2% + 2,1% ≈ <strong>9,3% a.a.</strong></div>
+    <p><strong><em>Nota:</strong> W<sub>e</sub> pode ser obtido pela razão <strong>(PL/P+PL)</strong> que mede a participação do <strong>Patrimônio Líquido (PL)</strong> mediante a estrutura de capital. O mesmo vale para W<sub>i</sub> que é obtido por <strong>(P/P+PL)</strong> que mede a participação do capital de terceiros (P referente ao Passivo). Essas razões mostram as proporções de cada fonte de capital na <strong>Estrutura de Capital</strong> da empresa.</em></p>
+    <h3>Por que descontar o fluxo operacional pelo WACC</h3>
+    <p>Na Unidade II, o fluxo de caixa operacional <strong>não deduz juros nem amortizações</strong>: o financiamento é avaliado à parte. Como o fluxo é "antes do financiamento", ele precisa ser descontado por uma taxa que já represente o <strong>custo de todas as fontes de capital</strong>, e esse é o WACC. Descontar pelo WACC e também subtrair os juros do fluxo seria contar o custo do financiamento duas vezes.</p>
+    <h3>Quando a TMA pode levar o WACC em consideração</h3>
+    <div class="tabela-wrap"><table>
+        <tr><th>Situação</th><th>Como definir a TMA</th></tr>
+        <tr><td>Projeto de risco semelhante ao da empresa (mesmo negócio, expansão, reposição) e estrutura de capital estável</td><td>TMA ≈ WACC. É o retorno mínimo para não destruir valor</td></tr>
+        <tr><td>Projeto um pouco mais arriscado que a média, ou a empresa quer margem de segurança</td><td>TMA = WACC + prêmio de risco do projeto</td></tr>
+        <tr><td>Projeto menos arriscado que a média</td><td>TMA pode ficar um pouco abaixo do WACC, com cautela</td></tr>
+    </table></div>
+    <p>No exemplo da indústria de polpas, uma TMA de 10% é coerente com um WACC de 9,3% mais um pequeno prêmio de 0,7 ponto percentual.</p>
+    <h3>Quando a TMA não pode (ou não deve) ser o WACC</h3>
+    <ul>
+        <li><strong>Risco diferente do negócio atual:</strong> um projeto em outro setor, país ou tecnologia deve usar uma taxa que reflita o <em>risco do projeto</em>, e não o da empresa. Usar o WACC pode aprovar projetos ruins (risco maior) ou rejeitar bons (risco menor).</li>
+        <li><strong>Restrição de capital:</strong> se o orçamento é limitado, a TMA é o retorno da <strong>melhor alternativa abandonada</strong> (custo de oportunidade), que pode ser maior que o WACC.</li>
+        <li><strong>Custo de oportunidade do investidor:</strong> pessoas físicas, pequenos negócios e entes sem estrutura de capital definida costumam usar como TMA o rendimento de uma aplicação segura (como a Selic ou o Tesouro), mais um prêmio de risco, e não um WACC.</li>
+        <li><strong>Política interna (<em>hurdle rate</em>):</strong> a diretoria pode exigir uma taxa fixa mais alta, por prudência ou por metas de retorno.</li>
+        <li><strong>Financiamento específico e subsidiado:</strong> o custo de uma linha de crédito barata não deve baratear a taxa de avaliação do projeto. Investimento e financiamento são avaliados separadamente.</li>
+        <li><strong>Consistência de moeda e inflação:</strong> fluxos em termos reais pedem taxa real; fluxos nominais, taxa nominal.</li>
+    </ul>
+    <div class="destaque">Regra prática: o WACC é o <strong>piso</strong> para projetos de risco médio. A TMA é o WACC ajustado ao risco do projeto e às restrições da empresa.</div>
+
+    <h3>Gráfico: carteira de projetos, WACC e TMA</h3>
+    <p>Cada barra é a TIR de um projeto de uma carteira ilustrativa de 30 projetos. As linhas mostram o <strong>WACC</strong> e a <strong>TMA</strong>. Mova os controles e veja como a decisão muda.</p>
+    <div class="controles">
+        <div><label for="rg-wacc">WACC: <span id="v-wacc"></span></label><input type="range" id="rg-wacc" min="5" max="25" step="0.5" value="12"></div>
+        <div><label for="rg-tma">TMA: <span id="v-tma"></span></label><input type="range" id="rg-tma" min="5" max="30" step="0.5" value="15"></div>
+    </div>
+    <div class="legenda">
+        <span style="--c:#16a34a">TIR ≥ TMA: aceitar</span>
+        <span style="--c:#f59e0b">WACC ≤ TIR &lt; TMA: cobre o custo de capital, mas não o retorno exigido</span>
+        <span style="--c:#dc2626">TIR &lt; WACC: destrói valor</span>
+    </div>
+    <div class="grafico" id="grafico" role="img" aria-label="Gráfico de barras com a TIR de 30 projetos, com linhas horizontais para o WACC e a TMA"></div>
+    <p id="resumo-grafico" style="text-align:left;"></p>
+    <p class="alerta" id="alerta-grafico">Atenção: com TMA abaixo do WACC, projetos aceitos podem destruir valor, pois não cobrem o custo de capital.</p>
+    <p>Repare: projetos amarelos têm TIR acima do WACC (criariam valor para a empresa), mas a empresa só os aprova se aceitar a TMA como retorno mínimo. Subir a TMA acima do WACC torna a seleção mais rigorosa; baixá-la abaixo do WACC é arriscado.</p>
+</section>
+<script>
+(function () {
+    function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;}}
+    var rnd = mulberry32(42);
+    var tir = Array.from({length: 30}, function(){ return 5 + rnd()*20; }); // uniforme entre 5% e 25%
+    var W=720, H=360, m={l:50,r:16,t:16,b:40}, ymax=30;
+    var el=document.getElementById("grafico"), rw=document.getElementById("rg-wacc"), rt=document.getElementById("rg-tma");
+    function y(v){return m.t+(H-m.t-m.b)*(1-v/ymax);}
+    function desenhar(){
+        var w=parseFloat(rw.value), t=parseFloat(rt.value);
+        document.getElementById("v-wacc").textContent=w.toFixed(1).replace(".",",")+"%";
+        document.getElementById("v-tma").textContent=t.toFixed(1).replace(".",",")+"%";
+        var bw=(W-m.l-m.r)/tir.length, a=0,b=0,c=0, s='<svg viewBox="0 0 '+W+' '+H+'" xmlns="http://www.w3.org/2000/svg">';
+        for(var g=0;g<=ymax;g+=5){s+='<line class="grade" x1="'+m.l+'" x2="'+(W-m.r)+'" y1="'+y(g)+'" y2="'+y(g)+'"/><text x="'+(m.l-6)+'" y="'+(y(g)+4)+'" text-anchor="end" font-size="11">'+g+'%</text>';}
+        tir.forEach(function(v,i){
+            var cor; if(v>=t){cor="#16a34a";a++;} else if(v>=w){cor="#f59e0b";b++;} else {cor="#dc2626";c++;}
+            var x=m.l+i*bw+bw*0.12;
+            s+='<rect x="'+x+'" y="'+y(v)+'" width="'+(bw*0.76)+'" height="'+(y(0)-y(v))+'" fill="'+cor+'"><title>Projeto '+(i+1)+': TIR '+v.toFixed(1).replace(".",",")+'%</title></rect>';
+            s+='<text x="'+(x+bw*0.38)+'" y="'+(y(0)+13)+'" text-anchor="middle" font-size="9">'+(i+1)+'</text>';
+        });
+        s+='<line class="eixo" x1="'+m.l+'" x2="'+m.l+'" y1="'+m.t+'" y2="'+y(0)+'"/><line class="eixo" x1="'+m.l+'" x2="'+(W-m.r)+'" y1="'+y(0)+'" y2="'+y(0)+'"/>';
+        s+='<line x1="'+m.l+'" x2="'+(W-m.r)+'" y1="'+y(w)+'" y2="'+y(w)+'" stroke="#ea580c" stroke-width="2.5" stroke-dasharray="7 5"/>';
+        s+='<line x1="'+m.l+'" x2="'+(W-m.r)+'" y1="'+y(t)+'" y2="'+y(t)+'" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="2 4"/>';
+        var up = t>=w;
+        s+='<text x="'+(W-m.r-4)+'" y="'+(y(w)+(up?15:-6))+'" text-anchor="end" font-size="12" font-weight="bold" fill="#ea580c" style="fill:#ea580c">WACC ('+w.toFixed(1).replace(".",",")+'%)</text>';
+        s+='<text x="'+(W-m.r-4)+'" y="'+(y(t)+(up?-6:15))+'" text-anchor="end" font-size="12" font-weight="bold" style="fill:#2563eb">TMA ('+t.toFixed(1).replace(".",",")+'%)</text>';
+        s+='<text x="'+((W+m.l)/2)+'" y="'+(H-4)+'" text-anchor="middle" font-size="12">Projetos</text></svg>';
+        el.innerHTML=s;
+        document.getElementById("resumo-grafico").innerHTML='<strong>'+a+'</strong> projeto(s) aceito(s) (TIR ≥ TMA); <strong>'+b+'</strong> entre o WACC e a TMA; <strong>'+c+'</strong> abaixo do WACC.';
+        document.getElementById("alerta-grafico").style.display = t<w ? "block" : "none";
+    }
+    rw.addEventListener("input",desenhar); rt.addEventListener("input",desenhar); desenhar();
+})();
+</script>
+
+<section class="topico">
+    <h2>8. Resumo do exemplo</h2>
     <div class="tabela-wrap"><table>
         <tr><th>Método</th><th>Resultado</th><th>Conclusão</th></tr>
         <tr><td>Payback simples</td><td>≈ 2,13 anos</td><td>Recupera em pouco mais de 2 anos</td></tr>
@@ -193,13 +311,31 @@ const QUESTOES = [
   explicacao:"IL = 291.216 ÷ 200.000 ≈ 1,46. Como IL > 1, o VPL é positivo e o projeto é aceito."},
  {enunciado:"Qual a relação entre IL e VPL?",
   opcoes:["IL > 1 equivale a VPL > 0","IL > 1 equivale a VPL < 0","IL = 0 equivale a VPL = 0","Não há relação"],correta:0,
-  explicacao:"O IL é uma variante do VPL: IL > 1 significa que o VP dos benefícios supera o dos desembolsos, logo VPL > 0."}
+  explicacao:"O IL é uma variante do VPL: IL > 1 significa que o VP dos benefícios supera o dos desembolsos, logo VPL > 0."},
+ {enunciado:"Segundo o material, o VPL de $ 91.216 no exemplo representa:",
+  opcoes:["O lucro contábil do primeiro ano","A riqueza adicional em valores de hoje, além do retorno exigido de 10%","O valor total dos fluxos futuros","O tempo de recuperação do investimento"],correta:1,
+  explicacao:"O VPL mede a riqueza criada, em dinheiro no tempo presente, depois de pagar o investimento e remunerar o capital à taxa exigida."},
+ {enunciado:"O WACC representa:",
+  opcoes:["O custo de oportunidade apenas dos acionistas","O custo médio ponderado de todas as fontes de capital da empresa","A taxa de juros da Selic","O retorno do projeto"],correta:1,
+  explicacao:"WACC = (E/V)·Ke + (D/V)·Kd·(1−IR): a média dos custos do capital próprio e de terceiros, ponderada pela estrutura de capital."},
+ {enunciado:"Com 60% de capital próprio (Ke = 12%), 40% de dívida (Kd = 8%) e IR de 34%, o WACC é aproximadamente:",
+  opcoes:["8,0%","9,3%","10,0%","12,0%"],correta:1,
+  explicacao:"0,6 × 12% + 0,4 × 8% × 0,66 = 7,2% + 2,11% ≈ 9,3%."},
+ {enunciado:"Em qual situação a TMA NÃO deve ser simplesmente igual ao WACC da empresa?",
+  opcoes:["Projeto de reposição de máquina do mesmo negócio","Projeto em setor e país de risco muito diferente do atual","Expansão da capacidade com risco médio","Projeto de risco semelhante ao da empresa"],correta:1,
+  explicacao:"Quando o risco do projeto difere do risco médio da empresa, a taxa deve refletir o risco do projeto, e não o WACC."},
+ {enunciado:"Por que o fluxo de caixa operacional é descontado pelo WACC, e não se deduzem os juros do fluxo?",
+  opcoes:["Porque juros não existem","Para evitar contar o custo do financiamento duas vezes","Porque o WACC ignora a dívida","Porque o IR é zero"],correta:1,
+  explicacao:"O WACC já incorpora o custo das fontes de financiamento; deduzir juros do fluxo também duplicaria esse custo."},
+ {enunciado:"Se a TIR de um projeto está entre o WACC e a TMA, ele:",
+  opcoes:["Destrói valor para a empresa","Cobre o custo de capital, mas não atinge o retorno mínimo exigido pela TMA","Tem VPL sempre igual a zero","Deve ser aceito automaticamente"],correta:1,
+  explicacao:"Acima do WACC ele cria valor, mas, se a TMA for maior que a TIR, a política da empresa o rejeita."}
 ];
 </script>
 
 <footer>
-    <p style="text-align: center;">&copy; 2026 Aprendendo Administração Financeira Avançada. Todos os direitos reservados.</p>
-    <p style="text-align: center;">Site criado por: Ariel de Oliveira</p>
+    <p style="text-align: center;">&copy; 2026 Administração Financeira Avançada — Centro de Estudos Sociais Aplicados (CESA / UECE)</p>
+    <p style="opacity: 0.8; font-size: 12px;">Conteúdo organizado pelo aluno monitor Ariel de Oliveira a partir do material de aula do Prof. Sérgio Lima | Plataforma Acadêmica</p>
 </footer>
 </main>
 <script src="script.js"></script>
