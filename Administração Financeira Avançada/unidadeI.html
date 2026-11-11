@@ -58,6 +58,25 @@
 <section class="topico">
     <h2>2. Mercados</h2>
     <p>O mercado financeiro divide-se em quatro grandes segmentos: <strong>mercado monetário, mercado de crédito, mercado de capitais e mercado de câmbio</strong>.</p>
+    
+    <h3>Mercado Monetário</h3>
+    <p>É o mercado onde são negociados títulos de curto e curtíssimo prazo e alta liquidez. As referências centrais de taxas de juros derivam desse mercado, como a <strong>taxa SELIC</strong> (operações com títulos públicos no Banco Central) e a <strong>taxa DI/CETIP</strong> (operações de curto prazo entre bancos).</p>
+    <p><strong>Principais atores:</strong> Banco Central do Brasil, bancos comerciais e de investimento.</p>
+    
+    <h3>Mercado de Crédito</h3>
+    <p>É o mercado onde são negociados empréstimos e financiamentos (o banco capta do agente superavitário e empresta ao deficitário, cobrando um spread bancário pelo risco de inadimplência).</p>
+    <p><strong>Principais atores:</strong> Bancos comerciais, bancos múltiplos, cooperativas de crédito e sociedades de crédito.</p>
+    <p><em><strong>Nota:</strong> <strong style="background-color: #71aab6;">Spread bancário</strong> é a diferença entre a taxa de juros cobrada pelos bancos e a taxa de juros oferecida pelos agentes superavitários.</em></p>
+
+    <h3>Mercado de Capitais</h3>
+    <p>É o mercado voltado ao financiamento de médio e longo prazo do setor produtivo e das decisões de investimento em ativos permanentes. Conecta investidores diretamente a empresas e governos, permitindo a captação de recursos sem a intermediação bancária tradicional.</p>
+    <p><strong>Principais atores:</strong> Empresas S/A de capital aberto, bolsas de valores (B3), corretoras e distribuidoras de valores (CTVM/DTVM), fundos de investimento e a CVM (Comissão de Valores Mobiliários) como órgão supervisor.</p>
+    <p><em><strong>Nota:</strong> Negocia títulos de <strong style="background-color: #71aab6;">renda variável (ex.: ações)</strong> e de <strong style="background-color: #71aab6;">renda fixa (ex.: debêntures, CRI, CRA)</strong>.</em></p>
+
+    <h3>Mercado de Câmbio</h3>
+    <p>Encaixa-se na negociação e troca de moedas estrangeiras por moeda nacional, viabilizando transações internacionais de comércio (importação e exportação) e fluxos de capitais estrangeiros. Envolve operações de compra e venda de moedas estrangeiras à vista e no mercado futuro.</p>
+    <p><strong>Principais atores:</strong> Banco Central do Brasil, bancos comerciais, corretoras de câmbio e empresas importadoras/exportadoras.</p>
+    <p><strong>Confira mais:</strong> <a href="https://www.bcb.gov.br/estabilidadefinanceira/sfn" target="_blank">Informações sobre o Sistema Financeiro Nacional</a></p>
 </section>
 
 <section class="topico">
@@ -68,7 +87,11 @@
         <li><strong>Poupança (consumo futuro) = Renda − Consumo:</strong> o consumo adiado, a parte da renda não direcionada ao consumo imediato.</li>
     </ul>
     <h3>Investimentos</h3>
-    <p>Para o poupador, é a destinação dos recursos poupados (aplicações que gerarão retorno). Para o tomador, os intermediários ofertam crédito aos agentes deficitários, que o empregam em ativos de longo prazo (projetos, capex), estoques, caixa etc.</p>
+    <p>Para o <strong>poupador</strong>, é a destinação dos recursos poupados (aplicações que gerarão retorno). Para o <strong>tomador</strong>, os intermediários ofertam crédito aos agentes deficitários, que o empregam em ativos de longo prazo (projetos, capex), estoques, caixa etc.</p>
+    <figure class="figura">
+        <img src="agentes.png" alt="Diagrama: agentes superavitários (poupadores) enviam recursos aos agentes intermediários (banco), que os repassam aos agentes deficitários (tomadores), que os aplicam em capex (fábricas e maquinários), estoques e caixa" width="816" height="450" loading="lazy">
+        <figcaption>Figura 1 – Dos poupadores aos tomadores: o intermediário financeiro conecta agentes superavitários e deficitários, que aplicam os recursos em capex, estoques e caixa.</figcaption>
+    </figure>
 </section>
 
 <section class="topico">
@@ -77,6 +100,16 @@
     <p><strong>Liquidez:</strong> facilidade de converter um ativo em moeda, com rapidez e baixo custo de transação (Gitman; Zutter, 2012).</p>
     <div class="destaque">Dilema risco-retorno-liquidez: quanto maior o risco, maior a expectativa de retorno (prêmio pelo risco). Porém, ativos de maior risco tendem a ter menor liquidez.</div>
     <p>Por isso a decisão deve considerar retorno esperado, liquidez e risco, de acordo com os objetivos e as estratégias do investidor. No gráfico das aulas, poupança e Tesouro Selic têm alta liquidez e baixa rentabilidade; imóveis e obras de arte, o inverso.</p>
+    <div class="figuras-duplas">
+        <figure class="figura">
+            <img src="risco-retorno.png" alt="Gráfico Relação Risco-Retorno: reta crescente de retorno esperado em função do risco, com o perfil conservador (baixo risco e baixo retorno) na parte inferior e o perfil agressivo (alto risco e alto retorno) na parte superior" width="989" height="617" loading="lazy">
+            <figcaption>Figura 2 – Relação risco-retorno: perfil conservador (baixo risco, baixo retorno) e perfil agressivo (alto risco, alto retorno).</figcaption>
+        </figure>
+        <figure class="figura">
+            <img src="risco-rentabilidade-ativos.png" alt="Curva de Risco x Rentabilidade: da poupança e títulos públicos, passando por CDB, CRA, CRI, LCA, LCI e debêntures, até imóveis e FIIs e ações, com rentabilidade crescente conforme o risco" width="828" height="624" loading="lazy">
+            <figcaption>Figura 3 – Curva de risco × rentabilidade: ativos com maior risco tendem a oferecer maior rentabilidade.</figcaption>
+        </figure>
+    </div>
 </section>
 
 <section class="topico">
@@ -150,8 +183,8 @@ const QUESTOES = [
 ];
 </script>
 <footer>
-    <p style="text-align: center;">&copy; 2026 Aprendendo Administração Financeira Avançada. Todos os direitos reservados.</p>
-    <p style="text-align: center;">Site criado por: Ariel de Oliveira</p>
+    <p style="text-align: center;">&copy; 2026 Administração Financeira Avançada — Centro de Estudos Sociais Aplicados (CESA / UECE)</p>
+    <p style="opacity: 0.8; font-size: 12px;">Conteúdo organizado pelo aluno monitor Ariel de Oliveira a partir do material de aula do Prof. Sérgio Lima | Plataforma Acadêmica</p>
 </footer>
 </main>
 <script src="script.js"></script>
