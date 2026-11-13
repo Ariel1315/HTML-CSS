@@ -3,144 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aprendendo Administração Financeira Avançada</title>
+    <title>Unidade I – Introdução ao Mercado Financeiro</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Google Analytics (GA4): troque G-XXXXXXXXXX pelo seu ID de métrica -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('consent', 'default', { analytics_storage: 'denied' });
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
-<body>
+<body data-unidade="I">
 <header class="header">
     <div class="logo">
         <h1>Administração Financeira Avançada</h1>
         <span class="subtitulo">Monitoria Acadêmica</span>
     </div>
-
     <nav class="nav" id="nav">
         <ul>
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#unidades">Unidades</a></li>
+            <li><a href="inicio.html">Início</a></li>
+            <li><a href="inicio.html#unidades">Unidades</a></li>
             <li><a href="#">Feedback</a></li>
         </ul>
     </nav>
-
     <div class="header-actions">
         <button id="theme-toggle" class="theme-btn">🌙</button>
-
-        <button class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
     </div>
 </header>
+<main>
+<section class="topico">
+    <h2>Unidade I – Introdução ao Mercado Financeiro</h2>
+    <p>Esta unidade apresenta os conceitos básicos do mercado financeiro e a estrutura do Sistema Financeiro Nacional (SFN).</p>
+</section>
 
+<section class="topico">
+    <h2>1. Agentes econômicos</h2>
+    <p>São os participantes do mercado financeiro, que tomam decisões "maximizadoras de utilidade" conforme suas condições e necessidades. A atuação de cada um determina os fluxos de poupança e investimento.</p>
+    <div class="tabela-wrap"><table>
+        <tr><th>Agente</th><th>Posição financeira</th><th>Função</th><th>Objetivo</th></tr>
+        <tr><td>Superavitários</td><td>Excedente de recursos</td><td>Aplicam recursos</td><td>Rentabilidade</td></tr>
+        <tr><td>Deficitários</td><td>Necessidade de recursos</td><td>Captam recursos</td><td>Financiamento</td></tr>
+        <tr><td>Intermediários</td><td>Equilíbrio entre oferta e demanda</td><td>Intermedeiam recursos</td><td>Eficiência e estabilidade do sistema</td></tr>
+    </table></div>
+    <ul>
+        <li><strong>Superavitários:</strong> famílias que poupam, fundos de investimento. Ofertam capital em troca de retorno superior ao custo de oportunidade (juros, dividendos).</li>
+        <li><strong>Deficitários:</strong> empresas que precisam de crédito, famílias endividadas, governo que emite títulos da dívida.</li>
+        <li><strong>Intermediários:</strong> bancos comerciais, corretoras, cooperativas de crédito. Reduzem custos de transação, diluem riscos, reduzem assimetrias de informação e convertem poupança em investimento.</li>
+    </ul>
+</section>
+
+<section class="topico">
+    <h2>2. Mercados</h2>
+    <p>O mercado financeiro divide-se em quatro grandes segmentos: <strong>mercado monetário, mercado de crédito, mercado de capitais e mercado de câmbio</strong>.</p>
+    
+    <h3>Mercado Monetário</h3>
+    <p>É o mercado onde são negociados títulos de curto e curtíssimo prazo e alta liquidez. As referências centrais de taxas de juros derivam desse mercado, como a <strong>taxa SELIC</strong> (operações com títulos públicos no Banco Central) e a <strong>taxa DI/CETIP</strong> (operações de curto prazo entre bancos).</p>
+    <p><strong>Principais atores:</strong> Banco Central do Brasil, bancos comerciais e de investimento.</p>
+    
+    <h3>Mercado de Crédito</h3>
+    <p>É o mercado onde são negociados empréstimos e financiamentos (o banco capta do agente superavitário e empresta ao deficitário, cobrando um spread bancário pelo risco de inadimplência).</p>
+    <p><strong>Principais atores:</strong> Bancos comerciais, bancos múltiplos, cooperativas de crédito e sociedades de crédito.</p>
+    <p><em><strong>Nota:</strong> <strong style="background-color: #71aab6;">Spread bancário</strong> é a diferença entre a taxa de juros cobrada pelos bancos e a taxa de juros oferecida pelos agentes superavitários.</em></p>
+
+    <h3>Mercado de Capitais</h3>
+    <p>É o mercado voltado ao financiamento de médio e longo prazo do setor produtivo e das decisões de investimento em ativos permanentes. Conecta investidores diretamente a empresas e governos, permitindo a captação de recursos sem a intermediação bancária tradicional.</p>
+    <p><strong>Principais atores:</strong> Empresas S/A de capital aberto, bolsas de valores (B3), corretoras e distribuidoras de valores (CTVM/DTVM), fundos de investimento e a CVM (Comissão de Valores Mobiliários) como órgão supervisor.</p>
+    <p><em><strong>Nota:</strong> Negocia títulos de <strong style="background-color: #71aab6;">renda variável (ex.: ações)</strong> e de <strong style="background-color: #71aab6;">renda fixa (ex.: debêntures, CRI, CRA)</strong>.</em></p>
+
+    <h3>Mercado de Câmbio</h3>
+    <p>Encaixa-se na negociação e troca de moedas estrangeiras por moeda nacional, viabilizando transações internacionais de comércio (importação e exportação) e fluxos de capitais estrangeiros. Envolve operações de compra e venda de moedas estrangeiras à vista e no mercado futuro.</p>
+    <p><strong>Principais atores:</strong> Banco Central do Brasil, bancos comerciais, corretoras de câmbio e empresas importadoras/exportadoras.</p>
+    <p><strong>Confira mais:</strong> <a href="https://www.bcb.gov.br/estabilidadefinanceira/sfn" target="_blank">Informações sobre o Sistema Financeiro Nacional</a></p>
+</section>
+
+<section class="topico">
+    <h2>3. Renda, consumo e poupança</h2>
+    <div class="formula">RENDA = CONSUMO + POUPANÇA</div>
+    <ul>
+        <li><strong>Consumo (presente):</strong> despesa com bens e serviços para satisfazer necessidades básicas ou sofisticadas.</li>
+        <li><strong>Poupança (consumo futuro) = Renda − Consumo:</strong> o consumo adiado, a parte da renda não direcionada ao consumo imediato.</li>
+    </ul>
+    <h3>Investimentos</h3>
+    <p>Para o <strong>poupador</strong>, é a destinação dos recursos poupados (aplicações que gerarão retorno). Para o <strong>tomador</strong>, os intermediários ofertam crédito aos agentes deficitários, que o empregam em ativos de longo prazo (projetos, capex), estoques, caixa etc.</p>
+    <figure class="figura">
+        <img src="agentes.png" alt="Diagrama: agentes superavitários (poupadores) enviam recursos aos agentes intermediários (banco), que os repassam aos agentes deficitários (tomadores), que os aplicam em capex (fábricas e maquinários), estoques e caixa" width="816" height="450" loading="lazy">
+        <figcaption>Figura 1 – Dos poupadores aos tomadores: o intermediário financeiro conecta agentes superavitários e deficitários, que aplicam os recursos em capex, estoques e caixa.</figcaption>
+    </figure>
+</section>
+
+<section class="topico">
+    <h2>4. Rentabilidade e liquidez</h2>
+    <p><strong>Rentabilidade:</strong> relação entre o resultado obtido e os recursos aplicados (Assaf Neto, 2019), isto é, o retorno esperado ou obtido. É diretamente associada ao risco (volatilidade).</p>
+    <p><strong>Liquidez:</strong> facilidade de converter um ativo em moeda, com rapidez e baixo custo de transação (Gitman; Zutter, 2012).</p>
+    <div class="destaque">Dilema risco-retorno-liquidez: quanto maior o risco, maior a expectativa de retorno (prêmio pelo risco). Porém, ativos de maior risco tendem a ter menor liquidez.</div>
+    <p>Por isso a decisão deve considerar retorno esperado, liquidez e risco, de acordo com os objetivos e as estratégias do investidor. No gráfico das aulas, poupança e Tesouro Selic têm alta liquidez e baixa rentabilidade; imóveis e obras de arte, o inverso.</p>
+    <div class="figuras-duplas">
+        <figure class="figura">
+            <img src="risco-retorno.png" alt="Gráfico Relação Risco-Retorno: reta crescente de retorno esperado em função do risco, com o perfil conservador (baixo risco e baixo retorno) na parte inferior e o perfil agressivo (alto risco e alto retorno) na parte superior" width="989" height="617" loading="lazy">
+            <figcaption>Figura 2 – Relação risco-retorno: perfil conservador (baixo risco, baixo retorno) e perfil agressivo (alto risco, alto retorno).</figcaption>
+        </figure>
+        <figure class="figura">
+            <img src="risco-rentabilidade-ativos.png" alt="Curva de Risco x Rentabilidade: da poupança e títulos públicos, passando por CDB, CRA, CRI, LCA, LCI e debêntures, até imóveis e FIIs e ações, com rentabilidade crescente conforme o risco" width="828" height="624" loading="lazy">
+            <figcaption>Figura 3 – Curva de risco × rentabilidade: ativos com maior risco tendem a oferecer maior rentabilidade.</figcaption>
+        </figure>
+    </div>
+</section>
+
+<section class="topico">
+    <h2>5. Moeda e quase-moeda</h2>
+    <p><strong>Moeda:</strong> ativo universalmente aceito como meio de troca. Funções: <em>meio de troca</em>, <em>unidade de conta</em> e <em>reserva de valor</em>.</p>
+    <p><strong>Quase-moeda:</strong> ativos de elevada liquidez, rapidamente convertidos em moeda, mas não aceitos diretamente como meio de pagamento. Geram remuneração. Ex.: poupança, CDBs, fundos de curto prazo, títulos públicos.</p>
+    <div class="tabela-wrap"><table>
+        <tr><th>Aspecto</th><th>Moeda</th><th>Quase-moeda</th></tr>
+        <tr><td>Natureza</td><td>Meio de pagamento universal</td><td>Ativo financeiro conversível em moeda</td></tr>
+        <tr><td>Liquidez</td><td>Máxima</td><td>Alta, mas exige conversão</td></tr>
+        <tr><td>Emissor</td><td>Banco Central</td><td>Instituições financeiras</td></tr>
+        <tr><td>Funções</td><td>Troca, unidade de conta, reserva de valor</td><td>Principalmente reserva de valor</td></tr>
+    </table></div>
+</section>
+
+<section class="topico">
+    <h2>6. Taxa de juros</h2>
+    <p>É o preço de troca de ativos disponíveis em momentos diferentes do tempo. Pela preferência pela liquidez, rendimentos de prazos mais longos devem ser superiores, pois incorporam remuneração pelo risco (maior prazo, maior risco). A taxa de juros é a expressão monetária do risco e da rentabilidade de um ativo.</p>
+    <ul>
+        <li><strong>SELIC:</strong> Serviço Especial de Liquidação e Custódia (títulos públicos); sua taxa é a taxa básica de juros da economia (Banco Central).</li>
+        <li><strong>CETIP:</strong> central de custódia e liquidação de títulos privados (B3).</li>
+    </ul>
+</section>
+
+<section class="topico">
+    <h2>7. Sistema Financeiro Nacional (SFN)</h2>
+    <p>O SFN se organiza em três subsistemas: <strong>normativo</strong>, de <strong>fiscalização (supervisão)</strong> e de <strong>intermediação (operação)</strong>.</p>
+    <div class="tabela-wrap"><table>
+        <tr><th>Segmento</th><th>Normativo</th><th>Supervisor</th><th>Operadores</th></tr>
+        <tr><td>Moeda, crédito e câmbio</td><td>CMN</td><td>Banco Central (BC)</td><td>Bancos, cooperativas de crédito, corretoras e distribuidoras, administradoras de consórcios, instituições de pagamento</td></tr>
+        <tr><td>Capitais</td><td>CMN</td><td>CVM</td><td>Bolsa de valores, bolsa de mercadorias e futuros</td></tr>
+        <tr><td>Seguros privados</td><td>CNSP</td><td>Susep</td><td>Seguradoras, resseguradoras, previdência aberta, capitalização</td></tr>
+        <tr><td>Previdência fechada</td><td>CNPC</td><td>Previc</td><td>Fundos de pensão</td></tr>
+    </table></div>
+    <p>Fonte: <a href="https://www.bcb.gov.br/estabilidadefinanceira/sfn" target="_blank" rel="noopener">Banco Central do Brasil</a>.</p>
+</section>
+
+<div class="acoes">
+    <a class="btn" id="btn-avancar" href="unidadeII.html">Avançar ➜</a>
+    <button class="btn" id="btn-questoes">Questões ✏️</button>
+</div>
+
+<section class="topico" id="questoes">
+    <h2>Questões – Unidade I</h2>
+    <div id="lista-questoes"></div>
+    <p class="placar" id="placar"></p>
+</section>
+
+<section class="topico" style="text-align:center;">
+    <h2>Sua opinião é importante</h2>
+    <p style="text-align:center;">Ajude a melhorar este material respondendo a um formulário rápido sobre esta unidade.</p>
+    <a class="btn" id="btn-formulario" href="https://forms.gle/SEU-FORMULARIO" target="_blank" rel="noopener">Responder formulário 📝</a>
+</section>
 <script>
-const hamburger = document.getElementById("hamburger");
-const nav = document.getElementById("nav");
-
-hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    nav.classList.toggle("active");
-});
+const QUESTOES = [
+ {enunciado:"Qual agente econômico tem excedente de recursos e busca rentabilidade?",
+  opcoes:["Deficitário","Superavitário","Intermediário","Regulador"],correta:1,
+  explicacao:"Os superavitários dispõem de recursos acima de suas necessidades imediatas e os aplicam em busca de retorno."},
+ {enunciado:"Qual das alternativas NÃO é uma função da moeda?",
+  opcoes:["Meio de troca","Unidade de conta","Reserva de valor","Emissão de títulos privados"],correta:3,
+  explicacao:"As três funções da moeda são meio de troca, unidade de conta e reserva de valor."},
+ {enunciado:"O dilema risco-retorno-liquidez indica que ativos de maior risco tendem a:",
+  opcoes:["Ter menor retorno e maior liquidez","Ter maior retorno esperado e menor liquidez","Ter retorno e liquidez iguais aos de menor risco","Não ter relação com o retorno"],correta:1,
+  explicacao:"Maior risco exige prêmio (maior retorno esperado), mas costuma vir com menor liquidez."},
+ {enunciado:"Qual órgão é o supervisor do mercado de capitais (bolsa de valores) no SFN?",
+  opcoes:["Banco Central","Susep","CVM","Previc"],correta:2,
+  explicacao:"A Comissão de Valores Mobiliários (CVM) supervisiona o mercado de capitais; o órgão normativo é o CMN."},
+ {enunciado:"A quase-moeda se diferencia da moeda porque:",
+  opcoes:["Não possui liquidez","É emitida pelo Banco Central","Tem alta liquidez, mas exige conversão em moeda","Não gera remuneração"],correta:2,
+  explicacao:"Quase-moeda (poupança, CDB etc.) é convertida rapidamente em moeda, gera rendimento e não é aceita diretamente como meio de pagamento."}
+];
 </script>
-
-<script>
-const toggleBtn = document.getElementById("theme-toggle");
-
-if(localStorage.getItem("theme") === "dark"){
-    document.body.classList.add("dark-mode");
-    toggleBtn.textContent = "☀️";
-}
-
-toggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-
-    if(document.body.classList.contains("dark-mode")){
-        localStorage.setItem("theme", "dark");
-        toggleBtn.textContent = "☀️";
-    } else {
-        localStorage.setItem("theme", "light");
-        toggleBtn.textContent = "🌙";
-    }
-});
-</script>
-
-    <main>
-        <section id="inicio" class="intro">
-            <h2>Portal de Estudos de Administração Financeira Avançada</h2>
-            <p style="text-indent: 20px; line-height: 1.6;">Bem-vindo ao portal interativo de acompanhamento da disciplina de <strong>Administração Financeira Avançada</strong>. Aqui você encontra de forma organizada os materiais de estudo, exercícios e recursos adicionais para facilitar o seu aprendizado durante a disciplina. Essa plataforma foi idealizada pelo aluno monitor da disciplina <strong>Ariel de Oliveira</strong> durante o semestre 2026.1 e com ajuda do professor orientador <strong>Dr. Sérgio Lima</strong>.</p>
-        </section>
-
-        <section class="objectives">
-            <h2>Objetivos do Curso</h2>
-            <ul style="line-height: 1.8;">
-                <li>Compreender o ambiente financeiro em que as empresas atuam (conceitos de mercado, moeda, juros).</li>
-                <li>Analisar o dilema Risco x Retorno x Liquidez dos produtos financeiros.</li>
-                <li>Mensurar o Orçamento de Capital (<em>Capital Budgeting</em>) e as decisões de longo prazo.</li>
-                <li>Dimensionar e mensurar os Fluxos de Caixa Incrementais para tomada de decisão.</li>
-                <li>Compreender os métodos de avaliação econômica de investimentos.</li>
-                <li>Compreender a estrutura de capital e o custo do capital. Além de entender como isso impacta as decisões de investimento.</li>
-            </ul>
-        </section>
-
-        <section class="navigation">
-            <h2>Como Navegar pelo Curso</h2>
-            <p style="text-indent: 20px; line-height: 1.6;">Use o menu de navegação abaixo para acessar as diferentes unidades e conteúdos do curso. Cada unidade contém materiais de leitura e exercícios práticos para ajudar no seu aprendizado.</p>
-        </section>
-
-        <a id="none" href="unidadeI.html">
-            <section id="unidades" class="card">
-                <h3 style="color: #2b6fb8;">Unidade I</h3>
-                <p><strong>Introdução ao Mercado Financeiro</strong></p>
-                <p style="text-indent: 20px; line-height: 1.6;">Estudo detalhado sobre os agentes econômicos (superavitários, deficitários e intermediários), a dinâmica entre Renda, Consumo e Poupança, as funções da moeda e da quase-moeda, a taxa de juros, dilema Risco x Retorno x Liquidez dos produtos financeiros, além da estrutura normativa e operacional do Sistema Financeiro Nacional (SFN).</p>
-            </section>
-        </a>
-
-        <a id="none" href="unidadeII.html">
-            <section class="card">
-                <h3 style="color: #2b6fb8;">Unidade II</h3>
-                <p><strong>Fundamentos da Administração dos Ativos Permanentes</strong></p>
-                <p style="text-indent: 20px; line-height: 1.6;">Nesta unidade, exploraremos os princípios fundamentais da gestão de ativos permanentes e sua importância para a tomada de decisões estratégicas. Conceitos como <em>Capex</em>, etapas de dimensionamento dos fluxos de caixa de cada projeto, origens das propostas e tipos de investimentos.</p>
-            </section>
-        </a>
-
-        <a id="none" href="unidadeIII.html">
-            <section class="card">
-                <h3 style="color: #2b6fb8;">Unidade III</h3>
-                <p><strong>Avaliação Econômica de Investimentos</strong></p>
-                <p style="text-indent: 20px; line-height: 1.6;">Compreender a importância da avaliação econômica para a escolha de determinados projetos de investimento, quais são os métodos, em que momento devem ser aplicados e como são calculados. Ademais, entender os conceitos de <strong>Custo Médio Ponderado de Capital (WACC)</strong> e a sua relação com a <strong>Taxa Mínima de Atratividade (TMA)</strong>.</p>
-            </section>
-        </a>
-
-        <a id="none" href="unidadeIV.html">
-            <section class="card">
-                <h3 style="color: #2b6fb8;">Unidade IV</h3>
-                <p><strong>Alavancagem e Criação de Valor</strong></p>
-                <ul>
-                    <li>Análise Custo - Volume - Lucro</li>
-                    <li>Alavancagem Operacional</li>
-                    <li>Alavancagem Financeira</li>
-                    <li>Medidas de Criação de Valor</li>
-                </ul>
-            </section>
-        </a>
-
-        <a id="none" href="unidadeV.html">
-            <section class="card">
-                <h3 style="color: #2b6fb8;">Unidade V</h3>
-                <p>Estrutura de Capital</p>
-                <ul>
-                    <li>Reflexões sobre a Estrutura Ótima de Capital</li>
-                    <li>Teoria Convencional</li>
-                    <li>Teoria de Modigliani e Miller</li>
-                    <li>Proposições em um Mundo com Impostos</li>
-                </ul>
-            </section>
-        </a>
-
-        <footer>
-            <p style="text-align: center;">&copy; 2026 Administração Financeira Avançada — Centro de Estudos Sociais Aplicados (CESA / UECE)</p>
-            <p style="opacity: 0.8; font-size: 12px;">Conteúdo organizado pelo aluno monitor Ariel de Oliveira a partir do material de aula do Prof. Sérgio Lima | Plataforma Acadêmica</p>
-        </footer>
-    </main>
-
+<footer>
+    <p style="text-align: center;">&copy; 2026 Administração Financeira Avançada — Centro de Estudos Sociais Aplicados (CESA / UECE)</p>
+    <p style="opacity: 0.8; font-size: 12px;">Conteúdo organizado pelo aluno monitor Ariel de Oliveira a partir do material de aula do Prof. Sérgio Lima | Plataforma Acadêmica</p>
+</footer>
+</main>
+<script src="script.js"></script>
 </body>
 </html>
