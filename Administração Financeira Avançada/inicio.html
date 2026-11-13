@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unidade II – Ativos Permanentes</title>
+    <title>Unidade III – Avaliação Econômica de Investimentos</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Google Analytics (GA4): troque G-XXXXXXXXXX pelo seu ID de métrica -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -15,7 +15,7 @@
         gtag('config', 'G-XXXXXXXXXX');
     </script>
 </head>
-<body data-unidade="II">
+<body data-unidade="III">
 <header class="header">
     <div class="logo">
         <h1>Administração Financeira Avançada</h1>
@@ -35,148 +35,298 @@
 </header>
 <main>
 <section class="topico">
-    <h2>Unidade II – Fundamentos da Administração dos Ativos Permanentes</h2>
-    <p>Aqui estudamos a decisão de investimento, o orçamento de capital (<em>capital budgeting</em>) e como dimensionar os fluxos de caixa de um projeto.</p>
+    <h2>Unidade III – Avaliação Econômica de Investimentos</h2>
+    <p>Depois de dimensionar os fluxos de caixa (Unidade II), é preciso avaliar se o projeto vale a pena. Esta unidade apresenta os métodos de avaliação econômica usados no orçamento de capital (<em>capital budgeting</em>).</p>
 </section>
 
 <section class="topico">
-    <h2>1. A decisão de investimento e o orçamento de capital</h2>
-    <p>Decisões de investimento envolvem elaborar, avaliar e selecionar propostas de aplicação de capital, normalmente de longo prazo, para produzir retorno aos proprietários. Exemplos: substituição de ativos, ampliação da capacidade e lançamento de novos produtos. O conceito de capital é amplo (máquinas, tecnologia, educação, bens públicos) e as despesas de capital são chamadas de <strong>Capex</strong>.</p>
-    <div class="destaque"> Retorno do investimento &gt; Custo do capital (custo do dinheiro).</div>
-    <h3>Etapas do processo</h3>
-    <ol>
-        <li>Dimensionar os fluxos de caixa de cada proposta;</li>
-        <li>Avaliar os fluxos com técnicas de análise de investimentos (Payback, TIR, VPL, índice de lucratividade);</li>
-        <li>Definir a taxa de retorno exigida por credores e acionistas;</li>
-        <li>Introduzir o risco na avaliação.</li>
-    </ol>
-    <p>Quase toda decisão de investimento exige também aplicações complementares em capital de giro.</p>
-    <h3>Origens das propostas</h3>
+    <h2>1. Por que avaliar economicamente?</h2>
+    <p>Segundo Assaf Neto (2014), uma empresa pode ser vista como um conjunto de projetos de investimento em diferentes estágios de execução. Ao avaliar alternativas, o objetivo é <strong>maximizar a contribuição marginal do capital</strong>, aumentando a riqueza líquida da empresa. Os métodos de avaliação medem a dimensão e a viabilidade desses resultados, isto é, a capacidade de gerar riqueza.</p>
+    <p>Os métodos quantitativos dividem-se em dois grupos:</p>
     <ul>
-        <li><strong>Ampliação:</strong> a capacidade máxima não atende à demanda (máquinas, equipamentos, instalações, aquisição de empresa).</li>
-        <li><strong>Reposição e modernização:</strong> ativos obsoletos ou desgastados. Ignorar isso gera paradas, mais rejeição de produtos, custos maiores e menor lucro. Compara-se benefícios do modelo novo, receita de venda do ativo usado e custo de aquisição e instalação do novo.</li>
-        <li><strong>Aquisição ou arrendamento:</strong> propriedade versus acesso ao serviço. Devo comprar o ativo ou arrendá-lo?</li>
-        <li><strong>Outras:</strong> certificações, P&amp;D e patentes, publicidade, novos produtos.</li>
+        <li>os que <strong>não consideram</strong> o valor do dinheiro no tempo;</li>
+        <li>os que <strong>consideram</strong> esse valor, com base no fluxo de caixa descontado. Pelo maior rigor, recebem atenção preferencial.</li>
     </ul>
-    <p><strong>Taxa de juros e investimento:</strong> juros baixos aumentam a atratividade de novos investimentos; juros altos os inibem.</p>
-</section>
-
-<section class="topico">
-    <h2>2. Tipos de investimentos</h2>
-    <p>Classificação de Bierman e Smidt, que mostra como um projeto afeta (ou é afetado por) outros:</p>
+    <p>Um ativo é avaliado pelos benefícios de caixa futuros trazidos a valor presente, por uma taxa de desconto que reflete o risco da decisão. A exceção é o <em>payback</em>, mantido pelo seu forte conteúdo informacional.</p>
     <div class="tabela-wrap"><table>
-        <tr><th>Tipo</th><th>Característica</th><th>Exemplo</th></tr>
-        <tr><td>Economicamente independentes</td><td>Aceitar um não impede nem altera os outros; se rentáveis, aceitam-se todos.</td><td>Duas máquinas para demandas distintas</td></tr>
-        <tr><td>Com restrição orçamentária</td><td>Independentes, mas o orçamento ou o custo de captação impede aceitar todos.</td><td>Capital limitado</td></tr>
-        <tr><td>Economicamente dependentes</td><td>Um projeto altera os fluxos de outros: concorrentes (negativo), complementares (positivo) ou estritamente dependentes.</td><td>Farmácias próximas; expansão de fábrica e de lojas; painéis solares e estrutura de suporte</td></tr>
-        <tr><td>Mutuamente excludentes</td><td>Cumprem a mesma função; aceitar um elimina o outro.</td><td>Mesmo equipamento de dois fabricantes; comprar ou arrendar</td></tr>
-        <tr><td>Com dependência estatística</td><td>Resultados variam em conjunto, ligados ao mesmo evento externo.</td><td>Iates e carros de luxo</td></tr>
+        <tr><th>Método</th><th>Sigla em inglês</th><th>Considera o valor do dinheiro no tempo?</th></tr>
+        <tr><td>Período de Payback</td><td>Payback Period</td><td>Depende da modalidade (simples e médio: não; efetivo: sim)</td></tr>
+        <tr><td>Valor Presente Líquido (VPL)</td><td>NPV</td><td>Sim</td></tr>
+        <tr><td>Taxa Interna de Retorno (TIR)</td><td>IRR</td><td>Sim</td></tr>
+        <tr><td>Índice de Lucratividade (IL)</td><td>PVI</td><td>Sim</td></tr>
     </table></div>
 </section>
 
 <section class="topico">
-    <h2>3. Dimensionamento dos fluxos de caixa</h2>
-    <p>O fluxo de caixa não coincide com o lucro contábil (regime de competência), que incorpora despesas não desembolsáveis (DNDs): depreciação, amortização, provisões. <strong>Todo projeto é avaliado em termos de fluxo de caixa, e não de lucro.</strong> Um investimento de $ 500.000 em um ativo, por exemplo, não aparece na DRE, mas é saída de caixa.</p>
-    <h3>Fluxos incrementais</h3>
-    <div class="destaque">Somente são relevantes os valores que se alteram se a proposta for implementada.</div>
-    <p>Receitas incrementais de uma campanha de publicidade são relevantes; as vendas correntes, não. Também é preciso medir <strong>efeitos colaterais</strong>: <em>erosion effects</em> (o novo produto canibaliza vendas de produtos existentes) e <em>synergy effects</em> (ganhos para outros produtos). Esses valores devem ser descontados ou somados aos fluxos do projeto.</p>
-    <h3>Movimentações atribuíveis ao investimento</h3>
-    <ol>
-        <li><strong>Desembolso inicial:</strong> preço de compra + gastos para entrar em operação (frete, seguro, instalação) + despesas intangíveis (pesquisa, treinamento) + capital de giro adicional.</li>
-        <li><strong>Receitas operacionais</strong> incrementais.</li>
-        <li><strong>Custos e despesas operacionais</strong> alterados pelo projeto.</li>
-        <li><strong>Vendas de ativos:</strong> entrada de caixa, com efeito no Imposto de Renda.</li>
-        <li><strong>DNDs e Imposto de Renda:</strong> a depreciação não é saída de caixa, mas reduz o IR a pagar. Por isso afeta o fluxo indiretamente.</li>
-    </ol>
-    <p>O capital de giro adicional retorna ao caixa normalmente nos anos finais; os ativos permanentes retornam via depreciação.</p>
-</section>
-
-<section class="topico">
-    <h2>4. Fluxo de caixa operacional (abordagem do lucro operacional)</h2>
-    <p>Os fluxos devem conter, em termos incrementais, <strong>exclusivamente valores operacionais</strong>, líquidos de IR e admitindo projeto 100% financiado com capital próprio. Amortizações e juros de empréstimos (decisão de financiamento) são ignorados: <em>decisões de investimento e de financiamento são avaliadas separadamente</em>.</p>
-    <div class="formula">ΔFCO = ΔLOP<sub>B</sub> − ΔIR × ΔLOP<sub>B</sub> + ΔDND</div>
-    <p>LOP<sub>B</sub> = lucro operacional bruto (antes do IR); IR = alíquota; DND = despesas não desembolsáveis (depreciação).</p>
-    <h3>Exemplo: fluxos incrementais (IR 40%)</h3>
+    <h2>2. Exemplo usado na unidade</h2>
+    <p>Uma indústria de polpas de frutas investiu <strong>$ 200.000</strong> em uma nova máquina de embalar. Esse valor já inclui a instalação e o capital de giro adicional. Os benefícios líquidos de caixa previstos são <strong>$ 70.000, $ 120.000, $ 80.000 e $ 100.000</strong> nos anos 1 a 4 (vida útil de 4 anos). A taxa mínima de atratividade (TMA) é de <strong>10% a.a.</strong></p>
     <div class="tabela-wrap"><table>
-        <tr><th>$</th><th>1º ao 3º ano</th><th>4º ao 7º ano</th><th>8º ao 10º ano</th></tr>
-        <tr><td>Δ Receitas operacionais</td><td>300</td><td>800</td><td>500</td></tr>
-        <tr><td>Δ Custos e despesas operacionais</td><td>(100)</td><td>(250)</td><td>(200)</td></tr>
-        <tr><td>Δ Depreciação</td><td>(20)</td><td>(50)</td><td>(40)</td></tr>
-        <tr><td>Δ LOP<sub>B</sub></td><td>180</td><td>500</td><td>260</td></tr>
-        <tr><td>IR (40%)</td><td>(72)</td><td>(200)</td><td>(104)</td></tr>
-        <tr><td>Δ LOP<sub>L</sub></td><td>108</td><td>300</td><td>156</td></tr>
-        <tr><td>+ Depreciação</td><td>20</td><td>50</td><td>40</td></tr>
-        <tr class="total"><td>Δ FCO</td><td>128</td><td>350</td><td>196</td></tr>
+        <tr><th>$ mil</th><th>Ano 0</th><th>Ano 1</th><th>Ano 2</th><th>Ano 3</th><th>Ano 4</th></tr>
+        <tr><td>Fluxo de caixa</td><td>(200)</td><td>70</td><td>120</td><td>80</td><td>100</td></tr>
     </table></div>
 </section>
 
 <section class="topico">
-    <h2>5. Benefício fiscal do endividamento e abordagem do lucro líquido</h2>
-    <p>Juros reduzem o lucro tributável (LAIR). Juros não são lucro de quem toma a dívida; são renda do credor. Daí o <strong>benefício fiscal do endividamento</strong>: a firma endividada paga menos imposto, mesmo com lucro contábil menor.</p>
+    <h2>3. Período de Payback</h2>
+    <p>É o tempo necessário para recuperar o investimento inicial com os benefícios líquidos de caixa do projeto. <strong>Quanto menor o payback, melhor</strong>, porque a empresa libera recursos mais cedo para outros projetos.</p>
+    <ul>
+        <li><strong>Payback simples:</strong> não atualiza o valor do dinheiro no tempo.</li>
+        <li><strong>Payback médio:</strong> também não atualiza o valor do dinheiro no tempo.</li>
+        <li><strong>Payback efetivo (descontado):</strong> corrige o valor do dinheiro no tempo. É o mais recomendado.</li>
+    </ul>
+    <h3>Cálculo no exemplo</h3>
     <div class="tabela-wrap"><table>
-        <tr><th>DRE (R$)</th><th>100% Equity</th><th>100% Debt</th></tr>
-        <tr><td>EBIT (500.000 − 300.000)</td><td>200.000</td><td>200.000</td></tr>
-        <tr><td>(−) Juros</td><td>0</td><td>50.000</td></tr>
-        <tr><td>LAIR</td><td>200.000</td><td>150.000</td></tr>
-        <tr><td>IR/CSLL (40%)</td><td>80.000</td><td>60.000</td></tr>
-        <tr class="total"><td>Lucro líquido</td><td>120.000</td><td>90.000</td></tr>
+        <tr><th>Ano</th><th>Fluxo</th><th>Acumulado (simples)</th><th>Fluxo descontado a 10%</th><th>Acumulado (efetivo)</th></tr>
+        <tr><td>1</td><td>70</td><td>70</td><td>63,64</td><td>63,64</td></tr>
+        <tr><td>2</td><td>120</td><td>190</td><td>99,17</td><td>162,81</td></tr>
+        <tr><td>3</td><td>80</td><td>270</td><td>60,11</td><td>222,92</td></tr>
+        <tr><td>4</td><td>100</td><td>370</td><td>68,30</td><td>291,22</td></tr>
     </table></div>
-    <p>Com dívida, a economia de imposto é de R$ 20.000 (40% × 50.000). Partindo do lucro líquido:</p>
-    <div class="formula">ΔFCO = ΔLL + ΔDND + (1 − IR) × ΔDF</div>
-    <p>ΔLL = lucro líquido incremental; ΔDF = despesas financeiras incrementais consideradas no ΔLL.</p>
+    <ul>
+        <li><strong>Simples:</strong> após 2 anos faltam 10 (200 − 190). Dividindo pelo fluxo do ano 3: 10 ÷ 80 = 0,125. Payback ≈ <strong>2,125 anos</strong> (cerca de 2 anos e 1,5 mês).</li>
+        <li><strong>Médio:</strong> investimento ÷ fluxo médio anual = 200 ÷ 92,5 ≈ <strong>2,16 anos</strong>.</li>
+        <li><strong>Efetivo:</strong> após 2 anos faltam 37,19 (200 − 162,81). Dividindo pelo fluxo descontado do ano 3: 37,19 ÷ 60,11 ≈ 0,62. Payback ≈ <strong>2,62 anos</strong> (cerca de 2 anos e 7 meses).</li>
+    </ul>
+    <div class="destaque">O payback efetivo é maior que o simples porque os fluxos futuros valem menos em valores de hoje.</div>
+    <p><strong>Limitação:</strong> o payback não mostra quanto o projeto gera depois de recuperar o investimento. Por isso é usado junto com VPL e TIR.</p>
+
+    <div class="grid-info">
+        <div><h4>O que mede?</h4><p>O <strong>tempo</strong> (em anos ou meses) para o caixa gerado pagar o investimento. É uma medida de <strong>liquidez e de risco</strong>: quanto mais cedo o dinheiro volta, menos tempo o capital fica exposto a imprevistos.</p></div>
+        <div><h4>Como decidir?</h4><p>Fica a critério da empresa a escolha de prazos que seriam aceitáveis; ex.: <strong>prazo-limite</strong> (por exemplo, 3 anos). Se o payback for menor ou igual ao limite, o projeto passa no teste. No exemplo, 2,13 anos (simples) e 2,62 anos (efetivo) ficam abaixo de 3 anos.</p></div>
+        <div><h4>Vantagens</h4><ul><li>Fácil de calcular e de explicar</li><li>Útil quando o caixa é escasso ou o futuro é muito incerto</li></ul></div>
+        <div><h4>Cuidados</h4><ul><li>Ignora o que acontece <strong>depois</strong> da recuperação</li><li>O simples e o médio ignoram o valor do dinheiro no tempo</li><li>Não mede riqueza criada: não deve ser o único critério</li></ul></div>
+    </div>
+    <p><strong>Passo a passo:</strong> (1) acumule os fluxos ano a ano; (2) ache o último ano em que o acumulado ainda é menor que o investimento; (3) divida o que falta pelo fluxo do ano seguinte e some à parte inteira.</p>
 </section>
 
 <section class="topico">
-    <h2>6. Exemplo completo de projeção de fluxo de caixa</h2>
-    <p><strong>Premissas:</strong> investimento inicial de $ 500.000 (80% em ativos fixos e 20% em capital de giro), duração de 5 anos sem valor residual, IR de 40%, sem inflação. Depreciação: 20% a.a. × 500.000 × 80% = $ 80.000/ano.</p>
-    <h3>1ª situação: 100% capital próprio ($ mil)</h3>
+    <h2>4. Valor Presente Líquido (VPL)</h2>
+    <p>É a diferença entre o valor presente dos benefícios de caixa e o valor presente dos desembolsos, incluindo o investimento inicial.</p>
+    <div class="formula">VPL = Σ [FC<sub>t</sub> / (1+i)<sup>t</sup>] - I<sub>0</sub></div>
+    <p><em>Que é o mesmo que...</em></p>
+    <div class="formula">VPL = − I<sub>0</sub> + FC<sub>1</sub>/(1+i)¹ + FC<sub>2</sub>/(1+i)² + ... + FC<sub>n</sub>/(1+i)<sup>n</sup></div>
     <div class="tabela-wrap"><table>
-        <tr><th></th><th>Ano 0</th><th>Ano 1</th><th>Ano 2</th><th>Ano 3</th><th>Ano 4</th><th>Ano 5</th></tr>
-        <tr><td>Receitas de vendas</td><td></td><td>1.300</td><td>1.500</td><td>1.800</td><td>2.400</td><td>3.200</td></tr>
-        <tr><td>(−) CPV</td><td></td><td>(700)</td><td>(850)</td><td>(980)</td><td>(1.150)</td><td>(1.500)</td></tr>
-        <tr><td>(−) Despesas operacionais</td><td></td><td>(280)</td><td>(350)</td><td>(420)</td><td>(490)</td><td>(620)</td></tr>
-        <tr><td>(−) Depreciação</td><td></td><td>(80)</td><td>(80)</td><td>(80)</td><td>(80)</td><td>(80)</td></tr>
-        <tr><td>LOP<sub>B</sub></td><td></td><td>240</td><td>220</td><td>320</td><td>680</td><td>1.000</td></tr>
-        <tr><td>(−) IR 40%</td><td></td><td>(96)</td><td>(88)</td><td>(128)</td><td>(272)</td><td>(400)</td></tr>
-        <tr><td>LOP<sub>L</sub></td><td></td><td>144</td><td>132</td><td>192</td><td>408</td><td>600</td></tr>
-        <tr><td>(+) Depreciação</td><td></td><td>80</td><td>80</td><td>80</td><td>80</td><td>80</td></tr>
-        <tr><td>(+) Recuperação do giro</td><td></td><td></td><td></td><td></td><td></td><td>100</td></tr>
-        <tr><td>(−) Investimento</td><td>(500)</td><td></td><td></td><td></td><td></td><td></td></tr>
-        <tr class="total"><td>Fluxo de caixa operacional</td><td>(500)</td><td>224</td><td>212</td><td>272</td><td>488</td><td>780</td></tr>
+        <tr><th>Resultado</th><th>Interpretação</th><th>Decisão</th></tr>
+        <tr><td>VPL &gt; 0</td><td>O projeto adiciona riqueza</td><td>Aceitar</td></tr>
+        <tr><td>VPL &lt; 0</td><td>O projeto destrói valor</td><td>Rejeitar</td></tr>
+        <tr><td>VPL = 0</td><td>Nem adiciona nem destrói valor</td><td>Avaliar outros critérios</td></tr>
     </table></div>
-    <h3>2ª situação: 60% empréstimo (juros 40% a.a., amortização constante em 5 anos) e 40% capital próprio</h3>
-    <p>Empréstimo de $ 300 mil; amortização de 60 por ano. Juros: 120, 96, 72, 48, 24 (total 360).</p>
-    <div class="tabela-wrap"><table>
-        <tr><th>$ mil</th><th>Ano 1</th><th>Ano 2</th><th>Ano 3</th><th>Ano 4</th><th>Ano 5</th></tr>
-        <tr><td>LOP<sub>L</sub></td><td>144</td><td>132</td><td>192</td><td>408</td><td>600</td></tr>
-        <tr><td>(−) Despesas financeiras</td><td>(120)</td><td>(96)</td><td>(72)</td><td>(48)</td><td>(24)</td></tr>
-        <tr><td>(+) Economia de IR (40%)</td><td>48</td><td>38,4</td><td>28,8</td><td>19,2</td><td>9,6</td></tr>
-        <tr><td>Lucro líquido</td><td>72</td><td>74,4</td><td>148,8</td><td>379,2</td><td>585,6</td></tr>
-        <tr class="total"><td>FCO = LL + DND + (1−IR)×DF</td><td>224</td><td>212</td><td>272</td><td>488</td><td>780</td></tr>
-    </table></div>
-    <p>Confira no Ano 1: 72 + 80 + (0,6 × 120) = 224.</p>
-    <div class="destaque">Conclusão: o fluxo de caixa operacional é o mesmo nas duas situações. A forma de financiamento não altera o valor do projeto; o fluxo deve ser comparado com o investimento total de $ 500.000.</div>
+    <h3>Cálculo no exemplo (i = 10%)</h3>
+    <div class="formula">VPL = −200 + 70/1,1 + 120/1,1² + 80/1,1³ + 100/1,1⁴<br>VPL = −200 + 63,64 + 99,17 + 60,11 + 68,30 = <strong>$ 91,22 mil</strong></div>
+    <p>Como o VPL é positivo, o projeto <strong>deve ser aceito</strong>. Ele cria cerca de $ 91.216 de riqueza além do retorno mínimo exigido de 10%.</p>
+
+    <h3>Entendendo o que o VPL calcula</h3>
+    <p>O VPL responde: <em>"depois de pagar o investimento e remunerar o capital à taxa exigida, sobra quanto de riqueza, em dinheiro no tempo presente?"</em> Cada fluxo futuro é <strong>descontado</strong> (dividido por (1+i)ⁿ) porque $ 1 recebido daqui a 3 anos vale menos que $ 1 hoje. Depois, soma-se tudo e subtrai-se o investimento.</p>
+    <div class="grid-info">
+        <div><h4>O que o resultado significa?</h4><p>VPL de $ 91.216 não é "lucro contábil". É a riqueza <strong>adicional, em valores no tempo presente</strong>, além de render os 10% exigidos sobre o capital. Se o VPL fosse zero, o projeto apenas pagaria o custo do capital.</p></div>
+        <div><h4>Papel da taxa i</h4><p>A taxa de desconto é o <strong>retorno exigido</strong> (veja o tópico sobre TMA e WACC). Quanto maior a taxa, menor o VPL: a 10% o VPL é 91,22; a 30% já é negativo (≈ −3,7).</p></div>
+        <div><h4>Vantagens</h4><ul><li>Considera todos os fluxos e o valor do dinheiro no tempo</li><li>Mede a riqueza criada em $</li><li>É aditivo: o VPL de vários projetos pode ser somado</li></ul></div>
+        <div><h4>Cuidados</h4><ul><li>Depende da taxa escolhida</li><li>Resultado não avalia a questão temporal de retorno do investimento como o Payback</li></ul></div>
+    </div>
+    <p><strong>Passo a passo:</strong> (1) escolha a taxa i; (2) desconte cada fluxo para o ano 0; (3) some os valores presentes; (4) subtraia o investimento inicial.</p>
 </section>
 
 <section class="topico">
-    <h2>7. Exercício resolvido: investimento inicial líquido</h2>
-    <p>Nova máquina de $ 260.000 (vida útil de 3 anos, sem custo para funcionar). Capital de giro adicional de $ 15.000. A máquina antiga será vendida por $ 35.000, com valor contábil de $ 30.000. IR de 34%.</p>
+    <h2>5. Taxa Interna de Retorno (TIR)</h2>
+    <p>É a taxa de desconto que torna o VPL igual a zero, isto é, que iguala as entradas e as saídas de caixa (geralmente no momento zero).</p>
+    <div class="formula">0 = Σ FC<sub>t</sub> / (1 + TIR)<sup>t</sup> &nbsp;&nbsp;(t = 0 até n)</div>
     <div class="tabela-wrap"><table>
-        <tr><td>Preço da nova máquina</td><td>260.000</td></tr>
-        <tr><td>(+) Capital de giro adicional</td><td>15.000</td></tr>
-        <tr><td>(−) Venda da máquina antiga</td><td>(35.000)</td></tr>
-        <tr><td>(+) IR sobre o ganho: (35.000 − 30.000) × 34%</td><td>1.700</td></tr>
-        <tr class="total"><td>Investimento inicial líquido</td><td>241.700</td></tr>
+        <tr><th>Comparação</th><th>VPL</th><th>Decisão</th></tr>
+        <tr><td>TMA &lt; TIR</td><td>VPL &gt; 0</td><td>Aceitar</td></tr>
+        <tr><td>TMA &gt; TIR</td><td>VPL &lt; 0</td><td>Rejeitar</td></tr>
+        <tr><td>TMA = TIR</td><td>VPL = 0</td><td>Avaliar</td></tr>
     </table></div>
+    <h3>Cálculo no exemplo</h3>
+    <p>Resolve-se: 200 = 70/(1+TIR) + 120/(1+TIR)² + 80/(1+TIR)³ + 100/(1+TIR)⁴. Não há solução algébrica simples; usa-se calculadora financeira, planilha (função <code>TIR</code>/<code>IRR</code>) ou tentativa e erro. Veja o VPL em algumas taxas:</p>
+    <div class="tabela-wrap"><table>
+        <tr><th>Taxa</th><th>10%</th><th>20%</th><th>30%</th><th>40%</th></tr>
+        <tr><td>VPL ($ mil)</td><td>91,22</td><td>≈ 36,2</td><td>≈ −3,7</td><td>≈ −33,6</td></tr>
+    </table></div>
+    <p>O VPL zera pouco abaixo de 30%: <strong>TIR ≈ 28,9% a.a.</strong> Como a TIR (28,9%) é maior que a TMA (10%), o projeto <strong>deve ser aceito</strong>, o que confirma o resultado do VPL.</p>
+    <p>No gráfico VPL × taxa, a curva cai à medida que a taxa sobe e cruza o eixo horizontal exatamente na TIR.</p>
+
+
+
+    <h3>Gráfico: a TIR de cada projeto contra a TMA</h3>
+    <p>A barra de cada projeto é a sua TIR. A linha tracejada é a TMA. Mova o controle e veja quais projetos passam a ser aceitos ou rejeitados.</p>
+    <div class="controles">
+        <div><label for="rg-tir-tma">TMA: <span id="v-tir-tma"></span></label><input type="range" id="rg-tir-tma" min="5" max="30" step="0.5" value="15"></div>
+    </div>
+    <div class="legenda">
+        <span style="--c:#16a34a">TIR &gt; TMA: VPL &gt; 0, aceitar</span>
+        <span style="--c:#9ca3af">TIR = TMA: VPL = 0, indiferente</span>
+        <span style="--c:#dc2626">TIR &lt; TMA: VPL &lt; 0, rejeitar</span>
+    </div>
+    <div class="grafico" id="grafico-tir" role="img" aria-label="Gráfico de barras com a TIR de 8 projetos e uma linha horizontal para a TMA"></div>
+    <p id="resumo-tir" style="text-align:left;"></p>
+    <p>Veja que quanto mais alta a TMA, mais exigente é a seleção: menos projetos passam. Quando a TMA coincide com a TIR de um projeto, ele apenas cobre o retorno exigido e o VPL é zero. A diferença entre a TIR e a TMA é a <strong>folga</strong> do projeto: passe o mouse sobre uma barra para vê-la.</p>
+
+
+    <h3>Entendendo o que a TIR calcula</h3>
+    <p>A TIR é o <strong>retorno anual do próprio projeto</strong>, como se fosse a taxa de juros de uma aplicação. Ela responde: <em>"se esses fluxos fossem um investimento financeiro, quanto ele renderia por ano?"</em> No exemplo, aplicar $ 200.000 neste projeto equivale a uma aplicação que rende cerca de 28,9% a.a.</p>
+    <div class="grid-info">
+        <div><h4>Como decidir?</h4><p>Compare a TIR com a taxa exigida (TMA). Se TIR &gt; TMA, o projeto rende mais do que o mínimo aceitável. A <strong>folga</strong> (28,9% contra 10%) indica a margem de segurança: o retorno exigido poderia subir bastante antes de o VPL ficar negativo.</p></div>
+        <div><h4>Relação com o VPL</h4><p>A TIR é o ponto em que a curva do VPL cruza o zero. Por isso, para um projeto "convencional" (um desembolso inicial seguido só de entradas), TIR &gt; TMA e VPL &gt; 0 levam à mesma decisão.</p></div>
+        <div><h4>Vantagens</h4><ul><li>Resultado em %, fácil de comparar com juros, Selic e custo de capital</li><li>Não exige definir a taxa para ser calculada</li></ul></div>
+        <div><h4>Cuidados</h4><ul><li>Entre projetos excludentes, pode contradizer o VPL (escala e prazos diferentes). Nesse caso, prevalece o VPL</li></ul></div>
+    </div>
+</section>
+
+<script>
+(function () {
+    var tir=[8.5,11,13.5,15,17.5,19,22,24.5];
+    var W=720,H=330,m={l:50,r:16,t:22,b:40},ymax=30;
+    var el=document.getElementById("grafico-tir"), rg=document.getElementById("rg-tir-tma");
+    function y(v){return m.t+(H-m.t-m.b)*(1-v/ymax);}
+    function f(v){return v.toFixed(1).replace(".",",");}
+    function desenhar(){
+        var t=parseFloat(rg.value), a=0,i0=0,r=0;
+        document.getElementById("v-tir-tma").textContent=f(t)+"%";
+        var bw=(W-m.l-m.r)/tir.length, s='<svg viewBox="0 0 '+W+' '+H+'" xmlns="http://www.w3.org/2000/svg">';
+        for(var g=0;g<=ymax;g+=5){s+='<line class="grade" x1="'+m.l+'" x2="'+(W-m.r)+'" y1="'+y(g)+'" y2="'+y(g)+'"/><text x="'+(m.l-6)+'" y="'+(y(g)+4)+'" text-anchor="end" font-size="11">'+g+'%</text>';}
+        tir.forEach(function(v,i){
+            var cor,st; if(Math.abs(v-t)<0.05){cor="#9ca3af";i0++;st="indiferente (VPL = 0)";} else if(v>t){cor="#16a34a";a++;st="aceitar (VPL > 0)";} else {cor="#dc2626";r++;st="rejeitar (VPL < 0)";}
+            var x=m.l+i*bw+bw*0.15, w=bw*0.7, d=v-t;
+            s+='<rect x="'+x+'" y="'+y(v)+'" width="'+w+'" height="'+(y(0)-y(v))+'" fill="'+cor+'"><title>Projeto '+String.fromCharCode(65+i)+': TIR '+f(v)+'% | folga '+(d>=0?"+":"")+f(d).replace("-","−")+' p.p. | '+st+'</title></rect>';
+            s+='<text x="'+(x+w/2)+'" y="'+(y(v)-5)+'" text-anchor="middle" font-size="11" font-weight="bold">'+f(v)+'%</text>';
+            s+='<text x="'+(x+w/2)+'" y="'+(y(0)+16)+'" text-anchor="middle" font-size="12">Projeto '+String.fromCharCode(65+i)+'</text>';
+        });
+        s+='<line class="eixo" x1="'+m.l+'" x2="'+m.l+'" y1="'+m.t+'" y2="'+y(0)+'"/><line class="eixo" x1="'+m.l+'" x2="'+(W-m.r)+'" y1="'+y(0)+'" y2="'+y(0)+'"/>';
+        s+='<line x1="'+m.l+'" x2="'+(W-m.r)+'" y1="'+y(t)+'" y2="'+y(t)+'" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="7 5"/>';
+        s+='<text x="'+(m.l+6)+'" y="'+(y(t)-6)+'" font-size="12" font-weight="bold" style="fill:#2563eb">TMA ('+f(t)+'%)</text></svg>';
+        el.innerHTML=s;
+        document.getElementById("resumo-tir").innerHTML='<strong>'+a+'</strong> projeto(s) com TIR acima da TMA (aceitar); <strong>'+i0+'</strong> igual(is) à TMA (indiferente); <strong>'+r+'</strong> abaixo da TMA (rejeitar).';
+    }
+    rg.addEventListener("input",desenhar); desenhar();
+})();
+</script>
+
+
+<section class="topico">
+    <h2>6. Índice de Lucratividade (IL)</h2>
+    <p>Variante do VPL: divide o valor presente dos benefícios líquidos de caixa pelo valor presente dos desembolsos.</p>
+    <div class="formula">IL = VP dos benefícios líquidos de caixa ÷ VP dos desembolsos de caixa</div>
+    <div class="tabela-wrap"><table>
+        <tr><th>Resultado</th><th>Equivale a</th><th>Decisão</th></tr>
+        <tr><td>IL &gt; 1</td><td>VPL &gt; 0</td><td>Aceitar</td></tr>
+        <tr><td>IL &lt; 1</td><td>VPL &lt; 0</td><td>Rejeitar</td></tr>
+        <tr><td>IL = 1</td><td>VPL = 0</td><td>Avaliar</td></tr>
+    </table></div>
+    <h3>Cálculo no exemplo</h3>
+    <div class="formula">IL = 291,22 ÷ 200 ≈ <strong>1,46</strong></div>
+    <p>Analisando em unidade monetária, cada $ 1 investido gera cerca de $ 1,46 em valor presente. Como IL &gt; 1, o projeto <strong>deve ser aceito</strong>.</p>
+
+    <h3>Entendendo o que o IL calcula</h3>
+    <p>O IL mede a <strong>eficiência do capital</strong>: quanto de valor presente cada $ 1 investido gera. No exemplo, IL = 1,46 significa que cada $ 1 investido devolve $ 1,46 em valores de hoje, ou seja, $ 0,46 de riqueza a mais. Esse $ 0,46 é o <strong>VPL por real investido</strong> (91.216 ÷ 200.000).</p>
+    <div class="grid-info">
+        <div><h4>Quando é mais útil?</h4><p> Dois projetos com o mesmo VPL podem ter ILs bem diferentes se exigirem investimentos diferentes.</p></div>
+        <div><h4>Relação com o VPL</h4><p>IL = (VPL + investimento) ÷ investimento = 1 + VPL/I. Por isso IL &gt; 1 equivale a VPL &gt; 0. O IL muda a <em>unidade</em> (razão em vez de $), não a decisão de aceitar ou rejeitar.</p></div>
+        <div><h4>Cuidados</h4><ul><li>Não mostra o tamanho da riqueza criada (um IL alto pode vir de projeto pequeno)</li><li>Depende da mesma taxa de desconto do VPL</li></ul></div>
+    </div>
+</section>
+
+<section class="topico">
+    <h2>7. WACC e TMA: qual taxa usar para descontar?</h2>
+    <p>VPL e IL dependem de uma taxa de desconto, e a TIR precisa ser comparada com uma taxa de referência. Essa taxa é a <strong>TMA (Taxa Mínima de Atratividade)</strong>: o retorno mínimo que o projeto precisa oferecer para valer o investimento. Uma referência muito usada para defini-la é o <strong>WACC</strong>.</p>
+    <h3>O que é o WACC</h3>
+    <p>WACC (<em>Weighted Average Cost of Capital</em>, em português CMPC ou WAAC) é o <strong>custo médio ponderado do capital</strong> da empresa: quanto ela paga, em média, para financiar seus ativos com capital próprio e de terceiros.</p>
+    <div class="formula">WACC = (W<sub>e</sub> × K<sub>e</sub>) + (W<sub>i</sub> × K<sub>i</sub>) × (1 − IR)</div>
+    <p>We = participação do capital próprio; Wi = Participação da dívida (terceiros); K<sub>e</sub> = custo do capital próprio (retorno exigido pelos acionistas); K<sub>i</sub> = custo da dívida antes do imposto; IR = alíquota. A dívida entra <strong>após o imposto</strong> por causa do benefício fiscal dos juros (Unidade II e Unidade IV).</p>
+    <div class="destaque">Exemplo ilustrativo: 60% capital próprio com K<sub>e</sub> = 12%; 40% dívida com K<sub>d</sub> = 8%; IR = 34%. WACC = 0,6 × 12% + 0,4 × 8% × 0,66 = 7,2% + 2,1% ≈ <strong>9,3% a.a.</strong></div>
+    <p><strong><em>Nota:</strong> W<sub>e</sub> pode ser obtido pela razão <strong>(PL/P+PL)</strong> que mede a participação do <strong>Patrimônio Líquido (PL)</strong> mediante a estrutura de capital. O mesmo vale para W<sub>i</sub> que é obtido por <strong>(P/P+PL)</strong> que mede a participação do capital de terceiros (P referente ao Passivo). Essas razões mostram as proporções de cada fonte de capital na <strong>Estrutura de Capital</strong> da empresa.</em></p>
+    <h3>Por que descontar o fluxo operacional pelo WACC</h3>
+    <p>Na Unidade II, o fluxo de caixa operacional <strong>não deduz juros nem amortizações</strong>: o financiamento é avaliado à parte. Como o fluxo é "antes do financiamento", ele precisa ser descontado por uma taxa que já represente o <strong>custo de todas as fontes de capital</strong>, e esse é o WACC. Descontar pelo WACC e também subtrair os juros do fluxo seria contar o custo do financiamento duas vezes.</p>
+    <h3>Quando a TMA pode levar o WACC em consideração</h3>
+    <div class="tabela-wrap"><table>
+        <tr><th>Situação</th><th>Como definir a TMA</th></tr>
+        <tr><td>Projeto de risco semelhante ao da empresa (mesmo negócio, expansão, reposição) e estrutura de capital estável</td><td>TMA ≈ WACC. É o retorno mínimo para não destruir valor</td></tr>
+        <tr><td>Projeto um pouco mais arriscado que a média, ou a empresa quer margem de segurança</td><td>TMA = WACC + prêmio de risco do projeto</td></tr>
+        <tr><td>Projeto menos arriscado que a média</td><td>TMA pode ficar um pouco abaixo do WACC, com cautela</td></tr>
+    </table></div>
+    <p>No exemplo da indústria de polpas, uma TMA de 10% é coerente com um WACC de 9,3% mais um pequeno prêmio de 0,7 ponto percentual.</p>
+    <h3>Quando a TMA não pode (ou não deve) ser o WACC</h3>
+    <ul>
+        <li><strong>Risco diferente do negócio atual:</strong> um projeto em outro setor, país ou tecnologia deve usar uma taxa que reflita o <em>risco do projeto</em>, e não o da empresa. Usar o WACC pode aprovar projetos ruins (risco maior) ou rejeitar bons (risco menor).</li>
+        <li><strong>Restrição de capital:</strong> se o orçamento é limitado, a TMA é o retorno da <strong>melhor alternativa abandonada</strong> (custo de oportunidade), que pode ser maior que o WACC.</li>
+        <li><strong>Custo de oportunidade do investidor:</strong> pessoas físicas, pequenos negócios e entes sem estrutura de capital definida costumam usar como TMA o rendimento de uma aplicação segura (como a Selic ou o Tesouro), mais um prêmio de risco, e não um WACC.</li>
+        <li><strong>Política interna (<em>hurdle rate</em>):</strong> a diretoria pode exigir uma taxa fixa mais alta, por prudência ou por metas de retorno.</li>
+        <li><strong>Financiamento específico e subsidiado:</strong> o custo de uma linha de crédito barata não deve baratear a taxa de avaliação do projeto. Investimento e financiamento são avaliados separadamente.</li>
+        <li><strong>Consistência de moeda e inflação:</strong> fluxos em termos reais pedem taxa real; fluxos nominais, taxa nominal.</li>
+    </ul>
+    <div class="destaque">Regra prática: o WACC é o <strong>piso</strong> para projetos de risco médio. A TMA é o WACC ajustado ao risco do projeto e às restrições da empresa.</div>
+
+    <h3>Gráfico: carteira de projetos, WACC e TMA</h3>
+    <p>Cada barra é a TIR de um projeto de uma carteira ilustrativa de 30 projetos. As linhas mostram o <strong>WACC</strong> e a <strong>TMA</strong>. Mova os controles e veja como a decisão muda.</p>
+    <div class="controles">
+        <div><label for="rg-wacc">WACC: <span id="v-wacc"></span></label><input type="range" id="rg-wacc" min="5" max="25" step="0.5" value="12"></div>
+        <div><label for="rg-tma">TMA: <span id="v-tma"></span></label><input type="range" id="rg-tma" min="5" max="30" step="0.5" value="15"></div>
+    </div>
+    <div class="legenda">
+        <span style="--c:#16a34a">TIR ≥ TMA: aceitar</span>
+        <span style="--c:#f59e0b">WACC ≤ TIR &lt; TMA: cobre o custo de capital, mas não o retorno exigido</span>
+        <span style="--c:#dc2626">TIR &lt; WACC: destrói valor</span>
+    </div>
+    <div class="grafico" id="grafico" role="img" aria-label="Gráfico de barras com a TIR de 30 projetos, com linhas horizontais para o WACC e a TMA"></div>
+    <p id="resumo-grafico" style="text-align:left;"></p>
+    <p class="alerta" id="alerta-grafico">Atenção: com TMA abaixo do WACC, projetos aceitos podem destruir valor, pois não cobrem o custo de capital.</p>
+    <p>Repare: projetos amarelos têm TIR acima do WACC (criariam valor para a empresa), mas a empresa só os aprova se aceitar a TMA como retorno mínimo. Subir a TMA acima do WACC torna a seleção mais rigorosa; baixá-la abaixo do WACC é arriscado.</p>
+</section>
+<script>
+(function () {
+    function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;}}
+    var rnd = mulberry32(42);
+    var tir = Array.from({length: 30}, function(){ return 5 + rnd()*20; }); // uniforme entre 5% e 25%
+    var W=720, H=360, m={l:50,r:16,t:16,b:40}, ymax=30;
+    var el=document.getElementById("grafico"), rw=document.getElementById("rg-wacc"), rt=document.getElementById("rg-tma");
+    function y(v){return m.t+(H-m.t-m.b)*(1-v/ymax);}
+    function desenhar(){
+        var w=parseFloat(rw.value), t=parseFloat(rt.value);
+        document.getElementById("v-wacc").textContent=w.toFixed(1).replace(".",",")+"%";
+        document.getElementById("v-tma").textContent=t.toFixed(1).replace(".",",")+"%";
+        var bw=(W-m.l-m.r)/tir.length, a=0,b=0,c=0, s='<svg viewBox="0 0 '+W+' '+H+'" xmlns="http://www.w3.org/2000/svg">';
+        for(var g=0;g<=ymax;g+=5){s+='<line class="grade" x1="'+m.l+'" x2="'+(W-m.r)+'" y1="'+y(g)+'" y2="'+y(g)+'"/><text x="'+(m.l-6)+'" y="'+(y(g)+4)+'" text-anchor="end" font-size="11">'+g+'%</text>';}
+        tir.forEach(function(v,i){
+            var cor; if(v>=t){cor="#16a34a";a++;} else if(v>=w){cor="#f59e0b";b++;} else {cor="#dc2626";c++;}
+            var x=m.l+i*bw+bw*0.12;
+            s+='<rect x="'+x+'" y="'+y(v)+'" width="'+(bw*0.76)+'" height="'+(y(0)-y(v))+'" fill="'+cor+'"><title>Projeto '+(i+1)+': TIR '+v.toFixed(1).replace(".",",")+'%</title></rect>';
+            s+='<text x="'+(x+bw*0.38)+'" y="'+(y(0)+13)+'" text-anchor="middle" font-size="9">'+(i+1)+'</text>';
+        });
+        s+='<line class="eixo" x1="'+m.l+'" x2="'+m.l+'" y1="'+m.t+'" y2="'+y(0)+'"/><line class="eixo" x1="'+m.l+'" x2="'+(W-m.r)+'" y1="'+y(0)+'" y2="'+y(0)+'"/>';
+        s+='<line x1="'+m.l+'" x2="'+(W-m.r)+'" y1="'+y(w)+'" y2="'+y(w)+'" stroke="#ea580c" stroke-width="2.5" stroke-dasharray="7 5"/>';
+        s+='<line x1="'+m.l+'" x2="'+(W-m.r)+'" y1="'+y(t)+'" y2="'+y(t)+'" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="2 4"/>';
+        var up = t>=w;
+        s+='<text x="'+(W-m.r-4)+'" y="'+(y(w)+(up?15:-6))+'" text-anchor="end" font-size="12" font-weight="bold" fill="#ea580c" style="fill:#ea580c">WACC ('+w.toFixed(1).replace(".",",")+'%)</text>';
+        s+='<text x="'+(W-m.r-4)+'" y="'+(y(t)+(up?-6:15))+'" text-anchor="end" font-size="12" font-weight="bold" style="fill:#2563eb">TMA ('+t.toFixed(1).replace(".",",")+'%)</text>';
+        s+='<text x="'+((W+m.l)/2)+'" y="'+(H-4)+'" text-anchor="middle" font-size="12">Projetos</text></svg>';
+        el.innerHTML=s;
+        document.getElementById("resumo-grafico").innerHTML='<strong>'+a+'</strong> projeto(s) aceito(s) (TIR ≥ TMA); <strong>'+b+'</strong> entre o WACC e a TMA; <strong>'+c+'</strong> abaixo do WACC.';
+        document.getElementById("alerta-grafico").style.display = t<w ? "block" : "none";
+    }
+    rw.addEventListener("input",desenhar); rt.addEventListener("input",desenhar); desenhar();
+})();
+</script>
+
+<section class="topico">
+    <h2>8. Resumo do exemplo</h2>
+    <div class="tabela-wrap"><table>
+        <tr><th>Método</th><th>Resultado</th><th>Conclusão</th></tr>
+        <tr><td>Payback simples</td><td>≈ 2,13 anos</td><td>Recupera em pouco mais de 2 anos</td></tr>
+        <tr><td>Payback médio</td><td>≈ 2,16 anos</td><td>Mesma ordem do simples</td></tr>
+        <tr><td>Payback efetivo (10%)</td><td>≈ 2,62 anos</td><td>Recuperação mais lenta ao descontar o tempo</td></tr>
+        <tr><td>VPL (10%)</td><td>$ 91.216</td><td>Aceitar (VPL &gt; 0)</td></tr>
+        <tr><td>TIR</td><td>≈ 28,9% a.a.</td><td>Aceitar (TIR &gt; TMA)</td></tr>
+        <tr><td>IL</td><td>≈ 1,46</td><td>Aceitar (IL &gt; 1)</td></tr>
+    </table></div>
+    <div class="destaque">VPL, TIR e IL levam à mesma decisão neste exemplo: aceitar o projeto.</div>
 </section>
 
 <div class="acoes">
-    <a class="btn" id="btn-avancar" href="unidadeIII.html">Avançar ➜</a>
+    <a class="btn" id="btn-avancar" href="unidadeIV.html">Avançar ➜</a>
     <button class="btn" id="btn-questoes">Questões ✏️</button>
 </div>
 
 <section class="topico" id="questoes">
-    <h2>Questões – Unidade II</h2>
+    <h2>Questões – Unidade III</h2>
     <div id="lista-questoes"></div>
     <p class="placar" id="placar"></p>
 </section>
@@ -188,29 +338,48 @@
 </section>
 <script>
 const QUESTOES = [
- {enunciado:"Duas propostas de fabricantes diferentes para o mesmo equipamento são investimentos:",
-  opcoes:["Independentes","Complementares","Mutuamente excludentes","Com dependência estatística"],correta:2,
-  explicacao:"Ambas cumprem a mesma função; aceitar uma elimina a outra."},
- {enunciado:"Na análise de um projeto, qual fluxo é irrelevante?",
-  opcoes:["Receita incremental gerada pelo projeto","Receita de vendas correntes que não muda com o projeto","Capital de giro adicional","Venda do ativo antigo"],correta:1,
-  explicacao:"Só são relevantes os fluxos que se alteram se o projeto for implementado (fluxos incrementais)."},
- {enunciado:"Por que a depreciação é somada de volta ao calcular o fluxo de caixa operacional?",
-  opcoes:["Porque é uma saída de caixa","Porque não é desembolso, apesar de reduzir o lucro e o IR","Porque aumenta a receita","Porque é despesa financeira"],correta:1,
-  explicacao:"Ela reduz o lucro tributável (e o IR), mas não sai do caixa. Soma-se de volta para chegar ao caixa efetivo."},
- {enunciado:"Dados LOP_B = 680, IR = 40% e depreciação = 120, qual o ΔFCO?",
-  opcoes:["408","528","680","272"],correta:1,
-  explicacao:"FCO = 680 − (0,4 × 680) + 120 = 408 + 120 = 528."},
- {enunciado:"Um projeto tem EBIT de 200.000, juros de 50.000 e IR de 40%. Qual a economia de imposto pelo endividamento?",
-  opcoes:["50.000","30.000","20.000","80.000"],correta:2,
-  explicacao:"Economia de IR = 40% × 50.000 = 20.000 (o IR cai de 80.000 para 60.000)."},
- {enunciado:"Segundo a abordagem do lucro operacional, as decisões de investimento e de financiamento devem ser:",
-  opcoes:["Avaliadas em conjunto","Avaliadas separadamente","Ignoradas","Sempre feitas com 100% de dívida"],correta:1,
-  explicacao:"O valor de um projeto depende da sua capacidade de gerar resultados operacionais, não de como é financiado."},
- {enunciado:"Calcule o investimento inicial líquido: máquina nova de 260.000, giro de 15.000, máquina antiga vendida por 35.000 (contábil 30.000), IR 34%.",
-  opcoes:["240.000","241.700","245.000","275.000"],correta:1,
-  explicacao:"260.000 + 15.000 − 35.000 + (5.000 × 34% = 1.700) = 241.700."}
+ {enunciado:"Qual modalidade de payback corrige o valor do dinheiro no tempo?",
+  opcoes:["Simples","Médio","Efetivo (descontado)","Nenhuma"],correta:2,
+  explicacao:"O payback efetivo desconta os fluxos pela taxa de atratividade e é o mais recomendado."},
+ {enunciado:"Investimento de $ 200.000 com fluxos anuais de 70.000, 120.000, 80.000 e 100.000. Qual o payback simples?",
+  opcoes:["Cerca de 2,1 anos","Cerca de 1,5 ano","Cerca de 3,0 anos","Cerca de 4,0 anos"],correta:0,
+  explicacao:"Acumulado: 70 e 190 nos dois primeiros anos. Faltam 10, que dividido por 80 dá 0,125. Payback = 2,125 anos."},
+ {enunciado:"Um projeto tem VPL negativo. A decisão correta é:",
+  opcoes:["Aceitar, pois há retorno positivo","Rejeitar, pois destrói valor","Aceitar se o payback for curto","Sempre aceitar"],correta:1,
+  explicacao:"VPL < 0 indica que o retorno é menor que o custo do capital; o projeto destrói valor."},
+ {enunciado:"A TIR de um projeto é 9% a.a. e a TMA é 12% a.a. O que se conclui?",
+  opcoes:["Aceitar, pois TIR > 0","Rejeitar, pois TMA > TIR e VPL < 0","Aceitar, pois TMA > TIR","VPL é exatamente zero"],correta:1,
+  explicacao:"Se TMA > TIR, o VPL à TMA é negativo e a proposta deve ser rejeitada."},
+ {enunciado:"A TIR é definida como a taxa de desconto que:",
+  opcoes:["Torna o payback igual a zero","Torna o VPL igual a zero","Torna o IL igual a 2","É sempre igual à TMA"],correta:1,
+  explicacao:"A TIR iguala o valor presente das entradas ao das saídas, ou seja, VPL = 0."},
+ {enunciado:"No exemplo da indústria de polpas (TMA 10%), o valor presente dos benefícios é cerca de $ 291.216 e o investimento é $ 200.000. Qual o IL?",
+  opcoes:["0,69","1,00","1,46","2,91"],correta:2,
+  explicacao:"IL = 291.216 ÷ 200.000 ≈ 1,46. Como IL > 1, o VPL é positivo e o projeto é aceito."},
+ {enunciado:"Qual a relação entre IL e VPL?",
+  opcoes:["IL > 1 equivale a VPL > 0","IL > 1 equivale a VPL < 0","IL = 0 equivale a VPL = 0","Não há relação"],correta:0,
+  explicacao:"O IL é uma variante do VPL: IL > 1 significa que o VP dos benefícios supera o dos desembolsos, logo VPL > 0."},
+ {enunciado:"Segundo o material, o VPL de $ 91.216 no exemplo representa:",
+  opcoes:["O lucro contábil do primeiro ano","A riqueza adicional em valores de hoje, além do retorno exigido de 10%","O valor total dos fluxos futuros","O tempo de recuperação do investimento"],correta:1,
+  explicacao:"O VPL mede a riqueza criada, em dinheiro no tempo presente, depois de pagar o investimento e remunerar o capital à taxa exigida."},
+ {enunciado:"O WACC representa:",
+  opcoes:["O custo de oportunidade apenas dos acionistas","O custo médio ponderado de todas as fontes de capital da empresa","A taxa de juros da Selic","O retorno do projeto"],correta:1,
+  explicacao:"WACC = (E/V)·Ke + (D/V)·Kd·(1−IR): a média dos custos do capital próprio e de terceiros, ponderada pela estrutura de capital."},
+ {enunciado:"Com 60% de capital próprio (Ke = 12%), 40% de dívida (Kd = 8%) e IR de 34%, o WACC é aproximadamente:",
+  opcoes:["8,0%","9,3%","10,0%","12,0%"],correta:1,
+  explicacao:"0,6 × 12% + 0,4 × 8% × 0,66 = 7,2% + 2,11% ≈ 9,3%."},
+ {enunciado:"Em qual situação a TMA NÃO deve ser simplesmente igual ao WACC da empresa?",
+  opcoes:["Projeto de reposição de máquina do mesmo negócio","Projeto em setor e país de risco muito diferente do atual","Expansão da capacidade com risco médio","Projeto de risco semelhante ao da empresa"],correta:1,
+  explicacao:"Quando o risco do projeto difere do risco médio da empresa, a taxa deve refletir o risco do projeto, e não o WACC."},
+ {enunciado:"Por que o fluxo de caixa operacional é descontado pelo WACC, e não se deduzem os juros do fluxo?",
+  opcoes:["Porque juros não existem","Para evitar contar o custo do financiamento duas vezes","Porque o WACC ignora a dívida","Porque o IR é zero"],correta:1,
+  explicacao:"O WACC já incorpora o custo das fontes de financiamento; deduzir juros do fluxo também duplicaria esse custo."},
+ {enunciado:"Se a TIR de um projeto está entre o WACC e a TMA, ele:",
+  opcoes:["Destrói valor para a empresa","Cobre o custo de capital, mas não atinge o retorno mínimo exigido pela TMA","Tem VPL sempre igual a zero","Deve ser aceito automaticamente"],correta:1,
+  explicacao:"Acima do WACC ele cria valor, mas, se a TMA for maior que a TIR, a política da empresa o rejeita."}
 ];
 </script>
+
 <footer>
     <p style="text-align: center;">&copy; 2026 Administração Financeira Avançada — Centro de Estudos Sociais Aplicados (CESA / UECE)</p>
     <p style="opacity: 0.8; font-size: 12px;">Conteúdo organizado pelo aluno monitor Ariel de Oliveira a partir do material de aula do Prof. Sérgio Lima | Plataforma Acadêmica</p>
