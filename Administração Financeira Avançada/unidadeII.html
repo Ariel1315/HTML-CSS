@@ -25,7 +25,7 @@
         <ul>
             <li><a href="inicio.html">Início</a></li>
             <li><a href="inicio.html#unidades">Unidades</a></li>
-            <li><a href="#">Feedback</a></li>
+            <li><a href="https://forms.gle/yCNQWjkMYK6ct4pH9">Feedback</a></li>
         </ul>
     </nav>
     <div class="header-actions">
@@ -184,7 +184,7 @@
 <section class="topico" style="text-align:center;">
     <h2>Sua opinião é importante</h2>
     <p style="text-align:center;">Ajude a melhorar este material respondendo a um formulário rápido sobre esta unidade.</p>
-    <a class="btn" id="btn-formulario" href="https://forms.gle/SEU-FORMULARIO" target="_blank" rel="noopener">Responder formulário 📝</a>
+    <a class="btn" id="btn-formulario" href="https://forms.gle/yCNQWjkMYK6ct4pH9" target="_blank" rel="noopener">Responder formulário 📝</a>
 </section>
 <script>
 const QUESTOES = [
@@ -211,6 +211,55 @@ const QUESTOES = [
   explicacao:"260.000 + 15.000 − 35.000 + (5.000 × 34% = 1.700) = 241.700."}
 ];
 </script>
+
+<!-- Botão voltar ao topo -->
+<style>
+    .btn-topo {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        z-index: 900;
+        width: 46px;
+        height: 46px;
+        border: none;
+        border-radius: 50%;
+        background: var(--primary, #1e3a8a);
+        color: #fff;
+        font-size: 22px;
+        line-height: 1;
+        cursor: pointer;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+        opacity: 0;
+        transform: translateY(12px);
+        pointer-events: none;
+        transition: opacity .25s, transform .25s;
+    }
+    .btn-topo.visivel {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+    .btn-topo:hover { transform: translateY(-3px); }
+</style>
+
+<button type="button" class="btn-topo" id="btn-topo" aria-label="Voltar ao topo da página" title="Voltar ao topo">↑</button>
+
+<script>
+    (function () {
+        const botao = document.getElementById("btn-topo");
+
+        // Mostra o botão depois de rolar 300px
+        window.addEventListener("scroll", function () {
+            botao.classList.toggle("visivel", window.scrollY > 300);
+        }, { passive: true });
+
+        // Rola suavemente até o topo
+        botao.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    })();
+</script>
+
 <footer>
     <p style="text-align: center;">&copy; 2026 Administração Financeira Avançada — Centro de Estudos Sociais Aplicados (CESA / UECE)</p>
     <p style="opacity: 0.8; font-size: 12px;">Conteúdo organizado pelo aluno monitor Ariel de Oliveira a partir do material de aula do Prof. Sérgio Lima | Plataforma Acadêmica</p>
