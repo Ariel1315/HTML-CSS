@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidade IV – Decisões de Financiamento e Estrutura de Capital</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Analytics (GA4): troque G-XXXXXXXXXX pelo seu ID de métrica -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('consent', 'default', { analytics_storage: 'denied' });
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body data-unidade="IV">
+<header class="header">
+    <div class="logo">
+        <h1>Administração Financeira Avançada</h1>
+        <span class="subtitulo">Monitoria Acadêmica</span>
+    </div>
+    <nav class="nav" id="nav">
+        <ul>
+            <li><a href="inicio.html">Início</a></li>
+            <li><a href="inicio.html#unidades">Unidades</a></li>
+            <li><a href="https://forms.gle/yCNQWjkMYK6ct4pH9" target="_blank" rel="noopener noreferrer">Feedback</a></li>
+        </ul>
+    </nav>
+    <div class="header-actions">
+        <button id="theme-toggle" class="theme-btn">🌙</button>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+</header>
+<main>
+<section class="topico">
+    <h2>Unidade IV – Decisões de Financiamento e Estrutura de Capital</h2>
+    <p>Nas unidades anteriores avaliamos <em>quais</em> projetos aceitar. Agora estudamos <em>como financiá-los</em>: qual combinação de capital próprio e de terceiros a empresa deve usar, quanto isso custa (WACC) e se existe uma estrutura ótima de capital.</p>
+</section>
+
+<section class="topico">
+    <h2>1. A decisão de financiamento e a estrutura de capital</h2>
+    <p>As decisões financeiras de longo prazo se dividem em três: <strong>investimento</strong> (orçamento de capital), <strong>financiamento</strong> (custo e estrutura de capital) e <strong>dividendos</strong>. Esta unidade trata da decisão de financiamento.</p>
+    <div class="destaque">Estrutura de capital: a forma como é composta a estrutura de fontes de financiamento de longo prazo dos investimentos e recursos permanentes da firma.</div>
+    <p>No balanço, ela corresponde às fontes de longo prazo: o <strong>Capital de Terceiros (P)</strong>, o exigível de longo prazo, e o <strong>Capital Próprio (PL)</strong>, o patrimônio líquido. A estrutura de capital é <strong>P + PL</strong>.</p>
+    <p>Dá-se maior destaque aos fundos de longo prazo porque se admite que o passivo circulante serve primeiro às necessidades financeiras sazonais da empresa, e não ao financiamento do ativo imobilizado. Em outras palavras, investimentos de longo prazo são financiados com recursos de longo prazo, e investimentos de curto prazo, com recursos de curto prazo.</p>
+</section>
+
+<section class="topico">
+    <h2>2. Benefício fiscal do endividamento</h2>
+    <p>As despesas financeiras (juros) reduzem o lucro antes do Imposto de Renda (LAIR). Como os <strong>juros não são lucro de quem toma a dívida, mas renda do credor</strong>, a empresa endividada tem uma base de cálculo menor e paga menos imposto. É a <strong>economia fiscal</strong> (ou benefício fiscal) dos juros.</p>
+    <p>A origem dessa regra está nos sistemas jurídico-tributários modernos do início do século XX, que buscaram estimular o investimento e eliminar uma distorção: a <em>dupla incidência econômica</em> do tributo.</p>
+    <h3>Exemplo com tributos totais de 34% (IR e CSLL)</h3>
+    <div class="tabela-wrap"><table>
+        <tr><th>DRE (R$)</th><th>100% Equity (sem dívida)</th><th>100% Debt (com dívida)</th></tr>
+        <tr><td>Receita operacional</td><td>500.000</td><td>500.000</td></tr>
+        <tr><td>(−) Custos e despesas operacionais</td><td>300.000</td><td>300.000</td></tr>
+        <tr><td>(=) LAJIR / EBIT</td><td>200.000</td><td>200.000</td></tr>
+        <tr><td>(−) Despesa financeira (juros)</td><td>0</td><td>50.000</td></tr>
+        <tr><td>(=) LAIR</td><td>200.000</td><td>150.000</td></tr>
+        <tr><td>(−) IR/CSLL (34%)</td><td>68.000</td><td>51.000</td></tr>
+        <tr class="total"><td>(=) Lucro líquido</td><td>132.000</td><td>99.000</td></tr>
+    </table></div>
+    <p>Com dívida, o imposto cai de $ 68.000 para $ 51.000, uma economia de <strong>$ 17.000</strong> (34% × 50.000). Sem esse benefício, a empresa pagaria $ 68.000 de imposto e ainda $ 50.000 ao credor: a despesa financeira seria tratada como lucro da empresa e a renda do credor também seria tributada (dupla incidência). Conclusão: a empresa endividada paga menos impostos, mesmo com lucro contábil menor.</p>
+</section>
+
+<section class="topico">
+    <h2>3. Custo do capital de terceiros (Ki)</h2>
+    <p>O custo do capital de terceiros, <strong>Ki</strong> (<em>interest</em>), é a taxa que a empresa paga pela dívida. Como os juros reduzem o imposto, o custo que realmente pesa é o custo <strong>líquido do IR</strong>.</p>
+    <div class="formula">K<sub>i</sub> = i × (1 − IR)</div>
+    <h3>Exemplo: financiamento de $ 100.000 a 12% a.a.</h3>
+    <div class="tabela-wrap"><table>
+        <tr><th>Situação</th><th>Cálculo</th><th>Ki</th></tr>
+        <tr><td>a) Sem IR</td><td>12.000 ÷ 100.000</td><td>12% a.a.</td></tr>
+        <tr><td>b) Com IR de 34%</td><td>Desp. financeira bruta = 12% × 100.000 = 12.000<br>(−) Economia de IR = 34% × 12.000 = 4.080<br>(=) Desp. financeira líquida = 7.920<br>Ki = 7.920 ÷ 100.000</td><td><strong>7,92% a.a.</strong></td></tr>
+    </table></div>
+    <p>Ou seja, o benefício fiscal reduz o custo da dívida de 12% para 7,92%: Ki = 12% × (1 − 0,34) = 7,92%.</p>
+</section>
+
+<section class="topico">
+    <h2>4. Custo de capital próprio, de terceiros e total (WACC)</h2>
+    <p>Duas fontes financiam a empresa: o capital de terceiros, com custo <strong>Ki</strong>, e o capital próprio, com custo <strong>Ke</strong> (<em>equity</em>), que é o retorno exigido pelos acionistas. O custo total de capital é o <strong>WACC</strong> (<em>Weighted Average Cost of Capital</em>), a média dos dois custos ponderada pela estrutura de capital:</p>
+    <div class="formula">WACC = Ke × PL/(P + PL) + Ki × P/(P + PL) × (1 − IR)</div>
+    <p>É a mesma ideia estudada na Unidade III, agora com a notação do balanço (P = capital de terceiros e PL = capital próprio).</p>
+    <div class="destaque">Atenção: se o Ki já estiver informado <strong>líquido de IR</strong>, como nas tabelas desta unidade, não se multiplica por (1 − IR) outra vez.</div>
+    <h3>Estrutura ótima de capital</h3>
+    <p>Diferentes estruturas, com maior ou menor participação de capital próprio, alteram o <strong>risco financeiro</strong> da empresa. A <strong>estrutura ótima</strong> é a proporção de recursos próprios e de terceiros que <strong>minimiza o WACC</strong> e leva à maximização da riqueza dos acionistas.</p>
+    <p>Isso ocorre porque o valor da empresa é o valor presente dos fluxos de caixa operacionais descontados ao WACC:</p>
+    <div class="formula">Valor da firma = Σ [ Fluxos de Caixa Operacionais<sub>t</sub> ÷ (1 + WACC)<sup>t</sup> ]</div>
+    <p>Quanto menor o WACC, maior o valor da firma. Na teoria de finanças há <strong>divergência</strong> sobre se existe ou não uma estrutura ótima que reduza o WACC. Duas linhas de pensamento se opõem: a <strong>Teoria Convencional</strong> (aceita a estrutura ótima) e a <strong>Teoria de Modigliani-Miller</strong> (não aceita).</p>
+</section>
+
+<section class="topico">
+    <h2>5. Teoria Convencional</h2>
+    <p>Admite a existência de uma estrutura ótima de capital, que minimiza o WACC e maximiza a riqueza dos acionistas, por meio de uma combinação adequada das fontes de financiamento. No gráfico, o eixo horizontal é o risco financeiro (P/PL). K<sub>0</sub> é o custo do capital próprio se a empresa fosse financiada só com capital próprio.</p>
+    <div class="grid-info">
+        <div><h4>Ki sobe com a dívida</h4><p>O custo do capital de terceiros eleva-se à medida que a participação de dívidas onerosas aumenta.</p></div>
+        <div><h4>WACC cai no início</h4><p>Com pouca dívida, o WACC diminui, porque o custo marginal de Ki é menor que o de Ke.</p></div>
+        <div><h4>Ponto X: o ótimo</h4><p>A queda só vai até certo nível de endividamento. No ponto X, o WACC é mínimo e o valor de mercado da empresa é máximo. Depois dele, o WACC volta a subir.</p></div>
+    </div>
+    <h3>Exemplo: projeto financiável em até 80% com capital de terceiros</h3>
+    <p>O WACC de cada linha é calculado com a fórmula acima, usando o Ki já líquido de IR: WACC = Ke × (1 − P/V) + Ki × P/V. A coluna do WACC foi calculada para esta página, pois nos slides ela fica para o aluno resolver.</p>
+    <div class="tabela-wrap"><table>
+        <tr><th>P/(P+PL)</th><th>Ke</th><th>Ki (líq. de IR)</th><th>WACC</th></tr>
+        <tr><td>0%</td><td>12,0%</td><td>7,0%</td><td>12,00%</td></tr>
+        <tr><td>20%</td><td>12,4%</td><td>7,2%</td><td>11,36%</td></tr>
+        <tr class="total"><td>40%</td><td>12,9%</td><td>7,7%</td><td>10,82%</td></tr>
+        <tr><td>60%</td><td>14,1%</td><td>9,8%</td><td>11,52%</td></tr>
+        <tr><td>80%</td><td>17,6%</td><td>13,4%</td><td>14,24%</td></tr>
+    </table></div>
+    <p>Exemplo de cálculo, linha de 40%: WACC = 0,60 × 12,9% + 0,40 × 7,7% = 7,74% + 3,08% = 10,82%.</p>
+    <div class="destaque">O menor WACC (10,82%) ocorre com 40% de capital de terceiros. Essa é a estrutura ótima neste exemplo. Com mais dívida, Ke e Ki sobem tanto que o WACC volta a crescer.</div>
+</section>
+
+<section class="topico">
+    <h2>6. Teoria de Modigliani-Miller (1958)</h2>
+    <p>Franco Modigliani (Nobel de Economia em 1985) e Merton Miller (Nobel em 1990) defendem que o custo de capital da empresa <strong>não se altera</strong> com mudanças na estrutura de financiamento: o WACC permanece constante e, portanto, <strong>não existe estrutura ótima de capital</strong>.</p>
+    <p>A ideia é que os investidores elevam sua taxa de desconto (Ke) diante de maior endividamento para compensar o risco financeiro. O benefício de usar uma dívida mais barata é compensado pelo aumento do custo do capital próprio. A atratividade do investimento depende da rentabilidade e do risco da decisão, e não da forma de financiamento.</p>
+    <h3>Pressupostos básicos</h3>
+    <ul>
+        <li>Não há Imposto de Renda.</li>
+        <li>Não há custos de falência: o custo de capital de terceiros não sobe com mais endividamento.</li>
+        <li>É possível a <strong>arbitragem</strong> no mercado: os investidores compram e vendem valores mobiliários e captam recursos à mesma taxa das empresas.</li>
+    </ul>
+    <h3>Proposição I</h3>
+    <ul>
+        <li>O valor da empresa é dimensionado pelo resultado operacional, descontado a uma taxa que reflete o risco da empresa.</li>
+        <li>A política de dividendos não influencia o valor da empresa.</li>
+        <li>Duas empresas iguais operacionalmente, diferindo só na forma de financiamento, têm o <strong>mesmo valor de mercado</strong>.</li>
+    </ul>
+    <div class="formula">V<sub>U</sub> = V<sub>L</sub> = Fluxo de caixa operacional ÷ K<sub>0</sub> &nbsp; (WACC = K<sub>0</sub>)</div>
+    <p>V<sub>U</sub> é o valor da empresa não alavancada (sem dívida), V<sub>L</sub> o da alavancada e K<sub>0</sub> o custo de capital se financiada só com capital próprio. A Proposição I diz que o WACC permanece inalterado, qualquer que seja a alavancagem financeira.</p>
+    <p>Ilustração dos slides: três empresas com ativos de 100% e passivos diferentes, a primeira com 100% de PL (passivo 0%), a segunda com 30% de passivo e 70% de PL e a terceira com 65% de passivo e 35% de PL. Como o lado dos ativos, que gera o fluxo operacional, é o mesmo, as três têm o mesmo valor.</p>
+    <h3>Proposição II</h3>
+    <ul>
+        <li>O retorno exigido pelo capital próprio é uma função linear e crescente do endividamento.</li>
+        <li>Ke é igual a K<sub>0</sub> (empresa sem dívida) mais um prêmio pelo risco de incluir capital de terceiros, que cresce com a relação P/PL.</li>
+    </ul>
+    <div class="formula">K<sub>e</sub> = K<sub>0</sub> + [ (K<sub>0</sub> − K<sub>i</sub>) × P/PL ]</div>
+</section>
+
+<section class="topico">
+    <h2>7. Modigliani-Miller (1963): a correção com Imposto de Renda</h2>
+    <p>Em um mundo hipotético sem impostos, a estrutura de financiamento é irrelevante. Em 1963, M-M corrigiram a teoria incluindo o IR: como os juros geram benefício fiscal, <strong>ao elevar o endividamento (P/PL), o WACC diminui</strong> e o valor de mercado da empresa aumenta. O Ke continua sendo função linear e crescente do risco financeiro:</p>
+    <div class="formula">K<sub>e</sub> = K<sub>0</sub> + [ (K<sub>0</sub> − K<sub>i</sub>) × P/PL × (1 − IR) ]</div>
+    <p>No gráfico dos slides, o <strong>benefício fiscal</strong> é a área entre o WACC sem IR (constante) e o WACC com IR (decrescente).</p>
+    <p>Para fluxos de caixa perpétuos, o valor da empresa alavancada é o valor da empresa sem dívida mais o valor presente do benefício fiscal:</p>
+    <div class="formula">V<sub>L</sub> = Fluxo de caixa operacional ÷ K<sub>0</sub> + IR × P</div>
+    <p>O primeiro termo é V<sub>U</sub> e o segundo, IR × P, é o valor presente do benefício fiscal do endividamento oneroso.</p>
+    <div class="destaque">Exemplo ilustrativo (elaborado para esta página): fluxo operacional perpétuo de $ 120.000, K<sub>0</sub> = 12%, dívida P = $ 200.000 e IR = 34%. V<sub>U</sub> = 120.000 ÷ 0,12 = $ 1.000.000. Benefício fiscal = 0,34 × 200.000 = $ 68.000. V<sub>L</sub> = <strong>$ 1.068.000</strong>.</div>
+    <h3>Exemplo dos slides: Ki líquido constante em 7%</h3>
+    <div class="tabela-wrap"><table>
+        <tr><th>P/(P+PL)</th><th>Ke</th><th>Ki (líq. de IR)</th><th>WACC</th></tr>
+        <tr><td>0%</td><td>12,0%</td><td>7,0%</td><td>12,0%</td></tr>
+        <tr><td>20%</td><td>12,4%</td><td>7,0%</td><td>11,3%</td></tr>
+        <tr><td>40%</td><td>12,9%</td><td>7,0%</td><td>10,5%</td></tr>
+        <tr><td>60%</td><td>14,1%</td><td>7,0%</td><td>9,8%</td></tr>
+        <tr class="total"><td>80%</td><td>17,6%</td><td>7,0%</td><td>9,1%</td></tr>
+    </table></div>
+    <p>Aqui o Ki não sobe com o endividamento (sem custos de falência) e o WACC <strong>cai continuamente</strong>: quanto mais dívida, menor o WACC. Isso contrasta com a teoria convencional, em que o WACC tem um ponto de mínimo.</p>
+</section>
+
+<section class="topico">
+    <h2>8. Gráfico interativo: custos de capital conforme a teoria</h2>
+    <p>Escolha uma teoria para ver como Ke, Ki e WACC variam com o endividamento P/(P+PL).</p>
+    <div class="controles">
+        <div style="display:flex; gap:8px; flex-wrap:wrap;" id="bt-teorias">
+            <button type="button" class="opcao" data-t="conv" style="width:auto; margin:0;">Convencional</button>
+            <button type="button" class="opcao" data-t="mm58" style="width:auto; margin:0;">M-M 1958 (sem IR)</button>
+            <button type="button" class="opcao" data-t="mm63" style="width:auto; margin:0;">M-M 1963 (com IR)</button>
+        </div>
+    </div>
+    <div class="legenda">
+        <span style="--c:#dc2626">Ke (capital próprio)</span>
+        <span style="--c:#16a34a">Ki (capital de terceiros, líquido)</span>
+        <span style="--c:#2563eb">WACC</span>
+    </div>
+    <div class="grafico" id="grafico-teorias" role="img" aria-label="Gráfico de Ke, Ki e WACC em função do endividamento, conforme a teoria escolhida"></div>
+    <p id="leitura-teorias" style="text-align:left;"></p>
+    <p style="font-size:0.85rem; opacity:0.85; text-align:left;">Convencional e M-M 1963 usam os valores das tabelas dos slides. M-M 1958 é uma ilustração calculada para esta página pela Proposição II, com K<sub>0</sub> = 12% e K<sub>i</sub> = 7%, sem IR.</p>
+</section>
+<script>
+(function () {
+    var w=[0,20,40,60,80];
+    var D={
+        conv:{Ke:[12,12.4,12.9,14.1,17.6],Ki:[7,7.2,7.7,9.8,13.4],W:[12,11.36,10.82,11.52,14.24],
+            t:"<strong>Teoria convencional:</strong> o WACC cai até 40% de dívida (10,82%, o ponto ótimo) e depois volta a subir, pois Ke e Ki crescem com o risco financeiro."},
+        mm63:{Ke:[12,12.4,12.9,14.1,17.6],Ki:[7,7,7,7,7],W:[12,11.3,10.5,9.8,9.1],
+            t:"<strong>M-M 1963 (com IR):</strong> com Ki constante, o benefício fiscal faz o WACC cair continuamente com o endividamento (de 12% para 9,1%). O valor da empresa aumenta."},
+        mm58:{Ke:[],Ki:[7,7,7,7,7],W:[12,12,12,12,12],
+            t:"<strong>M-M 1958 (sem IR):</strong> Ke cresce linearmente com o endividamento e compensa exatamente o uso de dívida mais barata. O WACC fica constante em K<sub>0</sub> = 12%: não há estrutura ótima."}
+    };
+    D.mm58.Ke=w.map(function(p){var d=p/(100-p);return 12+(12-7)*d;});
+    var W=720,H=340,m={l:56,r:60,t:20,b:46}, atual="conv";
+    var el=document.getElementById("grafico-teorias");
+    function f(v,n){return v.toFixed(n===undefined?1:n).replace(".",",");}
+    function desenhar(){
+        var d=D[atual], ymin=5, ymax=Math.ceil(Math.max.apply(null,d.Ke)/5)*5;
+        function x(p){return m.l+(W-m.l-m.r)*p/80;}
+        function y(v){return m.t+(H-m.t-m.b)*(1-(v-ymin)/(ymax-ymin));}
+        var s='<svg viewBox="0 0 '+W+' '+H+'" xmlns="http://www.w3.org/2000/svg">';
+        for(var g=ymin;g<=ymax;g+=5){s+='<line class="grade" x1="'+m.l+'" x2="'+(W-m.r)+'" y1="'+y(g)+'" y2="'+y(g)+'"/><text x="'+(m.l-8)+'" y="'+(y(g)+4)+'" text-anchor="end" font-size="11">'+g+'%</text>';}
+        w.forEach(function(p){s+='<text x="'+x(p)+'" y="'+(H-m.b+16)+'" text-anchor="middle" font-size="11">'+p+'%</text>';});
+        s+='<line class="eixo" x1="'+m.l+'" x2="'+m.l+'" y1="'+m.t+'" y2="'+(H-m.b)+'"/><line class="eixo" x1="'+m.l+'" x2="'+(W-m.r)+'" y1="'+(H-m.b)+'" y2="'+(H-m.b)+'"/>';
+        [["Ke","#dc2626"],["Ki","#16a34a"],["W","#2563eb"]].forEach(function(l){
+            var arr=d[l[0]], pts=arr.map(function(v,i){return x(w[i])+","+y(v);}).join(" ");
+            s+='<polyline points="'+pts+'" fill="none" stroke="'+l[1]+'" stroke-width="3"/>';
+            arr.forEach(function(v,i){s+='<circle cx="'+x(w[i])+'" cy="'+y(v)+'" r="4.5" fill="'+l[1]+'"><title>'+(l[0]=="W"?"WACC":l[0])+' em '+w[i]+'%: '+f(v,2)+'%</title></circle>';});
+            s+='<text x="'+(x(80)+8)+'" y="'+(y(arr[4])+4)+'" font-size="12" font-weight="bold" style="fill:'+l[1]+'">'+(l[0]=="W"?"WACC":l[0])+'</text>';
+        });
+        if(atual=="conv"){var i=2; s+='<circle cx="'+x(40)+'" cy="'+y(d.W[i])+'" r="10" fill="none" stroke="#f59e0b" stroke-width="3"/><text x="'+x(40)+'" y="'+(y(d.W[i])+28)+'" text-anchor="middle" font-size="12" font-weight="bold">Ótimo: 40% (WACC '+f(d.W[i],2)+'%)</text>';}
+        s+='<text x="'+((W-m.r+m.l)/2)+'" y="'+(H-6)+'" text-anchor="middle" font-size="12">Endividamento: P/(P+PL)</text>';
+        s+='<text transform="translate(14 '+((H-m.b+m.t)/2)+') rotate(-90)" text-anchor="middle" font-size="12">Custo (% a.a.)</text></svg>';
+        el.innerHTML=s;
+        document.getElementById("leitura-teorias").innerHTML=d.t;
+        document.querySelectorAll("#bt-teorias button").forEach(function(b){var on=b.getAttribute("data-t")==atual;b.style.background=on?"var(--primary)":"transparent";b.style.color=on?"#fff":"var(--text)";b.setAttribute("aria-pressed",on);});
+    }
+    document.querySelectorAll("#bt-teorias button").forEach(function(b){b.addEventListener("click",function(){atual=b.getAttribute("data-t");desenhar();});});
+    desenhar();
+})();
+</script>
+
+<section class="topico">
+    <h2>9. Convencional × Modigliani-Miller</h2>
+    <div class="tabela-wrap"><table>
+        <tr><th></th><th>Teoria convencional</th><th>M-M 1958 (sem IR)</th><th>M-M 1963 (com IR)</th></tr>
+        <tr><td>Existe estrutura ótima?</td><td>Sim</td><td>Não</td><td>Em tese, quanto mais dívida, melhor (sem custos de falência)</td></tr>
+        <tr><td>Comportamento do WACC</td><td>Cai até um ponto X e depois sobe</td><td>Constante (= K<sub>0</sub>)</td><td>Cai continuamente com a dívida</td></tr>
+        <tr><td>Ki</td><td>Sobe com o endividamento</td><td>Constante</td><td>Constante</td></tr>
+        <tr><td>Ke</td><td>Sobe com o endividamento</td><td>Sobe linearmente e compensa a dívida barata</td><td>Sobe linearmente, mas menos (fator 1 − IR)</td></tr>
+        <tr><td>Valor da empresa</td><td>Máximo no ponto X</td><td>V<sub>L</sub> = V<sub>U</sub></td><td>V<sub>L</sub> = V<sub>U</sub> + IR × P</td></tr>
+    </table></div>
+    <div class="destaque">Na prática, a teoria convencional é mais realista ao considerar que o risco de falência faz o custo da dívida subir. M-M mostram por que o benefício fiscal faz a dívida valer a pena, mas na vida real esse benefício é limitado pelo custo do risco de dificuldades financeiras.</div>
+</section>
+
+<div class="acoes">
+    <a class="btn" id="btn-avancar" href="unidadeV.html">Avançar ➜</a>
+    <button class="btn" id="btn-questoes">Questões ✏️</button>
+</div>
+
+<section class="topico" id="questoes">
+    <h2>Questões – Unidade IV</h2>
+    <div id="lista-questoes"></div>
+    <p class="placar" id="placar"></p>
+</section>
+
+<section class="topico" style="text-align:center;">
+    <h2>Sua opinião é importante</h2>
+    <p style="text-align:center;">Ajude a melhorar este material respondendo a um formulário rápido sobre esta unidade.</p>
+    <a class="btn" id="btn-formulario" href="https://forms.gle/yCNQWjkMYK6ct4pH9" target="_blank" rel="noopener noreferrer">Responder formulário 📝</a>
+</section>
+<script>
+const QUESTOES = [
+ {enunciado:"Um financiamento de $ 100.000 a 12% a.a., com IR de 34%, tem custo líquido (Ki) de:",
+  opcoes:["12,00%","7,92%","4,08%","8,00%"],correta:1,
+  explicacao:"Ki = i × (1 − IR) = 12% × 0,66 = 7,92%. A economia de IR é 34% × 12.000 = 4.080, e a despesa líquida é 7.920."},
+ {enunciado:"Na DRE com EBIT de 200.000, juros de 50.000 e alíquota de 34%, qual a economia de imposto trazida pela dívida?",
+  opcoes:["$ 50.000","$ 34.000","$ 17.000","$ 68.000"],correta:2,
+  explicacao:"O IR cai de 68.000 (sem dívida) para 51.000 (com dívida): 34% × 50.000 = 17.000."},
+ {enunciado:"A estrutura ótima de capital é a proporção entre capital próprio e de terceiros que:",
+  opcoes:["Maximiza o WACC","Minimiza o WACC e maximiza a riqueza dos acionistas","Elimina o risco financeiro","Zera o custo da dívida"],correta:1,
+  explicacao:"Como o valor da firma é o valor presente dos fluxos descontados ao WACC, minimizar o WACC maximiza o valor."},
+ {enunciado:"Na tabela da teoria convencional (Ke 12,0/12,4/12,9/14,1/17,6% e Ki líquido 7,0/7,2/7,7/9,8/13,4% para 0/20/40/60/80% de dívida), qual a estrutura de menor WACC?",
+  opcoes:["0% de dívida","20% de dívida","40% de dívida","80% de dívida"],correta:2,
+  explicacao:"WACC: 12,00%; 11,36%; 10,82%; 11,52%; 14,24%. O mínimo é com 40% de dívida (0,6 × 12,9% + 0,4 × 7,7% = 10,82%)."},
+ {enunciado:"Para Modigliani-Miller (1958, sem impostos), o que acontece com o WACC quando a empresa aumenta o endividamento?",
+  opcoes:["Cai continuamente","Sobe continuamente","Permanece constante, igual a K0","Cai até um ponto e depois sobe"],correta:2,
+  explicacao:"O aumento de Ke compensa exatamente a dívida mais barata. Por isso não existe estrutura ótima de capital."},
+ {enunciado:"Qual não é um pressuposto básico de M-M (1958)?",
+  opcoes:["Não há Imposto de Renda","Não há custos de falência","É possível a arbitragem no mercado","Os custos de falência elevam o Ki conforme a dívida cresce"],correta:3,
+  explicacao:"M-M supõem que não há custos de falência; logo o Ki não sobe com o endividamento."},
+ {enunciado:"Pela Proposição II de M-M (1958), Ke é:",
+  opcoes:["K0 − (K0 − Ki) × P/PL","K0 + (K0 − Ki) × P/PL","Ki + K0 × P/PL","Sempre igual a K0"],correta:1,
+  explicacao:"Ke = K0 + [(K0 − Ki) × P/PL]: o custo do capital próprio é K0 mais um prêmio de risco que cresce com o endividamento."},
+ {enunciado:"Na correção de M-M (1963), o valor da empresa alavancada, com fluxos perpétuos, é:",
+  opcoes:["VL = VU − IR × P","VL = VU","VL = VU + IR × P","VL = FCO × K0"],correta:2,
+  explicacao:"VL = FCO/K0 + IR × P, ou seja, o valor da empresa sem dívida mais o valor presente do benefício fiscal."},
+ {enunciado:"Com FCO perpétuo de $ 120.000, K0 = 12%, dívida de $ 200.000 e IR de 34%, o valor da empresa alavancada (M-M 1963) é:",
+  opcoes:["$ 1.000.000","$ 1.068.000","$ 932.000","$ 1.200.000"],correta:1,
+  explicacao:"VU = 120.000 ÷ 0,12 = 1.000.000. Benefício fiscal = 0,34 × 200.000 = 68.000. VL = 1.068.000."}
+];
+</script>
+
+<footer>
+    <p style="text-align: center;">&copy; 2026 Administração Financeira Avançada — Centro de Estudos Sociais Aplicados (CESA / UECE)</p>
+    <p style="opacity: 0.8; font-size: 12px;">Conteúdo organizado pelo aluno monitor Ariel de Oliveira a partir do material de aula do Prof. Sérgio Lima | Plataforma Acadêmica</p>
+</footer>
+</main>
+<script src="script.js"></script>
+<script src="topo.js"></script>
+</body>
+</html>
