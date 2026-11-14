@@ -25,7 +25,7 @@
         <ul>
             <li><a href="inicio.html">Início</a></li>
             <li><a href="inicio.html#unidades">Unidades</a></li>
-            <li><a href="#">Feedback</a></li>
+            <li><a href="https://forms.gle/yCNQWjkMYK6ct4pH9" target="_blank" rel="noopener">Feedback</a></li>
         </ul>
     </nav>
     <div class="header-actions">
@@ -91,8 +91,8 @@
     <p><strong>Limitação:</strong> o payback não mostra quanto o projeto gera depois de recuperar o investimento. Por isso é usado junto com VPL e TIR.</p>
 
     <div class="grid-info">
-        <div><h4>O que mede?</h4><p>O <strong>tempo</strong> (em anos ou meses) para o caixa gerado pagar o investimento. É uma medida de <strong>liquidez e de risco</strong>: quanto mais cedo o dinheiro volta, menos tempo o capital fica exposto a imprevistos.</p></div>
-        <div><h4>Como decidir?</h4><p>Fica a critério da empresa a escolha de prazos que seriam aceitáveis; ex.: <strong>prazo-limite</strong> (por exemplo, 3 anos). Se o payback for menor ou igual ao limite, o projeto passa no teste. No exemplo, 2,13 anos (simples) e 2,62 anos (efetivo) ficam abaixo de 3 anos.</p></div>
+        <div><h4>O que mede</h4><p>O <strong>tempo</strong> (em anos ou meses) para o caixa gerado pagar o investimento. É uma medida de <strong>liquidez e de risco</strong>: quanto mais cedo o dinheiro volta, menos tempo o capital fica exposto a imprevistos.</p></div>
+        <div><h4>Como decidir</h4><p>A empresa define um <strong>prazo-limite</strong> (por exemplo, 3 anos). Se o payback for menor ou igual ao limite, o projeto passa no teste. No exemplo, 2,13 anos (simples) e 2,62 anos (efetivo) ficam abaixo de 3 anos.</p></div>
         <div><h4>Vantagens</h4><ul><li>Fácil de calcular e de explicar</li><li>Útil quando o caixa é escasso ou o futuro é muito incerto</li></ul></div>
         <div><h4>Cuidados</h4><ul><li>Ignora o que acontece <strong>depois</strong> da recuperação</li><li>O simples e o médio ignoram o valor do dinheiro no tempo</li><li>Não mede riqueza criada: não deve ser o único critério</li></ul></div>
     </div>
@@ -102,8 +102,6 @@
 <section class="topico">
     <h2>4. Valor Presente Líquido (VPL)</h2>
     <p>É a diferença entre o valor presente dos benefícios de caixa e o valor presente dos desembolsos, incluindo o investimento inicial.</p>
-    <div class="formula">VPL = Σ [FC<sub>t</sub> / (1+i)<sup>t</sup>] - I<sub>0</sub></div>
-    <p><em>Que é o mesmo que...</em></p>
     <div class="formula">VPL = − I<sub>0</sub> + FC<sub>1</sub>/(1+i)¹ + FC<sub>2</sub>/(1+i)² + ... + FC<sub>n</sub>/(1+i)<sup>n</sup></div>
     <div class="tabela-wrap"><table>
         <tr><th>Resultado</th><th>Interpretação</th><th>Decisão</th></tr>
@@ -116,12 +114,12 @@
     <p>Como o VPL é positivo, o projeto <strong>deve ser aceito</strong>. Ele cria cerca de $ 91.216 de riqueza além do retorno mínimo exigido de 10%.</p>
 
     <h3>Entendendo o que o VPL calcula</h3>
-    <p>O VPL responde: <em>"depois de pagar o investimento e remunerar o capital à taxa exigida, sobra quanto de riqueza, em dinheiro no tempo presente?"</em> Cada fluxo futuro é <strong>descontado</strong> (dividido por (1+i)ⁿ) porque $ 1 recebido daqui a 3 anos vale menos que $ 1 hoje. Depois, soma-se tudo e subtrai-se o investimento.</p>
+    <p>O VPL responde: <em>"depois de pagar o investimento e remunerar o capital à taxa exigida, sobra quanto de riqueza, em dinheiro de hoje?"</em> Cada fluxo futuro é <strong>descontado</strong> (dividido por (1+i)ⁿ) porque $ 1 recebido daqui a 3 anos vale menos que $ 1 hoje. Depois, soma-se tudo e subtrai-se o investimento.</p>
     <div class="grid-info">
-        <div><h4>O que o resultado significa?</h4><p>VPL de $ 91.216 não é "lucro contábil". É a riqueza <strong>adicional, em valores no tempo presente</strong>, além de render os 10% exigidos sobre o capital. Se o VPL fosse zero, o projeto apenas pagaria o custo do capital.</p></div>
+        <div><h4>O que o resultado significa</h4><p>VPL de $ 91.216 não é "lucro contábil". É a riqueza <strong>adicional, em valores de hoje</strong>, além de render os 10% exigidos sobre o capital. Se o VPL fosse zero, o projeto apenas pagaria o custo do capital.</p></div>
         <div><h4>Papel da taxa i</h4><p>A taxa de desconto é o <strong>retorno exigido</strong> (veja o tópico sobre TMA e WACC). Quanto maior a taxa, menor o VPL: a 10% o VPL é 91,22; a 30% já é negativo (≈ −3,7).</p></div>
         <div><h4>Vantagens</h4><ul><li>Considera todos os fluxos e o valor do dinheiro no tempo</li><li>Mede a riqueza criada em $</li><li>É aditivo: o VPL de vários projetos pode ser somado</li></ul></div>
-        <div><h4>Cuidados</h4><ul><li>Depende da taxa escolhida</li><li>Resultado não avalia a questão temporal de retorno do investimento como o Payback</li></ul></div>
+        <div><h4>Cuidados</h4><ul><li>Depende da taxa escolhida</li><li>Resultado em $ não mostra eficiência: projetos de tamanhos diferentes ficam difíceis de comparar (use o IL)</li></ul></div>
     </div>
     <p><strong>Passo a passo:</strong> (1) escolha a taxa i; (2) desconte cada fluxo para o ano 0; (3) some os valores presentes; (4) subtraia o investimento inicial.</p>
 </section>
@@ -145,7 +143,22 @@
     <p>O VPL zera pouco abaixo de 30%: <strong>TIR ≈ 28,9% a.a.</strong> Como a TIR (28,9%) é maior que a TMA (10%), o projeto <strong>deve ser aceito</strong>, o que confirma o resultado do VPL.</p>
     <p>No gráfico VPL × taxa, a curva cai à medida que a taxa sobe e cruza o eixo horizontal exatamente na TIR.</p>
 
-
+    <h3>Gráfico interativo: a TIR é a taxa que zera o VPL</h3>
+    <p>A curva mostra o VPL do projeto da indústria de polpas para cada taxa de desconto. Na fórmula do VPL, a taxa <em>i</em> divide todos os fluxos futuros: quanto maior a taxa, menor o valor presente deles e, portanto, menor o VPL. A curva atravessa o eixo horizontal (VPL = 0) exatamente na <strong>TIR</strong>. Mova o controle para testar taxas diferentes.</p>
+    <div class="controles">
+        <div><label for="rg-vpl-taxa">Taxa de desconto (i): <span id="v-vpl-taxa"></span></label><input type="range" id="rg-vpl-taxa" min="0" max="50" step="0.5" value="10"></div>
+        <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:flex-end;">
+            <button type="button" class="opcao" id="bt-tma" style="width:auto; margin:0;">Usar a TMA do exemplo (10%)</button>
+            <button type="button" class="opcao" id="bt-tir" style="width:auto; margin:0;">Ir para a TIR</button>
+        </div>
+    </div>
+    <div class="legenda">
+        <span style="--c:#16a34a">VPL positivo: aceitar</span>
+        <span style="--c:#dc2626">VPL negativo: rejeitar</span>
+        <span style="--c:#2563eb">TIR: VPL = 0</span>
+    </div>
+    <div class="grafico" id="grafico-vpl-taxa" role="img" aria-label="Curva do VPL em função da taxa de desconto, que cruza o eixo horizontal na TIR, aproximadamente 28,9 por cento"></div>
+    <p id="leitura-vpl-taxa" style="text-align:left;"></p>
 
     <h3>Gráfico: a TIR de cada projeto contra a TMA</h3>
     <p>A barra de cada projeto é a sua TIR. A linha tracejada é a TMA. Mova o controle e veja quais projetos passam a ser aceitos ou rejeitados.</p>
@@ -159,18 +172,64 @@
     </div>
     <div class="grafico" id="grafico-tir" role="img" aria-label="Gráfico de barras com a TIR de 8 projetos e uma linha horizontal para a TMA"></div>
     <p id="resumo-tir" style="text-align:left;"></p>
-    <p>Veja que quanto mais alta a TMA, mais exigente é a seleção: menos projetos passam. Quando a TMA coincide com a TIR de um projeto, ele apenas cobre o retorno exigido e o VPL é zero. A diferença entre a TIR e a TMA é a <strong>folga</strong> do projeto: passe o mouse sobre uma barra para vê-la.</p>
-
-
+    <p>Quanto mais alta a TMA, mais exigente é a seleção: menos projetos passam. Quando a TMA coincide com a TIR de um projeto, ele apenas cobre o retorno exigido e o VPL é zero. A diferença entre a TIR e a TMA é a <strong>folga</strong> do projeto: passe o mouse sobre uma barra para vê-la.</p>
     <h3>Entendendo o que a TIR calcula</h3>
     <p>A TIR é o <strong>retorno anual do próprio projeto</strong>, como se fosse a taxa de juros de uma aplicação. Ela responde: <em>"se esses fluxos fossem um investimento financeiro, quanto ele renderia por ano?"</em> No exemplo, aplicar $ 200.000 neste projeto equivale a uma aplicação que rende cerca de 28,9% a.a.</p>
     <div class="grid-info">
-        <div><h4>Como decidir?</h4><p>Compare a TIR com a taxa exigida (TMA). Se TIR &gt; TMA, o projeto rende mais do que o mínimo aceitável. A <strong>folga</strong> (28,9% contra 10%) indica a margem de segurança: o retorno exigido poderia subir bastante antes de o VPL ficar negativo.</p></div>
+        <div><h4>Como decidir</h4><p>Compare a TIR com a taxa exigida (TMA). Se TIR &gt; TMA, o projeto rende mais do que o mínimo aceitável. A <strong>folga</strong> (28,9% contra 10%) indica a margem de segurança: o retorno exigido poderia subir bastante antes de o VPL ficar negativo.</p></div>
         <div><h4>Relação com o VPL</h4><p>A TIR é o ponto em que a curva do VPL cruza o zero. Por isso, para um projeto "convencional" (um desembolso inicial seguido só de entradas), TIR &gt; TMA e VPL &gt; 0 levam à mesma decisão.</p></div>
         <div><h4>Vantagens</h4><ul><li>Resultado em %, fácil de comparar com juros, Selic e custo de capital</li><li>Não exige definir a taxa para ser calculada</li></ul></div>
-        <div><h4>Cuidados</h4><ul><li>Entre projetos excludentes, pode contradizer o VPL (escala e prazos diferentes). Nesse caso, prevalece o VPL</li></ul></div>
+        <div><h4>Cuidados</h4><ul><li>Supõe que os fluxos são reinvestidos à própria TIR, o que pode ser irreal</li><li>Se o fluxo muda de sinal mais de uma vez, pode haver mais de uma TIR</li></ul></div>
     </div>
 </section>
+<script>
+(function () {
+    var I0=200, fc=[70,120,80,100];
+    var W=720,H=360,m={l:62,r:20,t:22,b:46}, xmax=50, ymin=-80, ymax=180;
+    var el=document.getElementById("grafico-vpl-taxa"), rg=document.getElementById("rg-vpl-taxa");
+    function vpl(i){var v=-I0; for(var t=0;t<fc.length;t++){v+=fc[t]/Math.pow(1+i,t+1);} return v;}
+    var lo=0,hi=1; for(var k=0;k<80;k++){var mid=(lo+hi)/2; if(vpl(mid)>0){lo=mid;}else{hi=mid;}}
+    var TIR=(lo+hi)/2*100;
+    function x(p){return m.l+(W-m.l-m.r)*p/xmax;}
+    function y(v){return m.t+(H-m.t-m.b)*(1-(v-ymin)/(ymax-ymin));}
+    function f(v,d){return v.toFixed(d===undefined?1:d).replace(".",",").replace("-","\u2212");}
+    function desenhar(){
+        var p=parseFloat(rg.value), v=vpl(p/100);
+        document.getElementById("v-vpl-taxa").textContent=f(p)+"%";
+        var s='<svg viewBox="0 0 '+W+' '+H+'" xmlns="http://www.w3.org/2000/svg">';
+        s+='<rect x="'+m.l+'" y="'+m.t+'" width="'+(W-m.l-m.r)+'" height="'+(y(0)-m.t)+'" fill="#16a34a" opacity="0.08"/>';
+        s+='<rect x="'+m.l+'" y="'+y(0)+'" width="'+(W-m.l-m.r)+'" height="'+(H-m.b-y(0))+'" fill="#dc2626" opacity="0.08"/>';
+        for(var g=-50;g<=150;g+=50){s+='<line class="grade" x1="'+m.l+'" x2="'+(W-m.r)+'" y1="'+y(g)+'" y2="'+y(g)+'"/><text x="'+(m.l-8)+'" y="'+(y(g)+4)+'" text-anchor="end" font-size="11">'+f(g,0)+'</text>';}
+        for(var q=0;q<=xmax;q+=10){s+='<line class="grade" x1="'+x(q)+'" x2="'+x(q)+'" y1="'+m.t+'" y2="'+(H-m.b)+'"/><text x="'+x(q)+'" y="'+(H-m.b+16)+'" text-anchor="middle" font-size="11">'+q+'%</text>';}
+        s+='<line class="eixo" x1="'+m.l+'" x2="'+m.l+'" y1="'+m.t+'" y2="'+(H-m.b)+'"/>';
+        s+='<line x1="'+m.l+'" x2="'+(W-m.r)+'" y1="'+y(0)+'" y2="'+y(0)+'" stroke="currentColor" style="stroke:var(--text)" stroke-width="2" opacity="0.7"/>';
+        var d="";for(var i=0;i<=xmax*2;i++){var pp=i/2;d+=(i?"L":"M")+x(pp).toFixed(1)+" "+y(vpl(pp/100)).toFixed(1)+" ";}
+        s+='<path d="'+d+'" fill="none" stroke="#1e3a8a" style="stroke:#3b82f6" stroke-width="3"/>';
+        s+='<text x="'+(m.l+10)+'" y="'+(m.t+16)+'" font-size="12" font-weight="bold" style="fill:#16a34a">VPL positivo</text>';
+        s+='<text x="'+(m.l+10)+'" y="'+(H-m.b-8)+'" font-size="12" font-weight="bold" style="fill:#dc2626">VPL negativo</text>';
+        s+='<line x1="'+x(TIR)+'" x2="'+x(TIR)+'" y1="'+y(0)+'" y2="'+(H-m.b)+'" stroke="#2563eb" stroke-width="2" stroke-dasharray="4 4"/>';
+        s+='<circle cx="'+x(TIR)+'" cy="'+y(0)+'" r="6" fill="#2563eb"/>';
+        s+='<text x="'+(x(TIR)+8)+'" y="'+(y(0)-10)+'" font-size="12" font-weight="bold" style="fill:#2563eb">TIR \u2248 '+f(TIR)+'%</text>';
+        var cor=Math.abs(v)<0.5?"#9ca3af":(v>0?"#16a34a":"#dc2626");
+        s+='<line x1="'+x(p)+'" x2="'+x(p)+'" y1="'+y(0)+'" y2="'+y(v)+'" stroke="'+cor+'" stroke-width="2" stroke-dasharray="3 3"/>';
+        s+='<circle cx="'+x(p)+'" cy="'+y(v)+'" r="7" fill="'+cor+'" stroke="#fff" stroke-width="2"/>';
+        var ax=p>35?"end":"start", dx=p>35?-12:12;
+        s+='<text x="'+(x(p)+dx)+'" y="'+(y(v)-12)+'" text-anchor="'+ax+'" font-size="12" font-weight="bold">VPL = $ '+f(v)+' mil</text>';
+        s+='<text x="'+((W+m.l)/2)+'" y="'+(H-6)+'" text-anchor="middle" font-size="12">Taxa de desconto / Taxa M\u00ednima de Atratividade (%)</text>';
+        s+='<text transform="translate(14 '+((H-m.b+m.t)/2)+') rotate(-90)" text-anchor="middle" font-size="12">VPL ($ mil)</text></svg>';
+        el.innerHTML=s;
+        var t;
+        if(Math.abs(p-TIR)<0.25){t="A taxa est\u00e1 praticamente igual \u00e0 TIR: o VPL \u00e9 quase zero. O projeto s\u00f3 cobre o retorno exigido, sem criar nem destruir valor.";}
+        else if(p<TIR){t="Com i = "+f(p)+"% (menor que a TIR de "+f(TIR)+"%), o VPL \u00e9 <strong>$ "+f(v)+" mil, positivo</strong>: o projeto rende mais que o exigido e deve ser aceito.";}
+        else {t="Com i = "+f(p)+"% (maior que a TIR de "+f(TIR)+"%), o VPL \u00e9 <strong>$ "+f(v)+" mil, negativo</strong>: o projeto rende menos que o exigido e deve ser rejeitado.";}
+        document.getElementById("leitura-vpl-taxa").innerHTML=t;
+    }
+    rg.addEventListener("input",desenhar);
+    document.getElementById("bt-tma").addEventListener("click",function(){rg.value=10;desenhar();});
+    document.getElementById("bt-tir").addEventListener("click",function(){rg.value=(Math.round(TIR*2)/2);desenhar();});
+    desenhar();
+})();
+</script>
 
 <script>
 (function () {
@@ -214,12 +273,12 @@
     </table></div>
     <h3>Cálculo no exemplo</h3>
     <div class="formula">IL = 291,22 ÷ 200 ≈ <strong>1,46</strong></div>
-    <p>Analisando em unidade monetária, cada $ 1 investido gera cerca de $ 1,46 em valor presente. Como IL &gt; 1, o projeto <strong>deve ser aceito</strong>.</p>
+    <p>Cada $ 1 investido gera cerca de $ 1,46 em valor presente. Como IL &gt; 1, o projeto <strong>deve ser aceito</strong>.</p>
 
     <h3>Entendendo o que o IL calcula</h3>
     <p>O IL mede a <strong>eficiência do capital</strong>: quanto de valor presente cada $ 1 investido gera. No exemplo, IL = 1,46 significa que cada $ 1 investido devolve $ 1,46 em valores de hoje, ou seja, $ 0,46 de riqueza a mais. Esse $ 0,46 é o <strong>VPL por real investido</strong> (91.216 ÷ 200.000).</p>
     <div class="grid-info">
-        <div><h4>Quando é mais útil?</h4><p> Dois projetos com o mesmo VPL podem ter ILs bem diferentes se exigirem investimentos diferentes.</p></div>
+        <div><h4>Quando é mais útil</h4><p>Quando o capital é <strong>limitado</strong> (racionamento): ordena-se os projetos pelo IL e escolhem-se os de maior índice até acabar o orçamento. Dois projetos com o mesmo VPL podem ter ILs bem diferentes se exigirem investimentos diferentes.</p></div>
         <div><h4>Relação com o VPL</h4><p>IL = (VPL + investimento) ÷ investimento = 1 + VPL/I. Por isso IL &gt; 1 equivale a VPL &gt; 0. O IL muda a <em>unidade</em> (razão em vez de $), não a decisão de aceitar ou rejeitar.</p></div>
         <div><h4>Cuidados</h4><ul><li>Não mostra o tamanho da riqueza criada (um IL alto pode vir de projeto pequeno)</li><li>Depende da mesma taxa de desconto do VPL</li></ul></div>
     </div>
@@ -230,10 +289,9 @@
     <p>VPL e IL dependem de uma taxa de desconto, e a TIR precisa ser comparada com uma taxa de referência. Essa taxa é a <strong>TMA (Taxa Mínima de Atratividade)</strong>: o retorno mínimo que o projeto precisa oferecer para valer o investimento. Uma referência muito usada para defini-la é o <strong>WACC</strong>.</p>
     <h3>O que é o WACC</h3>
     <p>WACC (<em>Weighted Average Cost of Capital</em>, em português CMPC ou WAAC) é o <strong>custo médio ponderado do capital</strong> da empresa: quanto ela paga, em média, para financiar seus ativos com capital próprio e de terceiros.</p>
-    <div class="formula">WACC = (W<sub>e</sub> × K<sub>e</sub>) + (W<sub>i</sub> × K<sub>i</sub>) × (1 − IR)</div>
-    <p>We = participação do capital próprio; Wi = Participação da dívida (terceiros); K<sub>e</sub> = custo do capital próprio (retorno exigido pelos acionistas); K<sub>i</sub> = custo da dívida antes do imposto; IR = alíquota. A dívida entra <strong>após o imposto</strong> por causa do benefício fiscal dos juros (Unidade II e Unidade IV).</p>
+    <div class="formula">WACC = (E/V) × K<sub>e</sub> + (D/V) × K<sub>d</sub> × (1 − IR)</div>
+    <p>E = capital próprio; D = dívida; V = E + D; K<sub>e</sub> = custo do capital próprio (retorno exigido pelos acionistas); K<sub>d</sub> = custo da dívida antes do imposto; IR = alíquota. A dívida entra <strong>após o imposto</strong> por causa do benefício fiscal dos juros (Unidade II).</p>
     <div class="destaque">Exemplo ilustrativo: 60% capital próprio com K<sub>e</sub> = 12%; 40% dívida com K<sub>d</sub> = 8%; IR = 34%. WACC = 0,6 × 12% + 0,4 × 8% × 0,66 = 7,2% + 2,1% ≈ <strong>9,3% a.a.</strong></div>
-    <p><strong><em>Nota:</strong> W<sub>e</sub> pode ser obtido pela razão <strong>(PL/P+PL)</strong> que mede a participação do <strong>Patrimônio Líquido (PL)</strong> mediante a estrutura de capital. O mesmo vale para W<sub>i</sub> que é obtido por <strong>(P/P+PL)</strong> que mede a participação do capital de terceiros (P referente ao Passivo). Essas razões mostram as proporções de cada fonte de capital na <strong>Estrutura de Capital</strong> da empresa.</em></p>
     <h3>Por que descontar o fluxo operacional pelo WACC</h3>
     <p>Na Unidade II, o fluxo de caixa operacional <strong>não deduz juros nem amortizações</strong>: o financiamento é avaliado à parte. Como o fluxo é "antes do financiamento", ele precisa ser descontado por uma taxa que já represente o <strong>custo de todas as fontes de capital</strong>, e esse é o WACC. Descontar pelo WACC e também subtrair os juros do fluxo seria contar o custo do financiamento duas vezes.</p>
     <h3>Quando a TMA pode levar o WACC em consideração</h3>
@@ -334,7 +392,7 @@
 <section class="topico" style="text-align:center;">
     <h2>Sua opinião é importante</h2>
     <p style="text-align:center;">Ajude a melhorar este material respondendo a um formulário rápido sobre esta unidade.</p>
-    <a class="btn" id="btn-formulario" href="https://forms.gle/SEU-FORMULARIO" target="_blank" rel="noopener">Responder formulário 📝</a>
+    <a class="btn" id="btn-formulario" href="https://forms.gle/yCNQWjkMYK6ct4pH9" target="_blank" rel="noopener">Responder formulário 📝</a>
 </section>
 <script>
 const QUESTOES = [
@@ -361,7 +419,7 @@ const QUESTOES = [
   explicacao:"O IL é uma variante do VPL: IL > 1 significa que o VP dos benefícios supera o dos desembolsos, logo VPL > 0."},
  {enunciado:"Segundo o material, o VPL de $ 91.216 no exemplo representa:",
   opcoes:["O lucro contábil do primeiro ano","A riqueza adicional em valores de hoje, além do retorno exigido de 10%","O valor total dos fluxos futuros","O tempo de recuperação do investimento"],correta:1,
-  explicacao:"O VPL mede a riqueza criada, em dinheiro no tempo presente, depois de pagar o investimento e remunerar o capital à taxa exigida."},
+  explicacao:"O VPL mede a riqueza criada, em dinheiro de hoje, depois de pagar o investimento e remunerar o capital à taxa exigida."},
  {enunciado:"O WACC representa:",
   opcoes:["O custo de oportunidade apenas dos acionistas","O custo médio ponderado de todas as fontes de capital da empresa","A taxa de juros da Selic","O retorno do projeto"],correta:1,
   explicacao:"WACC = (E/V)·Ke + (D/V)·Kd·(1−IR): a média dos custos do capital próprio e de terceiros, ponderada pela estrutura de capital."},
@@ -380,11 +438,60 @@ const QUESTOES = [
 ];
 </script>
 
+<!-- Botão voltar ao topo -->
+<style>
+    .btn-topo {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        z-index: 900;
+        width: 46px;
+        height: 46px;
+        border: none;
+        border-radius: 50%;
+        background: var(--primary, #1e3a8a);
+        color: #fff;
+        font-size: 22px;
+        line-height: 1;
+        cursor: pointer;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+        opacity: 0;
+        transform: translateY(12px);
+        pointer-events: none;
+        transition: opacity .25s, transform .25s;
+    }
+    .btn-topo.visivel {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+    .btn-topo:hover { transform: translateY(-3px); }
+</style>
+
+<button type="button" class="btn-topo" id="btn-topo" aria-label="Voltar ao topo da página" title="Voltar ao topo">↑</button>
+
+<script>
+    (function () {
+        const botao = document.getElementById("btn-topo");
+
+        // Mostra o botão depois de rolar 300px
+        window.addEventListener("scroll", function () {
+            botao.classList.toggle("visivel", window.scrollY > 300);
+        }, { passive: true });
+
+        // Rola suavemente até o topo
+        botao.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    })();
+</script>
+
 <footer>
     <p style="text-align: center;">&copy; 2026 Administração Financeira Avançada — Centro de Estudos Sociais Aplicados (CESA / UECE)</p>
     <p style="opacity: 0.8; font-size: 12px;">Conteúdo organizado pelo aluno monitor Ariel de Oliveira a partir do material de aula do Prof. Sérgio Lima | Plataforma Acadêmica</p>
 </footer>
 </main>
 <script src="script.js"></script>
+<script src="topo.js"></script>
 </body>
 </html>
