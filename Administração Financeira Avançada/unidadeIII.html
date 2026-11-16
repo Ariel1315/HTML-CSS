@@ -102,6 +102,8 @@
     <h2>4. Valor Presente Líquido (VPL)</h2>
     <p>É a diferença entre o valor presente dos benefícios de caixa e o valor presente dos desembolsos, incluindo o investimento inicial.</p>
     <div class="formula">VPL = − I<sub>0</sub> + FC<sub>1</sub>/(1+i)¹ + FC<sub>2</sub>/(1+i)² + ... + FC<sub>n</sub>/(1+i)<sup>n</sup></div>
+    <p><em>Escrito de outra forma:</em></p>
+    <div class="formula">VPL = ∑<sub>t=1</sub><sup>n</sup> FC<sub>t</sub>/(1+i)<sup>t</sup>− I<sub>0</sub> </div>
     <div class="tabela-wrap"><table>
         <tr><th>Resultado</th><th>Interpretação</th><th>Decisão</th></tr>
         <tr><td>VPL &gt; 0</td><td>O projeto adiciona riqueza</td><td>Aceitar</td></tr>
@@ -288,8 +290,12 @@
     <p>VPL e IL dependem de uma taxa de desconto, e a TIR precisa ser comparada com uma taxa de referência. Essa taxa é a <strong>TMA (Taxa Mínima de Atratividade)</strong>: o retorno mínimo que o projeto precisa oferecer para valer o investimento. Uma referência muito usada para defini-la é o <strong>WACC</strong>.</p>
     <h3>O que é o WACC</h3>
     <p>WACC (<em>Weighted Average Cost of Capital</em>, em português CMPC ou WAAC) é o <strong>custo médio ponderado do capital</strong> da empresa: quanto ela paga, em média, para financiar seus ativos com capital próprio e de terceiros.</p>
-    <div class="formula">WACC = (E/V) × K<sub>e</sub> + (D/V) × K<sub>d</sub> × (1 − IR)</div>
-    <p>E = capital próprio; D = dívida; V = E + D; K<sub>e</sub> = custo do capital próprio (retorno exigido pelos acionistas); K<sub>d</sub> = custo da dívida antes do imposto; IR = alíquota. A dívida entra <strong>após o imposto</strong> por causa do benefício fiscal dos juros (Unidade II).</p>
+    <div class="formula">WACC = W<sub>e</sub> × K<sub>e</sub> + W<sub>i</sub> × K<sub>i</sub> × (1 − IR)</div>
+    <p><em>Escrito de outra forma, segue a proporção (parte pelo todo):</em></p>
+    <div class="formula">WACC = (P/(P+PL)) × K<sub>e</sub> + (PL/(P+PL)) × K<sub>i</sub> × (1 − IR)</div>
+    <p><em>P/(P+PL)</em> = proporção do capital próprio; <em>PL/(P+PL)</em> = proporção da dívida.</p>
+    <p><sub>e</sub> = capital próprio; <sub>i</sub> = dívida (capital de terceiros); K<sub>e</sub> = custo do capital próprio (retorno exigido pelos acionistas); K<sub>i</sub> = custo da dívida antes do imposto; IR = alíquota. A dívida entra <strong>após o imposto</strong> por causa do benefício fiscal dos juros (Unidade II).</p>
+
     <div class="destaque">Exemplo ilustrativo: 60% capital próprio com K<sub>e</sub> = 12%; 40% dívida com K<sub>d</sub> = 8%; IR = 34%. WACC = 0,6 × 12% + 0,4 × 8% × 0,66 = 7,2% + 2,1% ≈ <strong>9,3% a.a.</strong></div>
     <h3>Por que descontar o fluxo operacional pelo WACC</h3>
     <p>Na Unidade II, o fluxo de caixa operacional <strong>não deduz juros nem amortizações</strong>: o financiamento é avaliado à parte. Como o fluxo é "antes do financiamento", ele precisa ser descontado por uma taxa que já represente o <strong>custo de todas as fontes de capital</strong>, e esse é o WACC. Descontar pelo WACC e também subtrair os juros do fluxo seria contar o custo do financiamento duas vezes.</p>
